@@ -1,0 +1,9 @@
+.logo svg {
+  width: 10rem;
+
+  @media screen and (min-width: 960px) {
+    & {
+      width: auto;
+    }
+  }
+}

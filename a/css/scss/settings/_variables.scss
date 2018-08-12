@@ -1,0 +1,47 @@
+/*-------------------------------------------
+    Colors
+-------------------------------------------*/
+
+// Brand Colors
+
+$green-olive: #CCE2A3;
+$innsist-blue: #34495E;
+$health-blue: #167BBF;
+$retail-purple: #833471;
+$light-color: #F0EFF4;
+$yellow: #FDC436;
+$coral: #F25F5C;
+$dark-olive: #5C6055;
+
+$text-color: #383838;
+
+
+ // Neutral Colors,
+ // Neutral colors are gray, white and black colors
+
+$white: #fff;
+$light-gray: #ccc;
+
+
+
+/*-------------------------------------------
+    Fonts
+-------------------------------------------*/
+$sans-serif-stack: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+$display-font: Roboto, $sans-serif-stack;
+$body-font: 'Open Sans', $sans-serif-stack;
+
+
+
+/*-------------------------------------------
+    Spacing
+-------------------------------------------*/
+$spacing			:		8;
+
+$xs 				:		$spacing;
+$s 					:		$spacing * 2;
+$m 					:		$spacing * 3;
+$l 					:		$spacing * 4;
+$xl 				:		$spacing * 5;
+$xxl 				:		$spacing * 6;

@@ -1,0 +1,51 @@
+/*-------------------------------------------
+    Table of contents
+-------------------------------------------*/
+// Settings..........Declarations of Sass variables & mixins
+// BASE...............Default element styles
+// LAYOUT.............Layout-specific styles
+// COMPONENTS.........Component styles
+// UTILITIES..........Utility classes
+
+/*-----------------------------------
+    Settings
+------------------------------------*/
+@import "scss/settings/mixins";
+@import "scss/settings/fonts";
+@import "scss/settings/variables";
+
+
+/*-----------------------------------
+    Base
+------------------------------------*/
+@import "scss/base/reset";
+@import "scss/base/body";
+@import "scss/base/headings";
+@import "scss/base/buttons";
+
+
+/*-----------------------------------
+    Layout
+------------------------------------*/
+@import "scss/layout/layout";
+
+
+/*-----------------------------------
+    Components
+------------------------------------*/
+@import "scss/components/logo";
+@import "scss/components/main-header";
+@import "scss/components/primary-nav";
+@import "scss/components/hero-image";
+@import "scss/components/page-intro";
+@import "scss/components/solutions";
+@import "scss/components/extra-section";
+@import "scss/components/client-portal";
+@import "scss/components/our-clients";
+@import "scss/components/global-footer";
+
+
+/*-----------------------------------
+    Utilities
+------------------------------------*/
+@import "scss/utilities/utilities";

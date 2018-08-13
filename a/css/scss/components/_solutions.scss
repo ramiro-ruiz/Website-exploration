@@ -3,7 +3,7 @@
   .products {
     display: none;
   }
-  
+
   @media screen and (min-width: 960px) {
     & {
       margin: 8rem 0;
@@ -30,7 +30,7 @@
       transform: translateY(-100%);
       transition: all ease .2s;
       opacity: 0;
-      background-color: #2F4051;
+      background-color: darken($innsist-blue, 8%);
 
       h4 {
         text-transform: uppercase;
@@ -172,7 +172,7 @@
 }
 
 .solutions > .hospitality::before {
-  background-color: #34495E;
+  background-color: $innsist-blue;
 }
 
 .solutions > .healthcare {
@@ -180,7 +180,7 @@
 }
 
 .solutions > .healthcare::before {
-  background-color: #167BBF;
+  background-color: $health-blue;
 }
 
 .solutions > .retail {
@@ -188,5 +188,5 @@
 }
 
 .solutions > .retail::before {
-  background-color: #833471;
+  background-color: $retail-purple;
 }

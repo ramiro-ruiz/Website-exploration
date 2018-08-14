@@ -5,9 +5,9 @@
     Settings
 ------------------------------------*/
 .slick-slide {
-  margin: 0 16px; }
+  margin: 0 2.4rem; }
   .slick-slide img {
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
     display: block; }
 
@@ -500,7 +500,8 @@ h2 {
 .client-logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding: 1.6rem; }
   .client-logos > .logo {
     width: 8rem;
     height: 8rem;

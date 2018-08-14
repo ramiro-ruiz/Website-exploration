@@ -476,7 +476,7 @@ p + .btn {
 .client-portal {
   flex-basis: 50%;
   padding: 3.2rem;
-  background-color: #FDC436;
+  background-color: #F27833;
   text-align: center; }
   @media screen and (min-width: 960px) {
     .client-portal {
@@ -522,7 +522,34 @@ p + .btn {
         margin: 2% 3%; } }
 
 .main-footer {
-  background-color: #5C6055; }
+  background-color: #5C6055;
+  color: #fff;
+  padding: 0 4rem; }
+  .main-footer a {
+    color: #fff;
+    font-size: 1.4rem; }
+  .main-footer a:hover {
+    color: #ccc; }
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0; }
+  .social-icons {
+    display: inline-flex; }
+  .social li {
+    margin: 0 .5rem; }
+
+.footer-list {
+  padding: 2rem 0; }
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap; }
+  .footer-menu ul {
+    margin: 1rem 0; }
+  .footer-menu li {
+    min-width: 25%; }
 
 .main-footer > * {
   /*opacity: 0;*/ }

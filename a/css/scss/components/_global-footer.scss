@@ -1,5 +1,47 @@
 .main-footer {
   background-color: #5C6055;
+  color: $white;
+  padding: 0 4rem;
+
+    a {
+      color: $white;
+      font-size: 1.4rem;
+    }
+    a:hover {
+      color: $light-gray;
+    }
+
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+
+  &-icons {
+    display: inline-flex;
+  }
+  li {
+    margin: 0 .5rem;
+  }
+
+}
+
+.footer-list {
+    padding: 2rem 0;
+}
+.footer-menu {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  ul {
+    margin: 1rem 0;
+  }
+  li {
+  min-width: 25%;
+  }
+
 }
 
 .main-footer > * {

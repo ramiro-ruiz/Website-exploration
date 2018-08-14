@@ -528,9 +528,6 @@ p + .btn {
 .main-footer {
   background-color: #5C6055; }
 
-.main-footer > * {
-  opacity: 0; }
-
 /*-----------------------------------
     Utilities
 ------------------------------------*/

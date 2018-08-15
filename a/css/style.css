@@ -382,7 +382,13 @@ p + .btn {
       position: relative;
       height: auto;
       transform: translateY(0);
-      opacity: 1; } }
+      opacity: 1; }
+    .solutions > section:nth-child(2) > a > .solution-info {
+      float: right;
+      padding: 4.8rem 0 4.8rem 4.8rem; }
+    .solutions > section:nth-child(2) > a::after {
+      right: auto;
+      left: 0; } }
   .solutions > section::before {
     content: '';
     position: absolute;
@@ -396,13 +402,7 @@ p + .btn {
     opacity: .8; }
     @media screen and (min-width: 960px) {
       .solutions > section::before {
-        opacity: 1; }
-      .solutions > section::before:nth-child(2) > a > .solution-info {
-        float: right;
-        padding: 4.8rem 0 4.8rem 4.8rem; }
-      .solutions > section::before:nth-child(2) > a::after {
-        right: auto;
-        left: 0; } }
+        opacity: 1; } }
   .solutions > section > * {
     position: relative;
     z-index: 5; }

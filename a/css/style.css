@@ -534,6 +534,8 @@ p + .btn {
     font-size: 1.4rem; }
   .main-footer a:hover {
     color: #ccc; }
+  .main-footer .products {
+    max-width: 33%; }
 
 .social {
   display: flex;
@@ -544,16 +546,10 @@ p + .btn {
   .social li {
     margin: 0 .5rem; }
 
-.footer-list {
-  padding: 2rem 0; }
-
 .footer-category {
   display: flex; }
-  .footer-category .products {
-    max-width: 33%; }
-
-.main-footer > * {
-  /*opacity: 0;*/ }
+  .footer-category-list + .footer-category-list {
+    margin-left: 1.6rem; }
 
 /*-----------------------------------
     Utilities

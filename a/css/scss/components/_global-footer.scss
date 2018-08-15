@@ -11,6 +11,10 @@
       color: $light-gray;
     }
 
+    .products {
+      max-width: 33%;
+    }
+
 }
 
 .social {
@@ -27,18 +31,12 @@
 
 }
 
-.footer-list {
-    padding: 2rem 0;
-}
+
 .footer-category {
   display: flex;
 
-  .products {
-    max-width: 33%;
+  &-list + &-list {
+    margin-left: 1.6rem;
   }
 
-}
-
-.main-footer > * {
-  /*opacity: 0;*/
 }

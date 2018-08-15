@@ -1,7 +1,7 @@
 .main-footer {
-  background-color: #5C6055;
+  background-color: $dark-olive;
   color: $white;
-  padding: 0 4rem;
+  padding: 0 4rem 4rem;
 
     a {
       color: $white;
@@ -30,16 +30,11 @@
 .footer-list {
     padding: 2rem 0;
 }
-.footer-menu {
+.footer-category {
   display: flex;
 
-  flex-wrap: wrap;
-
-  ul {
-    margin: 1rem 0;
-  }
-  li {
-  min-width: 25%;
+  .products {
+    max-width: 33%;
   }
 
 }

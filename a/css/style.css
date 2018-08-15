@@ -251,7 +251,7 @@ p + .btn {
       font-weight: 700;
       text-decoration: none; }
     .top-nav > .nav .link:hover {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.5); } }
+      border-bottom: 4px solid rgba(255, 255, 255, 0.5); } }
 
 @media screen and (min-width: 960px) {
   .mobile-toggle {

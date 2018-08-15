@@ -540,11 +540,19 @@ p + .btn {
 .social {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 0; }
+  align-items: center;
+  padding: 2.4rem 4rem;
+  margin: 0 -4rem 3.2rem;
+  background-color: #42453d; }
+  .social .tel {
+    font-size: 1.8rem; }
   .social-icons {
-    display: inline-flex; }
-  .social li {
-    margin: 0 .5rem; }
+    display: flex; }
+    .social-icons li svg {
+      width: 2.4rem;
+      fill: #fff; }
+    .social-icons li + li {
+      margin-left: 1.6rem; }
 
 .footer-category {
   display: flex; }

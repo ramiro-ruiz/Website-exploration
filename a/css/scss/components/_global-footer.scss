@@ -20,13 +20,29 @@
 .social {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 0;
+  align-items: center;
+  padding: 2.4rem 4rem;
+  margin: 0 -4rem 3.2rem;
+  background-color: darken($dark-olive, 10%);
+
+  .tel {
+    font-size: 1.8rem;
+  }
 
   &-icons {
-    display: inline-flex;
-  }
-  li {
-    margin: 0 .5rem;
+    display: flex;
+
+    li {
+
+      svg {
+        width: 2.4rem;
+        fill: $white;
+      }
+    }
+
+    li + li {
+      margin-left: 1.6rem;
+    }
   }
 
 }

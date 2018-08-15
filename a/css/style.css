@@ -101,7 +101,6 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
-
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -256,7 +255,6 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
-
 .hero-image {
   display: flex;
   position: relative;
@@ -332,7 +330,6 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0; }
-
 @media screen and (min-width: 960px) {
   .solutions {
     margin: 8rem 0; }
@@ -364,7 +361,6 @@ p + .btn {
       text-decoration: none;
       color: #fff;
       font-size: 1.4rem; } }
-
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -570,3 +566,5 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -47,13 +47,16 @@
 
 }
 
-
 .footer-category {
   display: flex;
+  justify-content: space-between;
 
   &-list + &-list {
     margin-left: 1.6rem;
-    width: 33%;
   }
 
+}
+
+.top {
+  padding-top: 18px;
 }

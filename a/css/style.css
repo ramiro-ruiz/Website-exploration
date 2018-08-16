@@ -119,7 +119,7 @@
 /**
  * Basic reset
  */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -528,6 +528,47 @@ p + .btn {
 .solutions > .retail::before {
   background-color: #833471; }
 
+.hotels-categories {
+  display: flex;
+  justify-content: space-between; }
+
+.solutions-benefits {
+  margin: 4rem 0 0;
+  padding: 4rem 2.4rem;
+  background-color: #34495E;
+  color: #fff; }
+  @media screen and (min-width: 960px) {
+    .solutions-benefits {
+      padding: 6.4rem 2.4rem; } }
+  .solutions-benefits > h3 {
+    margin-bottom: 2.4rem;
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (min-width: 960px) {
+      .solutions-benefits > h3 {
+        font-size: 4rem; } }
+
+.innsist-data {
+  margin: 4rem 0 0;
+  padding: 0 2.4rem; }
+  @media screen and (min-width: 960px) {
+    .innsist-data {
+      padding: 0 2.4rem; } }
+  .innsist-data > h3 {
+    margin-bottom: 2.4rem;
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (min-width: 960px) {
+      .innsist-data > h3 {
+        font-size: 4rem; } }
+
+.columns {
+  display: flex;
+  justify-content: space-between; }
+  .columns li {
+    width: 50%;
+    padding: 0 2rem; }
+
 .extra {
   padding: 3.2rem;
   flex-basis: 50%; }
@@ -616,9 +657,8 @@ p + .btn {
   justify-content: space-between; }
   .footer-category-list + .footer-category-list {
     margin-left: 1.6rem; }
-
-.top {
-  padding-top: 18px; }
+  .footer-category .top {
+    padding-top: 18px; }
 
 /*-----------------------------------
     Utilities

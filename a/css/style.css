@@ -553,7 +553,8 @@ p + .btn {
 .footer-category {
   display: flex; }
   .footer-category-list + .footer-category-list {
-    margin-left: 1.6rem; }
+    margin-left: 1.6rem;
+    width: 33%; }
 
 /*-----------------------------------
     Utilities

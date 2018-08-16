@@ -210,7 +210,7 @@ h2 {
     Layout
 ------------------------------------*/
 p + .btn {
-  margin-top: 3.2rem; }
+  margin: 3.2rem auto 0; }
 
 /*-----------------------------------
     Components
@@ -242,6 +242,54 @@ p + .btn {
       display: block; }
     .top-nav > .nav > li {
       display: inline-block; }
+      .top-nav > .nav > li.multi > a:hover {
+        border: 0; }
+      .top-nav > .nav > li.multi .solutions-list {
+        visibility: hidden;
+        display: flex;
+        position: absolute;
+        top: 7.8rem;
+        right: 4rem;
+        padding: 3.2rem 5.6rem 4rem; }
+        .top-nav > .nav > li.multi .solutions-list-category + .solutions-list-category {
+          margin-left: 4.8rem; }
+        .top-nav > .nav > li.multi .solutions-list > * {
+          opacity: 0;
+          transition: opacity .8s ease;
+          transition-delay: .2s; }
+        .top-nav > .nav > li.multi .solutions-list h4 {
+          text-transform: uppercase;
+          letter-spacing: .1rem;
+          color: #383838;
+          opacity: .8;
+          font-size: 1.8rem;
+          margin-bottom: 1rem; }
+        .top-nav > .nav > li.multi .solutions-list a {
+          font-size: 1.4rem;
+          color: #5A9C49; }
+          .top-nav > .nav > li.multi .solutions-list a:hover {
+            text-decoration: underline; }
+        .top-nav > .nav > li.multi .solutions-list::after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 0;
+          transition: all .2s ease;
+          border-bottom-left-radius: .4rem;
+          border-bottom-right-radius: .4rem;
+          background-color: #fff;
+          box-shadow: 0 0.2rem 0.2rem 0 rgba(56, 56, 56, 0.5);
+          transition: all .2s ease; }
+      .top-nav > .nav > li.multi:hover .solutions-list {
+        visibility: visible;
+        opacity: 1; }
+        .top-nav > .nav > li.multi:hover .solutions-list > * {
+          opacity: 1; }
+        .top-nav > .nav > li.multi:hover .solutions-list::after {
+          height: 100%; }
     .top-nav > .nav > li + li {
       margin-left: 2.4rem; }
     .top-nav > .nav .link {
@@ -485,18 +533,12 @@ p + .btn {
 .client-portal {
   flex-basis: 50%;
   padding: 3.2rem;
-  background-color: #CCE2A3;
-  text-align: center; }
+  background-color: #CCE2A3; }
+  .client-portal > h2 {
+    margin-bottom: .8rem; }
   @media screen and (min-width: 960px) {
     .client-portal {
       padding: 8rem 4.8rem; } }
-
-.client-portal > h2 {
-  margin-bottom: .8rem;
-  text-align: left; }
-
-.client-portal > p {
-  text-align: left; }
 
 .our-clients {
   margin: 4rem 0 0;
@@ -569,6 +611,9 @@ p + .btn {
 ------------------------------------*/
 .flex {
   display: flex; }
+
+.flex-column {
+  flex-direction: column; }
 
 .two-sections {
   display: block; }

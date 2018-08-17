@@ -1,4 +1,4 @@
-h1, h2, h3, h4 {
+h1, h2, h4 {
   font-family: $display-font;
 }
 
@@ -11,4 +11,20 @@ h2 {
       font-size: 4rem;
     }
   }
+}
+
+h3 {
+  font-family: $display-font;
+  color:  !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-family: $body-font;
+  color: $gray;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }

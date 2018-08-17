@@ -247,6 +247,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/a\/css\/scss\/settings\/_slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/a\/css\/scss\/settings\/_slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/a\/css\/scss\/settings\/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -283,6 +296,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/a\/css\/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/a\/css\/style.css.map",
+		"oF": 0
+		},
 	"\/a\/css\/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -303,6 +323,27 @@
 		"oAP": "\/a\/fonts\/RobotoCondensed-Bold-webfont.woff",
 		"oF": 0
 		},
+	"\/a\/imgs\/clients\/grupo-posadas.png": {
+		"ft": 32768,
+		"iS": 9659,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/clients\/grupo-posadas.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/a\/imgs\/health-2.jpg": {
+		"ft": 16384,
+		"iS": 74610,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/health-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/a\/imgs\/health.jpg": {
 		"ft": 16384,
 		"iS": 74610,
@@ -318,6 +359,16 @@
 		"iS": 76759,
 		"oA": 0,
 		"oAP": "\/a\/imgs\/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/hotel-2.jpg": {
+		"ft": 16384,
+		"iS": 106903,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/hotel-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -343,6 +394,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/a\/imgs\/retail-.jpg": {
+		"ft": 16384,
+		"iS": 85766,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/retail-.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/a\/imgs\/retail.jpg": {
 		"ft": 16384,
 		"iS": 85766,
@@ -352,6 +413,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/a\/js\/slick.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/a\/js\/slick.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/index.html": {
 		"cB": 0,

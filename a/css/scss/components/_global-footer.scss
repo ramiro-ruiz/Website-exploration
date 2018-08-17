@@ -1,28 +1,41 @@
 .main-footer {
+  padding: 0 4rem 4rem;
   background-color: $dark-olive;
   color: $white;
-  padding: 0 4rem 4rem;
 
-    a {
-      color: $white;
-      font-size: 1.4rem;
-    }
-    a:hover {
+  a {
+    color: $white;
+    font-size: 1.4rem;
+
+    &:hover {
       color: $light-gray;
+      text-decoration: underline;
     }
+  }
 
-    .products {
-      max-width: 33%;
+  .products {
+    max-width: 33%;
+  }
+
+  h3 {
+    a {
+      font-size: 1.8rem;
     }
+  }
 
+  .copyright {
+    margin: 8rem 0 0;
+    opacity: .5;
+    font-size: 1.2rem;
+  }
 }
 
 .social {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2.4rem 4rem;
+  justify-content: space-between;
   margin: 0 -4rem 3.2rem;
+  padding: 2.4rem 4rem;
   background-color: darken($dark-olive, 10%);
 
   .tel {
@@ -49,13 +62,47 @@
 
 .footer-category {
   display: flex;
-  justify-content: space-between;
 
   &-list + &-list {
-    margin-left: 1.6rem;
-  }
-  .top {
-    padding-top: 18px;
+    margin-left: 8%;
   }
 
+  &-list {
+    &.acerca {
+      flex-basis: 25%;
+    }
+
+    &.solutions-footer {
+      flex-basis: 65%;
+    }
+
+    &-products {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  h4 {
+    margin: 1.2rem 0 .8rem;
+    color: $gray;
+    font-family: $body-font;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+
+    a {
+      padding-bottom: .2rem;
+      border-bottom: .1rem solid rgba($white, .6);
+      font-size: 1.4rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    + ul > li {
+      margin: .4rem 0;
+    }
+  }
 }

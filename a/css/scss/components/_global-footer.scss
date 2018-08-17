@@ -19,14 +19,43 @@
 
   h3 {
     a {
+      display: block;
+      padding: .8rem 0;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
       font-size: 1.8rem;
+      text-align: center;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      @media screen and (min-width: 960px) {
+        & {
+          display: inline-block;
+          padding: 0;
+          border: 0;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
   .copyright {
-    margin: 8rem 0 0;
+    margin: 4.8rem 0 0;
     opacity: .5;
     font-size: 1.2rem;
+    text-align: center;
+
+    @media screen and (min-width: 960px) {
+      & {
+        margin: 8rem 0 0;
+        text-align: left;
+      }
+    }
   }
 }
 
@@ -62,9 +91,22 @@
 
 .footer-category {
   display: flex;
+  flex-flow: column;
+
+  @media screen and (min-width: 960px) {
+    & {
+      flex-flow: row;
+    }
+  }
 
   &-list + &-list {
-    margin-left: 8%;
+    margin: 10% 0 0;
+
+    @media screen and (min-width: 960px) {
+      & {
+        margin: 0 0 0 8%;
+      }
+    }
   }
 
   &-list {
@@ -78,7 +120,24 @@
 
     &-products {
       display: flex;
-      justify-content: space-between;
+      flex-flow: column;
+
+      @media screen and (min-width: 960px) {
+        & {
+          flex-flow: row;
+          justify-content: space-between;
+        }
+      }
+
+      & li ul > li {
+        display: none;
+
+        @media screen and (min-width: 960px) {
+          & {
+            display: flex;
+          }
+        }
+      }
     }
   }
 
@@ -89,7 +148,14 @@
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: .1rem;
+    text-align: center;
     text-transform: uppercase;
+
+    @media screen and (min-width: 960px) {
+      & {
+        text-align: left;
+      }
+    }
 
     a {
       padding-bottom: .2rem;

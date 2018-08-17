@@ -608,17 +608,11 @@ p + .btn {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1.6rem; }
-  .client-logos > .logo {
-    width: 8rem;
-    height: 8rem;
-    margin: 2% 4%;
-    border-radius: 50%;
-    background-color: #ccc; }
+  .client-logos .logo img {
+    width: 100%; }
     @media screen and (min-width: 960px) {
-      .client-logos > .logo {
-        width: 14rem;
-        height: 14rem;
-        margin: 2% 3%; } }
+      .client-logos .logo img {
+        width: 80%; } }
 
 .main-footer {
   padding: 0 4rem 4rem;
@@ -633,11 +627,30 @@ p + .btn {
   .main-footer .products {
     max-width: 33%; }
   .main-footer h3 a {
-    font-size: 1.8rem; }
+    display: block;
+    padding: .8rem 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    font-size: 1.8rem;
+    text-align: center; }
+    .main-footer h3 a:hover {
+      text-decoration: none; }
+    @media screen and (min-width: 960px) {
+      .main-footer h3 a {
+        display: inline-block;
+        padding: 0;
+        border: 0; }
+      .main-footer h3 a:hover {
+        text-decoration: underline; } }
   .main-footer .copyright {
-    margin: 8rem 0 0;
+    margin: 4.8rem 0 0;
     opacity: .5;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    text-align: center; }
+    @media screen and (min-width: 960px) {
+      .main-footer .copyright {
+        margin: 8rem 0 0;
+        text-align: left; } }
 
 .social {
   display: flex;
@@ -657,16 +670,32 @@ p + .btn {
       margin-left: 1.6rem; }
 
 .footer-category {
-  display: flex; }
+  display: flex;
+  flex-flow: column; }
+  @media screen and (min-width: 960px) {
+    .footer-category {
+      flex-flow: row; } }
   .footer-category-list + .footer-category-list {
-    margin-left: 8%; }
+    margin: 10% 0 0; }
+    @media screen and (min-width: 960px) {
+      .footer-category-list + .footer-category-list {
+        margin: 0 0 0 8%; } }
   .footer-category-list.acerca {
     flex-basis: 25%; }
   .footer-category-list.solutions-footer {
     flex-basis: 65%; }
   .footer-category-list-products {
     display: flex;
-    justify-content: space-between; }
+    flex-flow: column; }
+    @media screen and (min-width: 960px) {
+      .footer-category-list-products {
+        flex-flow: row;
+        justify-content: space-between; } }
+    .footer-category-list-products li ul > li {
+      display: none; }
+      @media screen and (min-width: 960px) {
+        .footer-category-list-products li ul > li {
+          display: flex; } }
   .footer-category h4 {
     margin: 1.2rem 0 .8rem;
     color: #AFB1AC;
@@ -674,7 +703,11 @@ p + .btn {
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: .1rem;
+    text-align: center;
     text-transform: uppercase; }
+    @media screen and (min-width: 960px) {
+      .footer-category h4 {
+        text-align: left; } }
     .footer-category h4 a {
       padding-bottom: .2rem;
       border-bottom: 0.1rem solid rgba(255, 255, 255, 0.6);

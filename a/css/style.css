@@ -218,6 +218,106 @@ h3 {
 p + .btn {
   margin: 3.2rem auto 0; }
 
+.main-footer .copyright {
+  margin: 4.8rem 0 0;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .main-footer .copyright {
+      margin: 8rem 0 0;
+      text-align: left; } }
+
+.main-footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -4rem 3.2rem;
+  padding: 2.4rem 4rem; }
+  .main-footer .social-icons {
+    display: flex; }
+    .main-footer .social-icons li svg {
+      width: 2.4rem; }
+    .main-footer .social-icons li + li {
+      margin-left: 1.6rem; }
+
+.main-footer .footer-category {
+  display: flex;
+  flex-flow: column; }
+  @media screen and (min-width: 960px) {
+    .main-footer .footer-category {
+      flex-flow: row; }
+    @supports (display: grid) {
+      .main-footer .footer-category {
+        display: grid;
+        grid-template-columns: repeat(2, 5fr 1fr) repeat(2, 5fr 1fr) 5fr; } } }
+  .main-footer .footer-category-list + .main-footer .footer-category-list {
+    margin: 10% 0 0; }
+    @media screen and (min-width: 960px) {
+      .main-footer .footer-category-list + .main-footer .footer-category-list {
+        margin: 0 0 0 10%; } }
+  .main-footer .footer-category-list.acerca {
+    flex-basis: 25%; }
+    @media screen and (min-width: 960px) {
+      @supports (display: grid) {
+        .main-footer .footer-category-list.acerca {
+          grid-column: 1/4; }
+        .main-footer .footer-category-list.acerca.footer-category-list-products {
+          display: grid;
+          grid-template-columns: 5fr 1fr 5fr; }
+          .main-footer .footer-category-list.acerca.footer-category-list-products li:last-child {
+            grid-column: 3/4; } } }
+  .main-footer .footer-category-list.solutions-footer {
+    flex-basis: 65%; }
+    @media screen and (min-width: 960px) {
+      @supports (display: grid) {
+        .main-footer .footer-category-list.solutions-footer {
+          display: grid;
+          grid-column: 5/10; }
+        .main-footer .footer-category-list.solutions-footer .footer-category-list-products {
+          display: grid;
+          grid-template-columns: repeat(2, 5fr 1fr) 5fr; }
+          .main-footer .footer-category-list.solutions-footer .footer-category-list-products li:nth-child(2) {
+            grid-column: 3/4; }
+          .main-footer .footer-category-list.solutions-footer .footer-category-list-products li:last-child {
+            grid-column: 5/6; } } }
+  .main-footer .footer-category-list-products {
+    display: flex;
+    flex-flow: column; }
+    @media screen and (min-width: 960px) {
+      .main-footer .footer-category-list-products {
+        flex-flow: row;
+        justify-content: space-between; }
+        @supports (display: grid) {
+          .main-footer .footer-category-list-products {
+            display: grid;
+            grid-template-columns: 5fr 1fr 5fr; }
+            .main-footer .footer-category-list-products li:last-child {
+              grid-column: 3/4; } }
+      .main-footer .footer-category-list-products li ul > li {
+        display: none; } }
+  @media screen and (min-width: 960px) and (min-width: 960px) {
+    .main-footer .footer-category-list-products li ul > li {
+      display: flex; } }
+  .main-footer .footer-category-list h4 {
+    margin: 1.2rem 0 .8rem;
+    color: #AFB1AC;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (min-width: 960px) {
+      .main-footer .footer-category-list h4 {
+        text-align: left; } }
+    .main-footer .footer-category-list h4 a {
+      padding-bottom: .2rem;
+      border-bottom: 0.1rem solid rgba(255, 255, 255, 0.6);
+      font-size: 1.4rem; }
+      .main-footer .footer-category-list h4 a:hover {
+        text-decoration: none; }
+    .main-footer .footer-category-list h4 + ul > li {
+      margin: .4rem 0; }
+
 /*-----------------------------------
     Components
 ------------------------------------*/
@@ -491,8 +591,7 @@ p + .btn {
         right: 0;
         bottom: 0;
         width: 50%;
-        height: 100%;
-        opacity: .8; } }
+        height: 100%; } }
     @media screen and (min-width: 960px) {
       .solutions > section > a > .solution-info {
         width: 50%;
@@ -512,18 +611,18 @@ p + .btn {
 .solutions > .healthcare {
   background: url(../imgs/health.jpg) center/cover no-repeat; }
   .solutions > .healthcare .products {
-    background-color: #12639a; }
+    background-color: #387caa; }
 
 .solutions > .healthcare::before {
-  background-color: #167BBF; }
+  background-color: #4891C3; }
 
 .solutions > .retail {
   background: url(../imgs/retail.jpg) center/cover no-repeat; }
   .solutions > .retail .products {
-    background-color: #662858; }
+    background-color: #713c64; }
 
 .solutions > .retail::before {
-  background-color: #833471; }
+  background-color: #8C4A7C; }
 
 .hotels-categories {
   display: flex;
@@ -624,8 +723,6 @@ p + .btn {
     .main-footer a:hover {
       color: #ccc;
       text-decoration: underline; }
-  .main-footer .products {
-    max-width: 33%; }
   .main-footer h3 a {
     display: block;
     padding: .8rem 0;
@@ -643,60 +740,24 @@ p + .btn {
       .main-footer h3 a:hover {
         text-decoration: underline; } }
   .main-footer .copyright {
-    margin: 4.8rem 0 0;
     opacity: .5;
-    font-size: 1.2rem;
-    text-align: center; }
-    @media screen and (min-width: 960px) {
-      .main-footer .copyright {
-        margin: 8rem 0 0;
-        text-align: left; } }
-
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 -4rem 3.2rem;
-  padding: 2.4rem 4rem;
-  background-color: #42453d; }
-  .social .tel {
-    font-size: 1.8rem; }
-  .social-icons {
-    display: flex; }
-    .social-icons li svg {
-      width: 2.4rem;
+    font-size: 1.2rem; }
+  .main-footer .social {
+    background-color: #42453d; }
+    .main-footer .social .tel {
+      font-size: 1.8rem; }
+    .main-footer .social-icons li svg {
       fill: #fff; }
-    .social-icons li + li {
-      margin-left: 1.6rem; }
-
-.footer-category {
-  display: flex;
-  flex-flow: column; }
-  @media screen and (min-width: 960px) {
-    .footer-category {
-      flex-flow: row; } }
-  .footer-category-list + .footer-category-list {
-    margin: 10% 0 0; }
-    @media screen and (min-width: 960px) {
-      .footer-category-list + .footer-category-list {
-        margin: 0 0 0 8%; } }
-  .footer-category-list.acerca {
+  .main-footer .footer-category-list.acerca {
     flex-basis: 25%; }
-  .footer-category-list.solutions-footer {
+  .main-footer .footer-category-list.solutions-footer {
     flex-basis: 65%; }
-  .footer-category-list-products {
-    display: flex;
-    flex-flow: column; }
+  .main-footer .footer-category-list-products li ul > li {
+    display: none; }
     @media screen and (min-width: 960px) {
-      .footer-category-list-products {
-        flex-flow: row;
-        justify-content: space-between; } }
-    .footer-category-list-products li ul > li {
-      display: none; }
-      @media screen and (min-width: 960px) {
-        .footer-category-list-products li ul > li {
-          display: flex; } }
-  .footer-category h4 {
+      .main-footer .footer-category-list-products li ul > li {
+        display: flex; } }
+  .main-footer .footer-category h4 {
     margin: 1.2rem 0 .8rem;
     color: #AFB1AC;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -706,15 +767,15 @@ p + .btn {
     text-align: center;
     text-transform: uppercase; }
     @media screen and (min-width: 960px) {
-      .footer-category h4 {
+      .main-footer .footer-category h4 {
         text-align: left; } }
-    .footer-category h4 a {
+    .main-footer .footer-category h4 a {
       padding-bottom: .2rem;
       border-bottom: 0.1rem solid rgba(255, 255, 255, 0.6);
       font-size: 1.4rem; }
-      .footer-category h4 a:hover {
+      .main-footer .footer-category h4 a:hover {
         text-decoration: none; }
-    .footer-category h4 + ul > li {
+    .main-footer .footer-category h4 + ul > li {
       margin: .4rem 0; }
 
 /*-----------------------------------

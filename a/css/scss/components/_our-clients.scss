@@ -29,18 +29,15 @@
   justify-content: center;
   padding: 1.6rem;
 
-  > .logo {
-    width: 8rem;
-    height: 8rem;
-    margin: 2% 4%;
-    border-radius: 50%;
-    background-color: $light-gray;
+  .logo {
 
-    @media screen and (min-width: 960px) {
-      & {
-        width: 14rem;
-        height: 14rem;
-        margin: 2% 3%;
+    img {
+      width: 100%;
+
+      @media screen and (min-width: 960px) {
+        & {
+          width: 80%;
+        }
       }
     }
   }

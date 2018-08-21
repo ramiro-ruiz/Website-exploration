@@ -1,4 +1,4 @@
-h1, h2, h3, h4 {
+h1, h2, h4 {
   font-family: $display-font;
 }
 
@@ -11,4 +11,11 @@ h2 {
       font-size: 4rem;
     }
   }
+}
+
+h3 {
+  font-family: $display-font;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 2.2rem;
 }

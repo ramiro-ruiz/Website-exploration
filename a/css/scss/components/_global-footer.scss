@@ -1,3 +1,123 @@
 .main-footer {
+  padding: 0 4rem 4rem;
   background-color: $dark-olive;
+  color: $white;
+
+  a {
+    color: $white;
+    font-size: 1.4rem;
+
+    &:hover {
+      color: $light-gray;
+      text-decoration: underline;
+    }
+  }
+
+  h3 {
+    a {
+      display: block;
+      padding: .8rem 0;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      font-size: 1.8rem;
+      text-align: center;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      @media screen and (min-width: 960px) {
+        & {
+          display: inline-block;
+          padding: 0;
+          border: 0;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    opacity: .5;
+    font-size: 1.2rem;
+  }
+
+  .social {
+    background-color: darken($dark-olive, 10%);
+
+    .tel {
+      font-size: 1.8rem;
+    }
+
+    &-icons {
+
+      li {
+
+        svg {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  .footer-category {
+
+
+    &-list {
+      &.acerca {
+        flex-basis: 25%;
+      }
+
+      &.solutions-footer {
+        flex-basis: 65%;
+      }
+
+      &-products {
+        
+        & li ul > li {
+          display: none;
+
+          @media screen and (min-width: 960px) {
+            & {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+
+    h4 {
+      margin: 1.2rem 0 .8rem;
+      color: $gray;
+      font-family: $body-font;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: .1rem;
+      text-align: center;
+      text-transform: uppercase;
+
+      @media screen and (min-width: 960px) {
+        & {
+          text-align: left;
+        }
+      }
+
+      a {
+        padding-bottom: .2rem;
+        border-bottom: .1rem solid rgba($white, .6);
+        font-size: 1.4rem;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      + ul > li {
+        margin: .4rem 0;
+      }
+    }
+  }
 }

@@ -337,12 +337,17 @@ p + .btn {
 
 .solutions-benefits {
   margin: 0 8rem; }
+  .solutions-benefits + .two-sections {
+    margin-top: 4rem; }
 
 .boxes {
   display: flex;
   flex-wrap: wrap; }
   .boxes li {
     flex-basis: 33.3%; }
+
+.solutions.one-category {
+  margin: 8rem; }
 
 /*-----------------------------------
     Components
@@ -724,15 +729,16 @@ p + .btn {
   padding: 8rem;
   background: rgba(114, 134, 160, 0.1); }
   .hotel-categories h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 4.8rem;
+    font-size: 4rem;
     text-align: center; }
   .hotel-categories img {
     width: 60%;
     margin: 0 auto; }
   .hotel-categories p {
-    text-align: center;
     font-size: 1.4rem;
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: center; }
 
 .our-clients {
   margin: 4rem 0 0;
@@ -830,7 +836,7 @@ p + .btn {
   padding: 4rem;
   background-color: #F25F5C;
   color: #fff;
-  font-size: 3.2rem;
+  font-size: 4rem;
   text-align: center; }
 
 .solutions-benefits .boxes li {

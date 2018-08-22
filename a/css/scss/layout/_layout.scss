@@ -208,6 +208,10 @@ p + .btn {
 
 .solutions-benefits {
   margin: 0 8rem;
+
+  & + .two-sections {
+    margin-top: 4rem;
+  }
 }
 
 .boxes {
@@ -217,4 +221,8 @@ p + .btn {
   li {
     flex-basis: 33.3%;
   }
+}
+
+.solutions.one-category {
+  margin: 8rem;
 }

@@ -54,7 +54,7 @@
 
 .hero-hoteleria {
   @extend .hero-image;
-  background: url(../imgs/hoteleria.jpg) center no-repeat;
+  background: url(../imgs/hoteleria.jpg) center/cover no-repeat;
 
   &::after {
     background-color: $innsist-blue;

@@ -334,16 +334,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/a\/imgs\/health-2.jpg": {
-		"ft": 16384,
-		"iS": 74610,
-		"oA": 0,
-		"oAP": "\/a\/imgs\/health-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/a\/imgs\/health.jpg": {
 		"ft": 16384,
 		"iS": 74610,
@@ -364,21 +354,31 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/a\/imgs\/hotel-2.jpg": {
-		"ft": 16384,
-		"iS": 106903,
-		"oA": 0,
-		"oAP": "\/a\/imgs\/hotel-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/a\/imgs\/hotel.jpg": {
 		"ft": 16384,
 		"iS": 106903,
 		"oA": 0,
 		"oAP": "\/a\/imgs\/hotel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/hoteleria.jpg": {
+		"ft": 16384,
+		"iS": 331516,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/hoteleria.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/ipms.jpg": {
+		"ft": 16384,
+		"iS": 437679,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/ipms.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -393,16 +393,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/a\/imgs\/retail-.jpg": {
-		"ft": 16384,
-		"iS": 85766,
-		"oA": 0,
-		"oAP": "\/a\/imgs\/retail-.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
 		},
 	"\/a\/imgs\/retail.jpg": {
 		"ft": 16384,
@@ -606,6 +596,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/index.html",
+		"oF": 0
+		},
+	"\/innsist-pms.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/innsist-pms.html",
 		"oF": 0
 		}
 	},

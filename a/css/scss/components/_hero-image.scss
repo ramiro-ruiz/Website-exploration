@@ -55,9 +55,17 @@
 .hero-hoteleria {
   @extend .hero-image;
   background: url(../imgs/hoteleria.jpg) center no-repeat;
+
+  &::after {
+    background-color: $innsist-blue;
+  }
 }
 
 .hero-ipms {
   @extend .hero-image;
   background: url(../imgs/ipms.jpg) center no-repeat;
+
+  &::after {
+    background-color: $innsist-blue;
+  }
 }

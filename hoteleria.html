@@ -74,7 +74,7 @@
     </nav>
   </header>
 
-  <main class="main-content home">
+  <main class="main-content">
     <section class="hero-hoteleria">
       <h1 class="main-heading">Hotelería</h1>
     </section>
@@ -82,59 +82,52 @@
     <section class="intro">
       <h2>¿Por qué elegir TCA Innsist?</h2>
       <p>TCA Innsist es una suite de soluciones de software para la industria de hotelería que, ya sea en sitio o en la nube, está enfocado a brindar soluciones integradas a las necesidades específicas de hoteles y grupos hoteleros en todas las áreas de operación y administración. Así mismo, esta solución ayuda al incremento en las ventas de habitaciones y servicios, y brinda un mayor control al ofrecer la información adecuada en el momento oportuno a cada área del negocio hotelero.</p>
+    </section>
+    <section class="content">
       <p>Las soluciones de TCA Innsist convergen en un solo punto, el huésped, por lo que todos los procesos contenidos en sus productos hoteleros están orientados en ofrecer un servicio rápido y de calidad al cliente de nuestros clientes.</p>
       <p>Más de 35 años en la industria hotelera respaldan nuestras soluciones y servicios especializados para el beneficio de su negocio. Hemos crecido en conjunto con grandes grupos hoteleros, y fungimos como aliados tecnológicos-hoteleros para que el cliente se enfoque en atender su negocio, aprovechando al máximo nuestros productos de software y servicios de consultoría.</p>
-      <h2>Nuestra solución se especializa en hoteles de categoría</h2>
-      <ul class="hotels-categories">
-        <li>
-          <ul>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Resorts-Spa&Golf.svg" alt="Resorts Spa & Golf" width="50">
-              <p>Resorts Spa & Golf</p>
-            </li>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Business-Class.svg" alt="Business Class" width="50">
-              <p>Business Class</p>
-            </li>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Hoteles-Lujo.svg" alt="Hoteles de Lujo" width="50">
-              <p>Hoteles de Lujo</p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Hoteles-Boutiques.svg" alt="Hoteles Boutiques" width="50">
-              <p>Hoteles Boutiques</p>
-            </li>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Hoteles-Aeropuerto.svg" alt="Hoteles Aeropuerto" width="50">
-              <p>Hoteles Aeropuerto</p>
-            </li>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Hoteles-Familiares.svg" alt="Hoteles Familiares" width="50">
-              <p>Hoteles Familiares</p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Hoteles-Convenciones.svg" alt="Hoteles de Convenciones" width="50">
-              <p>Hoteles de Convenciones</p>
-            </li>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Hoteles-Familiares.svg" alt="Hoteles Familiares" width="50">
-              <p>Hoteles Familiares</p>
-            </li>
-            <li>
-              <img src="a/imgs/soluciones/innsist/Hoteles-Familiares.svg" alt="Hoteles Familiares" width="50">
-              <p>Hoteles Familiares</p>
-            </li>
-          </ul>
-        </li>
-      </ul>
+
+      <div class="hotel-categories">
+        <h2>Especializada en hoteles de categoría</h2>
+        <ul class="cintilla">
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Resorts-Spa&Golf.svg" alt="Resorts Spa & Golf" width="50">
+            <p>Resorts Spa & Golf</p>
+          </li>
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Business-Class.svg" alt="Business Class" width="50">
+            <p>Business Class</p>
+          </li>
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Lujo.svg" alt="Hoteles de Lujo" width="50">
+            <p>Hoteles de Lujo</p>
+          </li>
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Boutiques.svg" alt="Hoteles Boutiques" width="50">
+            <p>Hoteles Boutiques</p>
+          </li>
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Aeropuerto.svg" alt="Hoteles Aeropuerto" width="50">
+            <p>Hoteles Aeropuerto</p>
+          </li>
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Familiares.svg" alt="Hoteles Familiares" width="50">
+            <p>Hoteles Familiares</p>
+          </li>
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Convenciones.svg" alt="Hoteles de Convenciones" width="50">
+            <p>Hoteles de Convenciones</p>
+          </li>
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Familiares.svg" alt="Hoteles Familiares" width="50">
+            <p>Hoteles Familiares</p>
+          </li>
+          <li class="slide">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Familiares.svg" alt="Hoteles Familiares" width="50">
+            <p>Hoteles Familiares</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="solutions-benefits">
@@ -331,7 +324,7 @@
 <script src="a/js/slick.min.js" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
-  $('.client-logos').slick({
+  $('.cintilla').slick({
       slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,

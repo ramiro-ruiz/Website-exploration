@@ -839,6 +839,9 @@ p + .btn {
 
 .two-sections {
   display: block; }
+  .two-sections li {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem; }
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }

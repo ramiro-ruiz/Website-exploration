@@ -4,138 +4,6 @@
 /*-----------------------------------
     Settings
 ------------------------------------*/
-<<<<<<< HEAD
-=======
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
-
-/* Icons */
-@font-face {
-  font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* Arrows */
-.slick-prev,
-.slick-next {
-  position: absolute;
-  display: block;
-  height: 20px;
-  width: 20px;
-  line-height: 0px;
-  font-size: 0px;
-  cursor: pointer;
-  background: transparent;
-  color: transparent;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  padding: 0;
-  border: none;
-  outline: none; }
-  .slick-prev:hover, .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus {
-    outline: none;
-    background: transparent;
-    color: transparent; }
-    .slick-prev:hover:before, .slick-prev:focus:before,
-    .slick-next:hover:before,
-    .slick-next:focus:before {
-      opacity: 1; }
-  .slick-prev.slick-disabled:before,
-  .slick-next.slick-disabled:before {
-    opacity: 0.25; }
-  .slick-prev:before,
-  .slick-next:before {
-    font-family: "slick";
-    font-size: 20px;
-    line-height: 1;
-    color: white;
-    opacity: 0.75;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
-
-.slick-prev {
-  left: -25px; }
-  [dir="rtl"] .slick-prev {
-    left: auto;
-    right: -25px; }
-  .slick-prev:before {
-    content: "←"; }
-    [dir="rtl"] .slick-prev:before {
-      content: "→"; }
-
-.slick-next {
-  right: -25px; }
-  [dir="rtl"] .slick-next {
-    left: -25px;
-    right: auto; }
-  .slick-next:before {
-    content: "→"; }
-    [dir="rtl"] .slick-next:before {
-      content: "←"; }
-
-/* Dots */
-.slick-dotted.slick-slider {
-  margin-bottom: 30px; }
-
-.slick-dots {
-  position: absolute;
-  bottom: -25px;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 100%; }
-  .slick-dots li {
-    position: relative;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer; }
-    .slick-dots li button {
-      border: 0;
-      background: transparent;
-      display: block;
-      height: 20px;
-      width: 20px;
-      outline: none;
-      line-height: 0px;
-      font-size: 0px;
-      color: transparent;
-      padding: 5px;
-      cursor: pointer; }
-      .slick-dots li button:hover, .slick-dots li button:focus {
-        outline: none; }
-        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
-          opacity: 1; }
-      .slick-dots li button:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "•";
-        width: 20px;
-        height: 20px;
-        font-family: "slick";
-        font-size: 6px;
-        line-height: 20px;
-        text-align: center;
-        color: black;
-        opacity: 0.25;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; }
-    .slick-dots li.slick-active button:before {
-      color: black;
-      opacity: 0.75; }
-
->>>>>>> 5c53bbea5f88d294b1ab23bc75b1b72db6f837e3
 .slick-slide {
   margin: 0 2.4rem; }
   .slick-slide img {
@@ -234,6 +102,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
+
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -363,6 +232,7 @@ p + .btn {
     .main-footer .copyright {
       margin: 8rem 0 0;
       text-align: left; } }
+
 .main-footer .social {
   display: flex;
   align-items: center;
@@ -375,6 +245,7 @@ p + .btn {
       width: 2.4rem; }
     .main-footer .social-icons li + li {
       margin-left: 1.6rem; }
+
 .main-footer .footer-category {
   display: flex;
   flex-flow: column; }
@@ -433,7 +304,6 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
-
   .main-footer .footer-category-list h4 {
     margin: 1.2rem 0 .8rem;
     color: #AFB1AC;
@@ -464,6 +334,15 @@ p + .btn {
   .text-columns p {
     font-size: 2.1rem;
     margin-top: 0; }
+
+.solutions-benefits {
+  margin: 0 8rem; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap; }
+  .boxes li {
+    flex-basis: 33.3%; }
 
 /*-----------------------------------
     Components
@@ -519,8 +398,8 @@ p + .btn {
           letter-spacing: .1rem;
           text-transform: uppercase; }
         .top-nav > .nav > li.multi .solutions-list a {
-          color: #5A9C49;
-          font-size: 1.4rem; }
+          color: #3576a3;
+          font-size: 1.2rem; }
           .top-nav > .nav > li.multi .solutions-list a:hover {
             text-decoration: underline; }
         .top-nav > .nav > li.multi .solutions-list::after {
@@ -558,6 +437,7 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
+
 .hero-image, .hero-hoteleria, .hero-ipms {
   display: flex;
   position: relative;
@@ -645,6 +525,7 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
+
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -679,6 +560,7 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
+
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -784,22 +666,6 @@ p + .btn {
 .hotels-categories {
   display: flex;
   justify-content: space-between; }
-
-.solutions-benefits {
-  margin: 4rem 0 0;
-  padding: 4rem 2.4rem;
-  background-color: #34495E;
-  color: #fff; }
-  @media screen and (min-width: 960px) {
-    .solutions-benefits {
-      padding: 6.4rem 2.4rem; } }
-  .solutions-benefits > h3 {
-    margin-bottom: 2.4rem;
-    text-align: center;
-    text-transform: uppercase; }
-    @media screen and (min-width: 960px) {
-      .solutions-benefits > h3 {
-        font-size: 4rem; } }
 
 .innsist-data {
   margin: 4rem 0 0;
@@ -950,6 +816,34 @@ p + .btn {
     .main-footer .footer-category h4 + ul > li {
       margin: .4rem 0; }
 
+.solutions-benefits h3 {
+  padding: 4rem;
+  background-color: #F25F5C;
+  color: #fff;
+  font-size: 3.2rem;
+  text-align: center; }
+
+.solutions-benefits .boxes li {
+  display: flex;
+  flex-flow: column;
+  padding: 4rem;
+  border: 2px solid rgba(56, 56, 56, 0.7);
+  font-size: 1.4rem;
+  line-height: 1.6; }
+  .solutions-benefits .boxes li:nth-child(1), .solutions-benefits .boxes li:nth-child(2), .solutions-benefits .boxes li:nth-child(3) {
+    border-top: 0; }
+  .solutions-benefits .boxes li:nth-child(2), .solutions-benefits .boxes li:nth-child(3) {
+    border-left: 0; }
+  .solutions-benefits .boxes li:nth-child(5), .solutions-benefits .boxes li:nth-child(6) {
+    border-left: 0; }
+  .solutions-benefits .boxes li:nth-child(4), .solutions-benefits .boxes li:nth-child(5), .solutions-benefits .boxes li:nth-child(6) {
+    border-top: 0; }
+  .solutions-benefits .boxes li strong {
+    display: block;
+    margin-bottom: .8rem;
+    font-size: 1.6rem;
+    font-weight: 700; }
+
 /*-----------------------------------
     Utilities
 ------------------------------------*/
@@ -964,5 +858,3 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
-
-/*# sourceMappingURL=style.css.map */

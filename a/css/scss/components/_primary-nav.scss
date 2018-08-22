@@ -43,8 +43,8 @@
             }
 
             a {
-              color: #5A9C49;
-              font-size: 1.4rem;
+              color: darken($health-blue, 10%);
+              font-size: 1.2rem;
 
               &:hover {
                 text-decoration: underline;

@@ -205,3 +205,16 @@ p + .btn {
     margin-top: 0;
   }
 }
+
+.solutions-benefits {
+  margin: 0 8rem;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    flex-basis: 33.3%;
+  }
+}

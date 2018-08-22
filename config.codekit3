@@ -208,6 +208,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/a\/css\/scss\/components\/_solutions-benefits.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/a\/css\/scss\/components\/_solutions-benefits.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/a\/css\/scss\/components\/_solutions.scss": {
 		"aP": 0,
 		"bl": 0,

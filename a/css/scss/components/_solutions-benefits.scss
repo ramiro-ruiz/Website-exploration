@@ -1,0 +1,50 @@
+.solutions-benefits {
+
+  h3 {
+    padding: 4rem;
+    background-color: $coral;
+    color: $white;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .boxes {
+    li {
+      display: flex;
+      flex-flow: column;
+      padding: 4rem;
+      border: 2px solid rgba($text-color, .7);
+      font-size: 1.4rem;
+      line-height: 1.6;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        border-top: 0;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        border-left: 0;
+      }
+
+      &:nth-child(5),
+      &:nth-child(6) {
+        border-left: 0;
+      }
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        border-top: 0;
+      }
+
+      strong {
+        display: block;
+        margin-bottom: .8rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -63,7 +63,7 @@
 
 .hero-ipms {
   @extend .hero-image;
-  background: url(../imgs/ipms.jpg) center no-repeat;
+  background: url(../imgs/ipms.jpg) center/cover no-repeat;
 
   &::after {
     background-color: $innsist-blue;

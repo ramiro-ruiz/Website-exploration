@@ -39,6 +39,28 @@
         border-top: 0;
       }
 
+      &:nth-child(8),
+      &:nth-child(9) {
+        border-left: 0;
+      }
+
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9) {
+        border-top: 0;
+      }
+
+      &:nth-child(11),
+      &:nth-child(12) {
+        border-left: 0;
+      }
+
+      &:nth-child(10),
+      &:nth-child(11),
+      &:nth-child(12) {
+        border-top: 0;
+      }
+
       strong {
         display: block;
         margin-bottom: .8rem;

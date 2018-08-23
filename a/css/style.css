@@ -102,7 +102,6 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
-
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -232,7 +231,6 @@ p + .btn {
     .main-footer .copyright {
       margin: 8rem 0 0;
       text-align: left; } }
-
 .main-footer .social {
   display: flex;
   align-items: center;
@@ -245,7 +243,6 @@ p + .btn {
       width: 2.4rem; }
     .main-footer .social-icons li + li {
       margin-left: 1.6rem; }
-
 .main-footer .footer-category {
   display: flex;
   flex-flow: column; }
@@ -304,6 +301,7 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
+
   .main-footer .footer-category-list h4 {
     margin: 1.2rem 0 .8rem;
     color: #AFB1AC;
@@ -442,7 +440,6 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
-
 .hero-image, .hero-hoteleria, .hero-ipms {
   display: flex;
   position: relative;
@@ -519,8 +516,7 @@ p + .btn {
   margin: 1.6rem 0 0; }
   @media screen and (min-width: 960px) {
     .intro > p {
-      font-size: 2.8rem;
-      max-width: 100rem; } }
+      font-size: 2.8rem; } }
 
 .solutions .products {
   display: none; }
@@ -530,7 +526,6 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
-
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -565,7 +560,6 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
-
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -688,9 +682,14 @@ p + .btn {
 
 .columns {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 8rem;
+  font-size: 1.4rem; }
+  .columns h2 {
+    font-size: 2.4rem;
+    padding-bottom: 2.4rem; }
   .columns li {
-    width: 50%;
+    width: 90%;
     padding: 0 2rem; }
 
 .certifications {
@@ -838,7 +837,6 @@ p + .btn {
   color: #fff;
   font-size: 4rem;
   text-align: center; }
-
 .solutions-benefits .boxes li {
   display: flex;
   flex-flow: column;
@@ -853,6 +851,14 @@ p + .btn {
   .solutions-benefits .boxes li:nth-child(5), .solutions-benefits .boxes li:nth-child(6) {
     border-left: 0; }
   .solutions-benefits .boxes li:nth-child(4), .solutions-benefits .boxes li:nth-child(5), .solutions-benefits .boxes li:nth-child(6) {
+    border-top: 0; }
+  .solutions-benefits .boxes li:nth-child(8), .solutions-benefits .boxes li:nth-child(9) {
+    border-left: 0; }
+  .solutions-benefits .boxes li:nth-child(7), .solutions-benefits .boxes li:nth-child(8), .solutions-benefits .boxes li:nth-child(9) {
+    border-top: 0; }
+  .solutions-benefits .boxes li:nth-child(11), .solutions-benefits .boxes li:nth-child(12) {
+    border-left: 0; }
+  .solutions-benefits .boxes li:nth-child(10), .solutions-benefits .boxes li:nth-child(11), .solutions-benefits .boxes li:nth-child(12) {
     border-top: 0; }
   .solutions-benefits .boxes li strong {
     display: block;
@@ -877,3 +883,5 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
+
+/*# sourceMappingURL=style.css.map */

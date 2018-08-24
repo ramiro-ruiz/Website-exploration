@@ -1,7 +1,35 @@
 .extra-material {
   margin: 8rem;
+  display: flex;
+  height: 40rem;
 
-  .video {
-    
+  &-video {
+    flex-basis: 70%;
+  }
+
+  &-links {
+    background-color: $innsist-blue;
+    flex-basis: 30%;
+    padding: 4rem;
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        color: $white;
+        opacity: .8;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        svg {
+          width: 4.8rem;
+          margin-right: .8rem;
+        }
+      }
+    }
   }
 }

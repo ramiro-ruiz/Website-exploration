@@ -102,7 +102,6 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
-
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -235,7 +234,6 @@ p + .btn {
     .main-footer .copyright {
       margin: 8rem 0 0;
       text-align: left; } }
-
 .main-footer .social {
   display: flex;
   align-items: center;
@@ -248,7 +246,6 @@ p + .btn {
       width: 2.4rem; }
     .main-footer .social-icons li + li {
       margin-left: 1.6rem; }
-
 .main-footer .footer-category {
   display: flex;
   flex-flow: column; }
@@ -307,6 +304,7 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
+
   .main-footer .footer-category-list h4 {
     margin: 1.2rem 0 .8rem;
     color: #AFB1AC;
@@ -445,7 +443,6 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
-
 .hero-image, .hero-hoteleria, .hero-ipms {
   display: flex;
   position: relative;
@@ -532,7 +529,6 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
-
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -567,7 +563,6 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
-
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -714,21 +709,6 @@ p + .btn {
     .certifications {
       padding: 8rem 4.8rem; } }
 
-.small-cards-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .small-cards-list li {
-    flex-basis: 18%;
-    display: flex;
-    align-items: center;
-    margin: .8rem;
-    padding: 2.4rem;
-    font-size: 1.4rem;
-    border-radius: .4rem;
-    background-color: #fff;
-    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.3); }
-
 .extra {
   padding: 3.2rem;
   flex-basis: 50%; }
@@ -871,7 +851,6 @@ p + .btn {
   text-align: center;
   border-top-left-radius: .8rem;
   border-top-right-radius: .8rem; }
-
 .solutions-benefits .boxes li {
   display: flex;
   flex-flow: column;
@@ -944,3 +923,5 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
+
+/*# sourceMappingURL=style.css.map */

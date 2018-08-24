@@ -3,7 +3,7 @@
 
   @media screen and (min-width: 960px) {
     & {
-      margin: 8rem;
+      margin: 4rem 8rem;
     }
   }
 }
@@ -30,8 +30,8 @@ p + .btn {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin: 0 -4rem 3.2rem;
-      padding: 2.4rem 4rem;
+      margin: 0 -8rem 3.2rem;
+      padding: 2.4rem 8rem;
 
       &-icons {
         display: flex;

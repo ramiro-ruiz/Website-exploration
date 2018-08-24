@@ -220,7 +220,7 @@ h3 {
   margin: 3.2rem; }
   @media screen and (min-width: 960px) {
     .content {
-      margin: 8rem; } }
+      margin: 4rem 8rem; } }
 
 p + .btn {
   margin: 3.2rem auto 0; }
@@ -237,8 +237,8 @@ p + .btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 -4rem 3.2rem;
-  padding: 2.4rem 4rem; }
+  margin: 0 -8rem 3.2rem;
+  padding: 2.4rem 8rem; }
   .main-footer .social-icons {
     display: flex; }
     .main-footer .social-icons li svg {
@@ -773,7 +773,7 @@ p + .btn {
         width: 80%; } }
 
 .main-footer {
-  padding: 0 4rem 4rem;
+  padding: 0 8rem 4rem;
   background-color: #5C6055;
   color: #fff; }
   .main-footer a {
@@ -879,6 +879,9 @@ p + .btn {
     margin-bottom: .8rem;
     font-size: 1.6rem;
     font-weight: 700; }
+
+.extra-material {
+  margin: 8rem; }
 
 /*-----------------------------------
     Utilities

@@ -714,6 +714,21 @@ p + .btn {
     .certifications {
       padding: 8rem 4.8rem; } }
 
+.small-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .small-cards-list li {
+    flex-basis: 18%;
+    display: flex;
+    align-items: center;
+    margin: .8rem;
+    padding: 2.4rem;
+    font-size: 1.4rem;
+    border-radius: .4rem;
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.3); }
+
 .extra {
   padding: 3.2rem;
   flex-basis: 50%; }
@@ -887,7 +902,7 @@ p + .btn {
     font-weight: 700; }
 
 .extra-material {
-  margin: 4rem 8rem;
+  margin: 6.4rem 8rem;
   display: flex;
   height: 40rem; }
   .extra-material-video {

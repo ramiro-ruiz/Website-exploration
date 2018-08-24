@@ -67,6 +67,17 @@
 
 
     &-list {
+
+      & + .footer-category-list{
+        margin-top: 4.8rem;
+      }
+
+      @media screen and (min-width: 960px) {
+        & + .footer-category-list{
+          margin-top: 0;
+        }
+      }
+
       &.acerca {
         flex-basis: 25%;
       }
@@ -76,7 +87,7 @@
       }
 
       &-products {
-        
+
         & li ul > li {
           display: none;
 

@@ -52,6 +52,11 @@
   }
 }
 
+.hero-nosotros {
+  @extend .hero-image;
+  background: url(../imgs/nosotros/nosotros.jpg) center/cover no-repeat;
+}
+
 .hero-hoteleria {
   @extend .hero-image;
   background: url(../imgs/hoteleria.jpg) center/cover no-repeat;

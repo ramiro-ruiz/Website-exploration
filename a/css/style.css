@@ -443,7 +443,7 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
-.hero-image, .hero-hoteleria, .hero-ipms {
+.hero-image, .hero-nosotros, .hero-hoteleria, .hero-ipms {
   display: flex;
   position: relative;
   height: 45vh;
@@ -451,11 +451,11 @@ p + .btn {
   background: url(../imgs/hero.jpg) center no-repeat;
   background-size: cover; }
   @media screen and (min-width: 960px) {
-    .hero-image, .hero-hoteleria, .hero-ipms {
+    .hero-image, .hero-nosotros, .hero-hoteleria, .hero-ipms {
       height: 70vh;
       padding: 4.8rem 8rem 2.4rem; } }
 
-.hero-image::after, .hero-hoteleria::after, .hero-ipms::after {
+.hero-image::after, .hero-nosotros::after, .hero-hoteleria::after, .hero-ipms::after {
   content: '';
   display: block;
   position: absolute;
@@ -466,11 +466,11 @@ p + .btn {
   height: 10rem;
   background-color: #D93E3E; }
   @media screen and (min-width: 960px) {
-    .hero-image::after, .hero-hoteleria::after, .hero-ipms::after {
+    .hero-image::after, .hero-nosotros::after, .hero-hoteleria::after, .hero-ipms::after {
       bottom: -10.6rem;
       height: 16rem; } }
 
-.hero-image > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
+.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
   width: 66%;
   margin: auto 0;
   color: #fff;
@@ -479,11 +479,14 @@ p + .btn {
   line-height: 1.25;
   text-transform: uppercase; }
   @media screen and (min-width: 960px) {
-    .hero-image > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
+    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
       width: 50%;
       margin: auto 0;
       font-size: 6.4rem;
       line-height: 1.1; } }
+
+.hero-nosotros {
+  background: url(../imgs/nosotros/nosotros.jpg) center/cover no-repeat; }
 
 .hero-hoteleria {
   background: url(../imgs/hoteleria.jpg) center/cover no-repeat; }

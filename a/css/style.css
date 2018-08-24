@@ -675,11 +675,12 @@ p + .btn {
   justify-content: space-between; }
 
 .innsist-data {
-  margin: 4rem 0 0;
-  padding: 0 2.4rem; }
+  margin: 8rem 0;
+  padding: 0 2.4rem;
+  background-color: #eeefee; }
   @media screen and (min-width: 960px) {
     .innsist-data {
-      padding: 0 2.4rem; } }
+      padding: 8rem; } }
   .innsist-data > h3 {
     margin-bottom: 2.4rem;
     text-align: center;
@@ -687,6 +688,8 @@ p + .btn {
     @media screen and (min-width: 960px) {
       .innsist-data > h3 {
         font-size: 4rem; } }
+  .innsist-data p {
+    font-size: 1.8rem; }
 
 .columns {
   display: flex;
@@ -884,11 +887,14 @@ p + .btn {
     font-weight: 700; }
 
 .extra-material {
-  margin: 8rem;
+  margin: 4rem 8rem;
   display: flex;
   height: 40rem; }
   .extra-material-video {
     flex-basis: 70%; }
+    .extra-material-video iframe {
+      border-top-left-radius: .8rem;
+      border-bottom-left-radius: .8rem; }
   .extra-material-links {
     background-color: #34495E;
     flex-basis: 30%;
@@ -904,7 +910,7 @@ p + .btn {
         opacity: 1; }
       .extra-material-links li a svg {
         width: 4.8rem;
-        margin-right: .8rem; }
+        margin-right: 1.6rem; }
 
 /*-----------------------------------
     Utilities

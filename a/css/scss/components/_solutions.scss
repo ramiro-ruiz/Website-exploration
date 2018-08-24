@@ -232,12 +232,13 @@
 }
 
 .innsist-data {
-  margin: 4rem 0 0;
+  margin: 8rem 0;
   padding: 0 2.4rem;
+  background-color: lighten($gray, 25%);
 
   @media screen and (min-width: 960px) {
     & {
-      padding: 0 2.4rem;
+      padding: 8rem;
     }
   }
 
@@ -251,6 +252,10 @@
         font-size: 4rem;
       }
     }
+  }
+
+  p {
+    font-size: 1.8rem;
   }
 }
 

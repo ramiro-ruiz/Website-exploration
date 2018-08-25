@@ -237,13 +237,20 @@ p + .btn {
       text-align: left; } }
 
 .main-footer .social {
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: space-between;
   margin: 0 -8rem 3.2rem;
   padding: 2.4rem 8rem; }
+  @media screen and (min-width: 960px) {
+    .main-footer .social {
+      display: flex;
+      justify-content: space-between; } }
   .main-footer .social-icons {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
+    @media screen and (min-width: 960px) {
+      .main-footer .social-icons {
+        justify-content: center; } }
     .main-footer .social-icons li svg {
       width: 2.4rem; }
     .main-footer .social-icons li + li {
@@ -836,7 +843,8 @@ p + .btn {
     opacity: .5;
     font-size: 1.2rem; }
   .main-footer .social {
-    background-color: #42453d; }
+    background-color: #42453d;
+    text-align: center; }
     .main-footer .social .tel {
       font-size: 1.8rem; }
     .main-footer .social-icons li svg {

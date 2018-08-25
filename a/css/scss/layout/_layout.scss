@@ -27,14 +27,27 @@ p + .btn {
     }
 
     .social {
-      display: flex;
+      display: block;
       align-items: center;
-      justify-content: space-between;
       margin: 0 -8rem 3.2rem;
       padding: 2.4rem 8rem;
 
+      @media screen and (min-width: 960px) {
+        & {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
       &-icons {
         display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 960px) {
+          & {
+            justify-content: center;
+          }
+        }
 
         li {
 

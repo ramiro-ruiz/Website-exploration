@@ -378,6 +378,15 @@ $(document).ready(function(){
           }
       }]
   });
+
+  var $menu = $('.top-nav > .nav'),
+  $menulink = $('.mobile-toggle');
+
+  $menulink.click(function() {
+    $menulink.toggleClass('active');
+    $menu.toggleClass('active');
+    return false;
+  });
 });
 </script>
 </body>

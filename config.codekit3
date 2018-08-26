@@ -78,6 +78,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/a\/css\/scss\/components\/_cards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/a\/css\/scss\/components\/_cards.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/a\/css\/scss\/components\/_client-portal.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -433,6 +446,156 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/a\/imgs\/nosotros\/ico-calidad.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-calidad.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-compromiso.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-compromiso.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-disciplina.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-disciplina.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-equipo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-equipo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-historia.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-historia.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-innovacion.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-innovacion.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-integridad.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-integridad.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-lealtad.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-lealtad.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-mision.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-mision.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-pasion.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-pasion.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-respeto.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-respeto.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-servicio.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-servicio.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/ico-vision.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/nosotros\/ico-vision.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/nosotros\/nosotros.jpg": {
+		"ft": 16384,
+		"iS": 224025,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/nosotros\/nosotros.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/nosotros\/TCA-logo-mockup.jpg": {
+		"ft": 16384,
+		"iS": 74866,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/nosotros\/TCA-logo-mockup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/a\/imgs\/retail.jpg": {
 		"ft": 16384,
 		"iS": 85766,
@@ -682,6 +845,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/innsist-pms.html",
+		"oF": 0
+		},
+	"\/nosotros.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/nosotros.html",
 		"oF": 0
 		}
 	},

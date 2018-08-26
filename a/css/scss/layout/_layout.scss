@@ -1,5 +1,5 @@
 .content {
-  margin: 3.2rem;
+  margin: 2.4rem;
 
   @media screen and (min-width: 960px) {
     & {
@@ -13,6 +13,13 @@ p + .btn {
 }
 
 .main-footer {
+  padding: 0 2.4rem 2.4rem;
+
+  @media screen and (min-width: 960px) {
+    & {
+      padding: 0 8rem 4rem;
+    }
+  }
 
     .copyright {
       margin: 4.8rem 0 0;
@@ -29,13 +36,15 @@ p + .btn {
     .social {
       display: block;
       align-items: center;
-      margin: 0 -8rem 3.2rem;
-      padding: 2.4rem 8rem;
+      margin: 0 -2.4rem 3.2rem;
+      padding: 2.4rem;
 
       @media screen and (min-width: 960px) {
         & {
           display: flex;
           justify-content: space-between;
+          padding: 2.4rem 8rem;
+          margin: 0 -8rem 3.2rem;
         }
       }
 
@@ -206,36 +215,33 @@ p + .btn {
 }
 
 .hotel-categories {
-  margin: 8rem -8rem;
+  margin: 4rem 0;
+  padding: 2.4rem;
+
+  @media screen and (min-width: 960px) {
+    & {
+      margin: 8rem 0;
+      padding: 4rem 2.4rem;
+    }
+  }
 }
 
 .text-columns {
-  column-count: 3;
   column-gap: 2.4rem;
+  column-count: 3;
 
   p {
-    font-size: 2.1rem;
     margin-top: 0;
+    font-size: 2.1rem;
   }
 }
 
-.solutions-benefits {
-  margin: 0 8rem;
-
-  & + .two-sections {
-    margin-top: 4rem;
-  }
-}
-
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-
-  li {
-    flex-basis: 33.3%;
-  }
-}
 
 .solutions.one-category {
-  margin: 8rem;
+
+  @media screen and (min-width: 960px) {
+    & {
+      margin: 8rem;
+    }
+  }
 }

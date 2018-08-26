@@ -1,73 +1,13 @@
 .solutions-benefits {
 
-  h3 {
-    padding: 4rem;
-    background-color: $coral;
-    color: $white;
-    font-size: 4rem;
+  > h3 {
+    padding: 1.6rem;
+    color: $coral;
     text-align: center;
-    border-top-left-radius: .8rem;
-    border-top-right-radius: .8rem;
-  }
 
-  .boxes {
-    li {
-      display: flex;
-      flex-flow: column;
-      padding: 4rem;
-      border: 2px solid rgba($text-color, .7);
-      font-size: 1.4rem;
-      line-height: 1.6;
-
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3) {
-        border-top: 0;
-      }
-
-      &:nth-child(2),
-      &:nth-child(3) {
-        border-left: 0;
-      }
-
-      &:nth-child(5),
-      &:nth-child(6) {
-        border-left: 0;
-      }
-
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6) {
-        border-top: 0;
-      }
-
-      &:nth-child(8),
-      &:nth-child(9) {
-        border-left: 0;
-      }
-
-      &:nth-child(7),
-      &:nth-child(8),
-      &:nth-child(9) {
-        border-top: 0;
-      }
-
-      &:nth-child(11),
-      &:nth-child(12) {
-        border-left: 0;
-      }
-
-      &:nth-child(10),
-      &:nth-child(11),
-      &:nth-child(12) {
-        border-top: 0;
-      }
-
-      strong {
-        display: block;
-        margin-bottom: .8rem;
-        font-size: 1.6rem;
-        font-weight: 700;
+    @media screen and (min-width: 960px) {
+      & {
+        font-size: 4rem;
       }
     }
   }

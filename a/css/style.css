@@ -92,7 +92,6 @@
 
 .slick-slider:hover .slick-arrow {
   opacity: 1; }
-
 .slick-slider .slick-arrow {
   position: absolute;
   z-index: 20;
@@ -138,7 +137,6 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
-
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -355,6 +353,7 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
+
     .main-footer .footer-category-list h4 {
       margin: 1.2rem 0 .8rem;
       color: #AFB1AC;
@@ -514,7 +513,6 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
-
 .hero-image, .hero-nosotros, .hero-hoteleria, .hero-ipms {
   display: flex;
   position: relative;
@@ -604,7 +602,6 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
-
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -639,7 +636,6 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
-
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -787,6 +783,56 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .certifications {
       padding: 8rem 4.8rem; } }
+
+* {
+  box-sizing: border-box; }
+
+/* Style the tab */
+.tabs {
+  margin: 8rem; }
+  .tabs h3 {
+    font-size: 3.2rem;
+    padding-bottom: 1.6rem; }
+
+.tab {
+  float: left;
+  border-top: 2px solid #F0EFF4;
+  border-bottom: 2px solid #F0EFF4;
+  border-left: 2px solid #F0EFF4;
+  background-color: #f1f1f1;
+  width: 30%; }
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  padding: 2.4rem 1.6rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.8rem; }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #AFB1AC; }
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #fff; }
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 4rem 8rem 0;
+  border-top: 2px solid #F0EFF4;
+  border-right: 2px solid #F0EFF4;
+  border-bottom: 2px solid #F0EFF4;
+  width: 70%;
+  border-left: none;
+  height: 70.5%; }
 
 .extra {
   padding: 3.2rem;
@@ -1001,7 +1047,6 @@ p + .btn {
       background-color: #fff;
       border-radius: .4rem;
       box-shadow: 0 0.1rem 0.3rem rgba(56, 56, 56, 0.3); }
-
 .cards li strong {
   display: block;
   margin-bottom: .8rem;
@@ -1025,3 +1070,5 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
+
+/*# sourceMappingURL=style.css.map */

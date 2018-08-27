@@ -6,6 +6,7 @@
   <title>Innsist Property Management System</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="a/css/style.css">
+
 </head>
 <body>
   <header class="main-header">
@@ -157,25 +158,6 @@
       </div>
     </section>
 
-    <section class="innsist-data">
-      <h3>Procesos de Negocio</h3>
-      <ul class="columns">
-        <li>
-          <p>Estrategia tarifaria.</p>
-          <p>Inventarios de habitaciones.</p>
-          <p>Reservaciones.</p>
-          <p>Recepción (check-in y check-out).</p>
-          <p>Asingación de habitaciones.</p>
-        </li>
-        <li>
-          <p>Control y manejo de grupos.</p>
-          <p>Cuentas Maestras</p>
-          <p>Ama de llaves.</p>
-          <p>Facturación fiscal.</p>
-          <p>Auditoría Nocturna.</p>
-        </li>
-      </ul>
-    </section>
 
     <section class="solutions-benefits">
       <h3>Beneficios</h3>
@@ -195,106 +177,83 @@
       </ul>
     </section>
 
-    <section class="innsist-data">
-      <h3>Funcionalidades</h3>
-      <ul>
-          <li>Reservaciones integradas con todos los canales de la industria.</li>
-          <li>Establece conectividad en 2 vías para cada canal de distribución.</li>
-          <li>Control de allotments para las agencias mayoristas.</li>
-          <li>Registro del huésped (check-in).</li>
-          <li>Salida del huésped (check Out).</li>
-          <li>Asignación de habitaciones de acuerdo a las preferencias del huésped.</li>
-          <li>Control y manejo completo de bloqueos abiertos y cerrados (grupos).</li>
-          <li>Asignación de folio para consumos previo al check-in.</li>
-          <li>Administración de multi-propiedades.</li>
-          <li>Integración bancaria con tarjetas de débito y crédito.</li>
-          <li>Integraciones para acceso a las habitaciones a través de tarjeta o dispositivo móvil (virtual key).</li>
-          <li>Monitoreo y control de la calidad en los servicios al huésped a través de Innsist Quality Management System.</li>
-          <li>Administración de cargas de trabajo para el departamento de ama de llaves.</li>
-          <li>Control de inventario de habitaciones.</li>
-          <li>Actualización en limpieza de habitaciones por medio de la integración telefónica para camaristas.</li>
-          <li>Procesos automáticos para Auditoría nocturna.</li>
-          <li>Control de objetos perdidos.</li>
-          <li>Facturación / Contabilidad Electrónica.</li>
-      </ul>
-    </section>
+<section class="tabs">
+  <h3 align="center">Procesos de Negocio + Funcionalidades</h3>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'proceso1')" id="defaultOpen">Estrategia tarifaria</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso2')">Inventarios de habitaciones</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso3')">Reservaciones</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso4')">Recepción (check-in y check-out)</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso5')">Asingación de habitaciones</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso6')">Control y manejo de grupos</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso7')">Cuentas Maestras</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso8')">Ama de llaves</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso9')">Facturación fiscal</button>
+      <button class="tablinks" onclick="openCity(event, 'proceso10')">Auditoría Nocturna</button>
+    </div>
 
+    <div id="proceso1" class="tabcontent">
+      <h3>Estrategia tarifaria</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
 
-    <section>
-      <ul>
-        <li>
-          <h3>Estrategia tarifaria</h3>
-          <div>
-            <p>Reservaciones integradas con todos los canales de la industria.</p>
-            <p>Establece conectividad en 2 vías para cada canal de distribución.</p>
-          </div>
-        </li>
-        <li>
-          <h3>Inventarios de habitaciones</h3>
-          <div>
-            <p>Control de allotments para las agencias mayoristas.</p>
-            <p>Registro del huésped (check-in).</p>
-          </div>
-        </li>
-        <li>
-          <h3>Reservaciones</h3>
-          <div>
-            <p>Salida del huésped (check Out).</p>
-            <p>Asignación de habitaciones de acuerdo a las preferencias del huésped.</p>
-          </div>
-        </li>
-        <li>
-          <h3>Recepción (check-in y check-out)</h3>
-          <div>
-            <p>Control y manejo completo de bloqueos abiertos y cerrados (grupos).</p>
-            <p>Asignación de folio para consumos previo al check-in.</p>
-          </div>
-        </li>
-        <li>
-          <h3>Asingación de habitaciones</h3>
-          <div>
-            <p>Administración de multi-propiedades.</p>
-            <p>Integración bancaria con tarjetas de débito y crédito.</p>
-          </div>
-        </li>
-        <li>
-          <h3>Control y manejo de grupos</h3>
-          <div>
-            <p>Integraciones para acceso a las habitaciones a través de tarjeta o dispositivo móvil (virtual key).</p>
-            <p>Monitoreo y control de la calidad en los servicios al huésped a través de Innsist Quality Management System.</p>
-          </div>
-        </li>
-        <li>
-          <h3>Cuentas Maestras</h3>
-          <div>
-            <p>Administración de cargas de trabajo para el departamento de ama de llaves.</p>
-            <p>Control de inventario de habitaciones.</p>
-          </div>
-        </li>
-        <li>
-          <h3>Ama de llaves</h3>
-          <div>
-            <p>Actualización en limpieza de habitaciones por medio de la integración telefónica para camaristas.</p>
-            <p>Procesos automáticos para Auditoría nocturna.</p>
-          </div>
-        </li>
-        <li>
-          <h3>Facturación fiscal</h3>
-          <div>
-            <p>Control de objetos perdidos.</p>
-            <p>Facturación / Contabilidad Electrónica.</p>
-          </div>
-        </li>
-        <li>
-          <h3>Auditoría Nocturna</h3>
-          <div>
-            <p>Reservaciones integradas con todos los canales de la industria.</p>
-            <p>Establece conectividad en 2 vías para cada canal de distribución.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <div id="proceso2" class="tabcontent">
+      <h3>Inventarios de habitaciones</h3>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
+    <div id="proceso3" class="tabcontent">
+      <h3>Reservaciones</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+
+    <div id="proceso4" class="tabcontent">
+      <h3>Recepción (check-in y check-out)</h3>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p>Lorem ipsm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div id="proceso5" class="tabcontent">
+      <h3>Asingación de habitaciones</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+
+    <div id="proceso6" class="tabcontent">
+      <h3>Control y manejo de grupos</h3>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div id="proceso7" class="tabcontent">
+      <h3>Cuentas Maestras</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+
+    <div id="proceso8" class="tabcontent">
+      <h3>Ama de llaves</h3>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div id="proceso9" class="tabcontent">
+      <h3>Facturación fiscal</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+
+    <div id="proceso10" class="tabcontent">
+      <h3>Auditoría Nocturna</h3>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</section>
 
     <section class="solutions one-category">
         <section class="hospitality">
@@ -472,6 +431,24 @@ $(document).ready(function(){
       }]
   });
 });
+</script>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>

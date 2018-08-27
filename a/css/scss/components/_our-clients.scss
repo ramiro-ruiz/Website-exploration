@@ -28,13 +28,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1.6rem 0;
   margin: 0 -2.4rem;
+  padding: 1.6rem 0;
 
   @media screen and (min-width: 960px) {
     & {
-      padding: 1.6rem;
       margin: 0;
+      padding: 1.6rem;
     }
   }
 
@@ -46,7 +46,8 @@
 
       @media screen and (min-width: 960px) {
         & {
-          width: 80%;
+          width: 100%;
+          max-width: 100%;
         }
       }
     }
@@ -57,8 +58,13 @@
 
     @media screen and (min-width: 960px) {
       & {
-        margin: 0 2.4rem;
+        margin: 0 1.6rem;
       }
     }
+  }
+
+  .slick-arrow::after {
+    height: 100%;
+    line-height: 1.6;
   }
 }

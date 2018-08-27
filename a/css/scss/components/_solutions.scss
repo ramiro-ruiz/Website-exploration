@@ -311,9 +311,9 @@
 }
 .tab {
     float: left;
-    border-top: 2px solid $light-color;
-    border-bottom: 2px solid $light-color;
-    border-left: 2px solid $light-color;
+    border-top: 2px solid $innsist-blue;
+    border-bottom: 2px solid $innsist-blue;
+    border-left: 2px solid $innsist-blue;
     background-color: #f1f1f1;
     width: 30%;
 
@@ -322,7 +322,8 @@
 /* Style the buttons inside the tab */
 .tab button {
     display: block;
-    background-color: inherit;
+    background-color: $shade-blue;
+    color: $white;
     padding: 2.4rem 1.6rem;
     width: 100%;
     border: none;
@@ -335,21 +336,23 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: $gray;
+    background-color: $innsist-blue;
+    color: $white;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
     background-color: $white;
+    color: $text-color;
 }
 
 /* Style the tab content */
 .tabcontent {
     float: left;
     padding: 4rem 8rem 0;
-    border-top: 2px solid $light-color;
-    border-right: 2px solid $light-color;
-    border-bottom: 2px solid $light-color;
+    border-top: 2px solid $innsist-blue;
+    border-right: 2px solid $innsist-blue;
+    border-bottom: 2px solid $innsist-blue;
     width: 70%;
     border-left: none;
     height: 70.5%;

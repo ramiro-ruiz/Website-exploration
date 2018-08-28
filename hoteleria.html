@@ -130,10 +130,10 @@
       </div>
     </section>
 
-    <section class="solutions-benefits cards">
+    <section class="solutions-benefits">
       <h3>Algunos de los beneficios que ofrece</h3>
-      <ul class="cards-list">
-        <li class="cards-list-item">
+      <ul class="cintilla-beneficios">
+        <li class="slide">
           <div class="cards-list-item-info">
             <strong>Certificaciones y Estándares</strong>
             <ul>
@@ -146,37 +146,39 @@
             </ul>
           </div>
         </li>
-        <li class="cards-list-item">
-          <div class="cards-list-item-info">
+        <li class="slide">
+          <div class="cards-list-item-info finanzas">
             <strong>Ventas</strong>
-            Mejora las ventas de habitaciones gracias a la conectividad global con los GDS/IDS/CRS y Yield Management líderes en el mercado internacional.
+            <p>Mejora las ventas de habitaciones gracias a la conectividad global con los GDS/IDS/CRS y Yield Management líderes en el mercado internacional.</p>
+
           </div>
         </li>
-        <li class="cards-list-item">
-          <div class="cards-list-item-info">
+        <li class="slide">
+          <div class="cards-list-item-info ama-llaves">
             <strong>Calidad</strong>
-            Mejora la calidad y tiempos de servicio al huésped al ofrecer productos totalmente integrados, permitiendo que todas las áreas del negocio se comuniquen de una manera más efectiva y eficiente.
+            <p>Mejora la calidad y tiempos de servicio al huésped al ofrecer productos totalmente integrados, permitiendo que todas las áreas del negocio se comuniquen de una manera más efectiva y eficiente.</p>
+
           </div>
         </li>
-        <li class="cards-list-item">
+        <li class="slide">
           <div class="cards-list-item-info">
             <strong>Comodidad</strong>
             Brinda comodidad al huésped por medio de sus más de 500 integraciones con proveedores de servicios hoteleros.
           </div>
         </li>
-        <li class="cards-list-item">
+        <li class="slide">
           <div class="cards-list-item-info">
             <strong>Administración</strong>
             Controla los ingresos y costos en las diferentes cajas y puntos de venta.
           </div>
         </li>
-        <li class="cards-list-item">
+        <li class="slide">
           <div class="cards-list-item-info">
             <strong>Responsivo</strong>
             Adaptabilidad a la constante demanda del mercado a través de proyectos de desarrollo de software desktop, web y apps.
           </div>
         </li>
-        <li class="cards-list-item">
+        <li class="slide">
           <div class="cards-list-item-info">
             <strong>Flexibilidad</strong>
             Ofrecemos esquemas en la nube o en sitio, dependiendo de las necesidades y recursos del cliente.
@@ -347,7 +349,7 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 2500,
       arrows: true,
-      dots: false,
+      dots: true,
       pauseOnHover: true,
       responsive: [{
           breakpoint: 768,
@@ -357,10 +359,32 @@ $(document).ready(function(){
       }, {
           breakpoint: 520,
           settings: {
-              slidesToShow: 3
+              slidesToShow: 3,
+              arrows: false
           }
       }]
   });
+  $('.cintilla-beneficios').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2500,
+      arrows: true,
+      dots: true,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 2
+          }
+      }, {
+          breakpoint: 520,
+          settings: {
+              slidesToShow: 1,
+              arrows: false
+          }
+      }]
+  });
+
 
   var $menu = $('.top-nav > .nav'),
   $menulink = $('.mobile-toggle');

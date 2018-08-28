@@ -147,3 +147,22 @@
     display: none;
   }
 }
+
+.products-margin {
+  margin-bottom: 1.6rem;
+}
+
+.language-nav {
+    position: absolute;
+    right: 4rem;
+    top: 1rem;
+    z-index: 3;
+    font-size: 1rem;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+    abbr {
+      padding-right: .5rem;
+    }
+}

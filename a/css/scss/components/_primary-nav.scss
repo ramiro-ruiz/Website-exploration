@@ -1,10 +1,48 @@
 .top-nav > .nav {
-    display: none;
+    position: absolute;
+    right: 2.4rem;
+    max-height: 0;
+    overflow: hidden;
+
+    &.active {
+      display: block;
+      height: auto;
+      max-height: 40rem;
+      padding: 2.4rem 0;
+      transition: all .2s ease;
+      border-bottom-left-radius: .4rem;
+      border-bottom-right-radius: .4rem;
+      opacity: 1;
+      background-color: $white;
+      box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
+
+      li + li {
+        margin-top: 1.6rem;
+      }
+
+      a {
+        padding: .8rem 4rem;
+        font-size: 1.6rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .solutions-list {
+        display: none;
+      }
+    }
 
     @media screen and (min-width: 960px) {
+
       & {
         display: block;
+        position: static;
+        overflow: visible;
+        max-height: 40rem;
       }
+
       & > li {
         display: inline-block;
 
@@ -43,8 +81,8 @@
             }
 
             a {
-              color: #5A9C49;
-              font-size: 1.4rem;
+              color: darken($health-blue, 10%);
+              font-size: 1.2rem;
 
               &:hover {
                 text-decoration: underline;

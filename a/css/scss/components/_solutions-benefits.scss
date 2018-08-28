@@ -1,0 +1,15 @@
+.solutions-benefits {
+  margin: 16rem 0;
+
+  > h3 {
+    padding: 1.6rem;
+    color: $coral;
+    text-align: center;
+
+    @media screen and (min-width: 960px) {
+      & {
+        font-size: 4rem;
+      }
+    }
+  }
+}

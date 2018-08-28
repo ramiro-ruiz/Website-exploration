@@ -16,7 +16,6 @@
   src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -235,7 +234,6 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
-
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -452,6 +450,7 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
+
     .main-footer .footer-category-list h4 {
       margin: 1.2rem 0 .8rem;
       color: #AFB1AC;
@@ -611,6 +610,20 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
+.products-margin {
+  margin-bottom: 1.6rem; }
+
+.language-nav {
+  position: absolute;
+  right: 4rem;
+  top: 1rem;
+  z-index: 3;
+  font-size: 1rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center; }
+  .language-nav abbr {
+    padding-right: .5rem; }
 
 .hero-image, .hero-nosotros, .hero-hoteleria, .hero-ipms {
   display: flex;
@@ -701,7 +714,6 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
-
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -736,7 +748,6 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
-
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -1109,8 +1120,7 @@ p + .btn {
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info > p,
     .solutions-benefits .center-cintilla .slide .cards-list-item-info > p {
       font-size: 1.8rem; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *,
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > *,
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > *,
     .solutions-benefits .center-cintilla .slide .cards-list-item-info.ama-llaves > *,
     .solutions-benefits .center-cintilla .slide .cards-list-item-info.finanzas > * {
       color: #fff; }
@@ -1143,7 +1153,6 @@ p + .btn {
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas,
     .solutions-benefits .center-cintilla .slide .cards-list-item-info.finanzas {
       background: url("../imgs/beneficios/finanzas.jpg") center/cover no-repeat; }
-
 .solutions-benefits li strong {
   display: block;
   margin-bottom: .8rem;
@@ -1256,3 +1265,5 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
+
+/*# sourceMappingURL=style.css.map */

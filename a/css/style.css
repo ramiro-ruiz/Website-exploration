@@ -92,6 +92,7 @@
 
 .slick-slider:hover .slick-arrow {
   opacity: 1; }
+
 .slick-slider .slick-arrow {
   position: absolute;
   z-index: 20;
@@ -137,6 +138,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
+
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -353,7 +355,6 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
-
     .main-footer .footer-category-list h4 {
       margin: 1.2rem 0 .8rem;
       color: #AFB1AC;
@@ -513,6 +514,7 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
+
 .hero-image, .hero-nosotros, .hero-hoteleria, .hero-ipms {
   display: flex;
   position: relative;
@@ -602,6 +604,7 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
+
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -636,6 +639,7 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
+
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -783,59 +787,6 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .certifications {
       padding: 8rem 4.8rem; } }
-
-* {
-  box-sizing: border-box; }
-
-/* Style the tab */
-.tabs {
-  margin: 8rem; }
-  .tabs h3 {
-    font-size: 3.2rem;
-    padding-bottom: 1.6rem; }
-
-.tab {
-  float: left;
-  border-top: 2px solid #34495E;
-  border-bottom: 2px solid #34495E;
-  border-left: 2px solid #34495E;
-  background-color: #f1f1f1;
-  width: 30%; }
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: #425D78;
-  color: #fff;
-  padding: 2.4rem 1.6rem;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 1.8rem; }
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #34495E;
-  color: #fff; }
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #fff;
-  color: #383838; }
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 4rem 8rem 0;
-  border-top: 2px solid #34495E;
-  border-right: 2px solid #34495E;
-  border-bottom: 2px solid #34495E;
-  width: 70%;
-  border-left: none;
-  height: 70.5%; }
 
 .extra {
   padding: 3.2rem;
@@ -994,29 +945,37 @@ p + .btn {
     .main-footer .footer-category h4 + ul > li {
       margin: .4rem 0; }
 
-.solutions-benefits > h3 {
-  padding: 1.6rem;
-  color: #F25F5C;
-  text-align: center; }
-  @media screen and (min-width: 960px) {
-    .solutions-benefits > h3 {
-      font-size: 4rem; } }
+.solutions-benefits {
+  margin: 16rem 0; }
+  .solutions-benefits > h3 {
+    padding: 1.6rem;
+    color: #F25F5C;
+    text-align: center; }
+    @media screen and (min-width: 960px) {
+      .solutions-benefits > h3 {
+        font-size: 4rem; } }
 
 .extra-material {
   margin: 6.4rem 8rem;
   display: flex;
   height: 40rem; }
+  .extra-material-text {
+    flex-basis: 50%;
+    margin-right: 3%; }
+    .extra-material-text h3 {
+      font-size: 2.8rem; }
   .extra-material-video {
-    flex-basis: 70%; }
+    flex-basis: 50%; }
     .extra-material-video iframe {
-      border-top-left-radius: .8rem;
-      border-bottom-left-radius: .8rem; }
+      border-radius: .8rem .8rem 0 0;
+      height: 76%; }
   .extra-material-links {
     background-color: #34495E;
-    flex-basis: 30%;
-    padding: 4rem;
-    border-top-right-radius: .8rem;
-    border-bottom-right-radius: .8rem; }
+    padding: 1.6rem 2.4rem;
+    border-radius: 0 0 .8rem .8rem; }
+    .extra-material-links ul {
+      display: flex;
+      justify-content: space-between; }
     .extra-material-links li a {
       display: flex;
       align-items: center;
@@ -1026,7 +985,8 @@ p + .btn {
         opacity: 1; }
       .extra-material-links li a svg {
         width: 4.8rem;
-        margin-right: 1.6rem; }
+        height: 4.8rem;
+        margin-right: .8rem; }
 
 .cards-list {
   display: flex;
@@ -1036,25 +996,115 @@ p + .btn {
   border-top: 1.6rem solid #F25F5C;
   background-color: #F0EFF4; }
   .cards-list-item {
-    min-width: 24rem;
+    min-width: 32rem;
     padding: 0 .8rem;
-    font-size: 1.4rem;
     line-height: 1.5; }
     .cards-list-item:first-child {
       padding-left: 1.6rem; }
     .cards-list-item:last-child {
       padding-right: 1.6rem; }
     .cards-list-item-info {
+      position: relative;
       height: 100%;
-      padding: 1.6rem;
-      background-color: #fff;
+      padding: 2.4rem;
       border-radius: .4rem;
+      background: #fff center/cover no-repeat;
+      background-image: linear-gradient(180deg, #FFFFFF 38.29%, #ECECEC 100%);
       box-shadow: 0 0.1rem 0.3rem rgba(56, 56, 56, 0.3); }
+      .cards-list-item-info > * {
+        position: relative;
+        z-index: 10; }
+      .cards-list-item-info > p {
+        font-size: 1.8rem; }
+      .cards-list-item-info.ama-llaves > *,
+      .cards-list-item-info.finanzas > * {
+        color: #fff; }
+      .cards-list-item-info.ama-llaves::before, .cards-list-item-info.finanzas::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: .4rem;
+        background: rgba(52, 73, 94, 0.8); }
+      .cards-list-item-info::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: .4rem; }
+      .cards-list-item-info.ama-llaves::after {
+        background: url("../imgs/beneficios/ama-llaves2.jpg") center/cover no-repeat; }
+      .cards-list-item-info.finanzas {
+        background: url("../imgs/beneficios/finanzas.jpg") center/cover no-repeat; }
+
 .cards li strong {
   display: block;
   margin-bottom: .8rem;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 700; }
+
+.tabs {
+  margin: 8rem 8rem 16rem; }
+  .tabs-wrapper {
+    display: grid;
+    border-radius: .4rem;
+    border-top: 1.6rem solid #7286A0;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 0 0.2rem 0.3rem 0 rgba(56, 56, 56, 0.3); }
+  .tabs > h3 {
+    font-size: 3.2rem;
+    padding-bottom: 1.6rem;
+    grid-column: 1/-1;
+    color: #506076; }
+
+.tab {
+  border-top: 0.2rem solid #7286A0;
+  border-bottom: 2px solid #7286A0;
+  border-left: 2px solid #7286A0;
+  background-color: #7286A0;
+  border-radius: 0 0 0 .4rem;
+  grid-column: 1/2; }
+  .tab button {
+    display: block;
+    background-color: #7286A0;
+    color: #fff;
+    padding: 2.4rem 1.6rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.4rem;
+    font-weight: 600; }
+    .tab button:hover {
+      background-color: #34495E;
+      color: #fff; }
+    .tab button.active {
+      background-color: #fff;
+      color: #5a6d85; }
+
+/* Style the tab content */
+.tabcontent {
+  padding: 4rem 8rem 0;
+  border-top: 2px solid #7286A0;
+  border-right: 2px solid #7286A0;
+  border-bottom: 2px solid #7286A0;
+  border-left: none;
+  border-radius: 0 0 .4rem 0;
+  grid-column: 2/3;
+  background-image: linear-gradient(180deg, #FFFFFF 38.29%, #ECECEC 100%); }
+  .tabcontent > h3 {
+    font-size: 2.4rem; }
+  .tabcontent > p {
+    font-size: 1.8rem; }
 
 /*-----------------------------------
     Utilities
@@ -1073,5 +1123,3 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+.tabs {
+  margin: 8rem 8rem 16rem;
+
+  &-wrapper {
+    display: grid;
+    border-radius: .4rem;
+    border-top: 1.6rem solid $innsist-shade;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 0 .2rem .3rem 0 rgba($text-color, .3);
+  }
+
+  > h3 {
+    font-size: 3.2rem;
+    padding-bottom: 1.6rem;
+    grid-column: 1/-1;
+    color: darken($innsist-shade, 15%);
+  }
+}
+.tab {
+    border-top: .2rem solid $innsist-shade;
+    border-bottom: 2px solid $innsist-shade;
+    border-left: 2px solid $innsist-shade;
+    background-color: $innsist-shade;
+    border-radius: 0 0 0 .4rem;
+    grid-column: 1/2;
+
+    button {
+        display: block;
+        background-color: $innsist-shade;
+        color: $white;
+        padding: 2.4rem 1.6rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $innsist-blue;
+            color: $white;
+        }
+
+        &.active {
+            background-color: $white;
+            color: darken($innsist-shade, 10%);
+        }
+    }
+}
+
+
+
+/* Style the tab content */
+.tabcontent {
+    padding: 4rem 8rem 0;
+    border-top: 2px solid $innsist-shade;
+    border-right: 2px solid $innsist-shade;
+    border-bottom: 2px solid $innsist-shade;
+    border-left: none;
+    border-radius: 0 0 .4rem 0;
+    grid-column: 2/3;
+    background-image: linear-gradient(180deg, #FFFFFF 38.29%, #ECECEC 100%);
+
+    > h3 {
+      font-size: 2.4rem;
+    }
+
+    > p {
+      font-size: 1.8rem;
+    }
+}

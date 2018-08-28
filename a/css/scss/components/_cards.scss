@@ -9,9 +9,8 @@
     background-color: $light-color;
 
     &-item {
-      min-width: 24rem;
+      min-width: 32rem;
       padding: 0 .8rem;
-      font-size: 1.4rem;
       line-height: 1.5;
 
       &:first-child {
@@ -23,11 +22,62 @@
       }
 
       &-info {
+        position: relative;
         height: 100%;
-        padding: 1.6rem;
-        background-color: $white;
+        padding: 2.4rem;
+
         border-radius: .4rem;
+        background: $white center/cover no-repeat;
+
+        background-image: linear-gradient(180deg, #FFFFFF 38.29%, #ECECEC 100%);
         box-shadow: 0 .1rem .3rem rgba($text-color, .3);
+
+        & > * {
+          position: relative;
+          z-index: 10;
+        }
+
+        & > p {
+          font-size: 1.8rem;
+        }
+
+        &.ama-llaves > *,
+        &.finanzas > * {
+          color: $white;
+        }
+
+        &.ama-llaves::before,
+        &.finanzas::before {
+      		content: '';
+      		display: block;
+      		position: absolute;
+          z-index: 5;
+      		top: 0;
+      		left: 0;
+      		width: 100%;
+      		height: 100%;
+          border-radius: .4rem;
+      		background: rgba($innsist-blue, .8);
+        }
+
+        &::after {
+      		content: '';
+      		display: block;
+      		position: absolute;
+      		top: 0;
+      		left: 0;
+      		width: 100%;
+      		height: 100%;
+          border-radius: .4rem;
+        }
+
+        &.ama-llaves::after {
+      		background: url("../imgs/beneficios/ama-llaves2.jpg") center/cover no-repeat;
+        }
+
+        &.finanzas {
+          background: url("../imgs/beneficios/finanzas.jpg") center/cover no-repeat;
+        }
       }
     }
   }
@@ -37,7 +87,7 @@
     strong {
       display: block;
       margin-bottom: .8rem;
-      font-size: 1.6rem;
+      font-size: 2.4rem;
       font-weight: 700;
     }
   }

@@ -260,6 +260,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/a\/css\/scss\/components\/_tabs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/a\/css\/scss\/components\/_tabs.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/a\/css\/scss\/layout\/_layout.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -374,6 +387,36 @@
 		"oA": 0,
 		"oAP": "\/a\/fonts\/RobotoCondensed-Bold-webfont.woff",
 		"oF": 0
+		},
+	"\/a\/imgs\/beneficios\/ama-llaves.jpg": {
+		"ft": 16384,
+		"iS": 46085,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/beneficios\/ama-llaves.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/beneficios\/ama-llaves2.jpg": {
+		"ft": 16384,
+		"iS": 6215,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/beneficios\/ama-llaves2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/beneficios\/finanzas.jpg": {
+		"ft": 16384,
+		"iS": 122138,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/beneficios\/finanzas.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/a\/imgs\/clients\/grupo-posadas.png": {
 		"ft": 32768,

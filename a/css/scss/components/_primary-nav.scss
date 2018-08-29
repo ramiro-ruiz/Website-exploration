@@ -187,57 +187,62 @@
   display: flex;
   position: absolute;
   z-index: 3;
-  top: 1rem;
+  top: 0;
   right: 4rem;
   align-items: center;
-  color: $white;
+  padding: .4rem .8rem;
+  background-color: rgba($white, .8);
+  border-radius: 0 0 .2rem .2rem;
+  color: $text-color;
   font-size: 1rem;
 
-  abbr {
-    padding-right: .5rem;
-    font-size: 1.2rem
+  .current-lang {
+    display: flex;
+    align-items: center;
+
+    abbr {
+      padding-right: .5rem;
+      font-size: 1rem
+    }
+
+    svg {
+      width: 1.1rem;
+    }
+
+    .st0 {
+      fill: $text-color;
+    }
   }
-}
-.language-nav ul a {
-	display: block;
-	padding: 0 15px;
-	color: #3576a3;
-	line-height: 32px;
-	text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    border-radius: 0;
+
+    .more-langs {
+      display: block;
+    }
   }
-}
-.language-nav ul li {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	float: left;
-}
-.language-nav ul li.current-menu-item {
-	background: &$white;
-}
-.language-nav ul ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-	right: 0;
-	padding: 0;
-	background: $white;
-}
-.language-nav ul ul li {
-	float: none;
-}
-.language-nav ul ul a {
-	padding: 1rem 1.5rem;
-	line-height: 120%;
-}
-.language-nav ul ul ul {
-	top: 0;
-	left: 100%;
-}
-.language-nav ul:hover > li ul {
-	display: block;
-  box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
+
+  .more-langs {
+    display: none;
+  	position: absolute;
+  	top: 2.3rem;
+  	right: 0;
+    width: 5rem;
+  	padding: 0;
+    border-radius: 0 0 .4rem .4rem;
+  	background: rgba($text-color, .9);
+    box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
+    text-align: center;
+
+    a {
+      display: block;
+    	padding: 1.6rem .8rem;
+    	color: $white;
+    	text-decoration: none;
+
+      abbr {
+        padding: 0;
+      }
+    }
+  }
 }

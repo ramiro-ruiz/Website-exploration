@@ -54,6 +54,11 @@
         display: inline-block;
 
         &.multi {
+          padding-bottom: .8rem;
+
+          > .link {
+            padding-bottom: 1.6rem;
+          }
 
           > a:hover {
             border: 0;
@@ -80,7 +85,7 @@
             h4,
             h5 {
               margin-bottom: 1rem;
-              opacity: .8;
+              opacity: 0;
               color: $text-color;
               font-family: $display-font;
               font-size: 1.8rem;
@@ -142,6 +147,11 @@
                 &::after {
                   height: 100%;
                 }
+
+                h4,
+                h5 {
+                  opacity: .8;
+                }
             }
           }
         }
@@ -202,6 +212,11 @@
   background-color: rgba($white, .8);
   color: $text-color;
   font-size: 1rem;
+  opacity: .7;
+
+  &:hover {
+    opacity: 1;
+  }
 
   @media screen and (min-width: 960px) {
     & {

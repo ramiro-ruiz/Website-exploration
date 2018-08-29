@@ -644,8 +644,8 @@ p + .btn {
   right: 1.6rem;
   align-items: center;
   padding: .2rem .4rem;
-  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0 0 .2rem .2rem;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #383838;
   font-size: 1rem; }
   @media screen and (min-width: 960px) {
@@ -669,14 +669,18 @@ p + .btn {
   .language-nav .more-langs {
     display: none;
     position: absolute;
-    top: 2.3rem;
+    top: 1.9rem;
     right: 0;
-    width: 5rem;
+    width: 4.1rem;
     padding: 0;
     border-radius: 0 0 .4rem .4rem;
     background: rgba(56, 56, 56, 0.9);
     box-shadow: 0 0.2rem 0.2rem 0 rgba(56, 56, 56, 0.5);
     text-align: center; }
+    @media screen and (min-width: 960px) {
+      .language-nav .more-langs {
+        top: 2.3rem;
+        width: 5rem; } }
     .language-nav .more-langs a {
       display: block;
       padding: 1.6rem .8rem;

@@ -191,8 +191,8 @@
   right: 1.6rem;
   align-items: center;
   padding: .2rem .4rem;
-  background-color: rgba($white, .8);
   border-radius: 0 0 .2rem .2rem;
+  background-color: rgba($white, .8);
   color: $text-color;
   font-size: 1rem;
 
@@ -232,14 +232,21 @@
   .more-langs {
     display: none;
   	position: absolute;
-  	top: 2.3rem;
+    top: 1.9rem;
   	right: 0;
-    width: 5rem;
+    width: 4.1rem;
   	padding: 0;
     border-radius: 0 0 .4rem .4rem;
   	background: rgba($text-color, .9);
     box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
     text-align: center;
+
+    @media screen and (min-width: 960px) {
+      & {
+        top: 2.3rem;
+        width: 5rem;
+      }
+    }
 
     a {
       display: block;

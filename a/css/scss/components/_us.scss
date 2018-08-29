@@ -5,3 +5,45 @@
   text-align: center;
   border-radius: .8rem;
 }
+#aparece{
+  color:#fff;
+    width:100px;
+    height:100px;
+    padding:25px;
+  background:red;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+#mouse{
+  background:#fff;
+    width:100px;
+    height:100px;
+    padding:25px;
+    border:1px solid #ccc;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+.contenedorover {
+  position: relative;
+}
+
+.ver{
+  opacity:1.0;
+  position:absolute;
+  top:10px;
+  left:10px;
+}
+
+.nover{
+  opacity:0.0;
+  position:absolute;
+  top:10px;
+  left:-200px;
+}

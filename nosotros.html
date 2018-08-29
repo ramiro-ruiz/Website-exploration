@@ -295,6 +295,11 @@
       <a href="#" class="btn">Conocer más</a>
     </section>
 
+<section class="contenedorover">
+  <div id="mouse" class="ver">Hover</div>
+  <div id="aparece" class="nover">aparece el texto</div>
+</section>
+
   </main>
 
   <footer class="main-footer">
@@ -413,6 +418,16 @@
       $( this ).toggleClass( 'active' );
     });
   });
+
+  $("#mouse").mouseover(function(){
+  $("#mouse").addClass("nover").removeClass("ver")
+  $("#aparece").addClass("ver").removeClass("nover")
+})
+
+$("#aparece").mouseout(function(){
+  $("#aparece").addClass("nover").removeClass("ver")
+  $("#mouse").addClass("ver").removeClass("nover")
+})
   </script>
 </body>
 </html>

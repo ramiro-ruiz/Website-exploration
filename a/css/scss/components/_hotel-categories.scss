@@ -16,11 +16,11 @@
 
   img {
     margin: 0 auto;
+  }
 
-    @media screen and (min-width: 960px) {
-      & {
-        width: 70%;
-      }
+  @media screen and (min-width: 960px) {
+    .slick-track img {
+      width: 70%;
     }
   }
 

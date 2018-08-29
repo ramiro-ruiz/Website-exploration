@@ -642,55 +642,46 @@ p + .btn {
   display: flex;
   position: absolute;
   z-index: 3;
-  top: 1rem;
+  top: 0;
   right: 4rem;
   align-items: center;
-  color: #fff;
+  padding: .4rem .8rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 0 .2rem .2rem;
+  color: #383838;
   font-size: 1rem; }
-  .language-nav abbr {
-    padding-right: .5rem;
-    font-size: 1.2rem; }
-
-.language-nav ul a {
-  display: block;
-  padding: 0 15px;
-  color: #3576a3;
-  line-height: 32px;
-  text-decoration: none; }
-  .language-nav ul a:hover {
-    text-decoration: underline; }
-
-.language-nav ul li {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  float: left; }
-
-.language-nav ul li.current-menu-item {
-  background: .language-nav ul li.current-menu-item #fff; }
-
-.language-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  padding: 0;
-  background: #fff; }
-
-.language-nav ul ul li {
-  float: none; }
-
-.language-nav ul ul a {
-  padding: 1rem 1.5rem;
-  line-height: 120%; }
-
-.language-nav ul ul ul {
-  top: 0;
-  left: 100%; }
-
-.language-nav ul:hover > li ul {
-  display: block;
-  box-shadow: 0 0.2rem 0.2rem 0 rgba(56, 56, 56, 0.5); }
+  .language-nav .current-lang {
+    display: flex;
+    align-items: center; }
+    .language-nav .current-lang abbr {
+      padding-right: .5rem;
+      font-size: 1rem; }
+    .language-nav .current-lang svg {
+      width: 1.1rem; }
+    .language-nav .current-lang .st0 {
+      fill: #383838; }
+  .language-nav:hover {
+    border-radius: 0; }
+    .language-nav:hover .more-langs {
+      display: block; }
+  .language-nav .more-langs {
+    display: none;
+    position: absolute;
+    top: 2.3rem;
+    right: 0;
+    width: 5rem;
+    padding: 0;
+    border-radius: 0 0 .4rem .4rem;
+    background: rgba(56, 56, 56, 0.9);
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(56, 56, 56, 0.5);
+    text-align: center; }
+    .language-nav .more-langs a {
+      display: block;
+      padding: 1.6rem .8rem;
+      color: #fff;
+      text-decoration: none; }
+      .language-nav .more-langs a abbr {
+        padding: 0; }
 
 .hero-image, .hero-nosotros, .hero-hoteleria, .hero-ipms {
   display: flex;

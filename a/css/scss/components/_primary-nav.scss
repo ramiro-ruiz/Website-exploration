@@ -188,13 +188,20 @@
   position: absolute;
   z-index: 3;
   top: 0;
-  right: 4rem;
+  right: 1.6rem;
   align-items: center;
-  padding: .4rem .8rem;
+  padding: .2rem .4rem;
   background-color: rgba($white, .8);
   border-radius: 0 0 .2rem .2rem;
   color: $text-color;
   font-size: 1rem;
+
+  @media screen and (min-width: 960px) {
+    & {
+      right: 4rem;
+      padding: .4rem .8rem;
+    }
+  }
 
   .current-lang {
     display: flex;

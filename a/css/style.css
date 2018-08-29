@@ -641,13 +641,17 @@ p + .btn {
   position: absolute;
   z-index: 3;
   top: 0;
-  right: 4rem;
+  right: 1.6rem;
   align-items: center;
-  padding: .4rem .8rem;
+  padding: .2rem .4rem;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0 0 .2rem .2rem;
   color: #383838;
   font-size: 1rem; }
+  @media screen and (min-width: 960px) {
+    .language-nav {
+      right: 4rem;
+      padding: .4rem .8rem; } }
   .language-nav .current-lang {
     display: flex;
     align-items: center; }

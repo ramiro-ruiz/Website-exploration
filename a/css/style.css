@@ -16,6 +16,7 @@
   src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -234,6 +235,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
+
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -450,7 +452,6 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
-
     .main-footer .footer-category-list h4 {
       margin: 1.2rem 0 .8rem;
       color: #AFB1AC;
@@ -543,8 +544,8 @@ p + .btn {
     .top-nav > .nav {
       display: block;
       position: static;
-      overflow: visible;
-      max-height: 40rem; }
+      max-height: 40rem;
+      overflow: visible; }
     .top-nav > .nav > li {
       display: inline-block; }
       .top-nav > .nav > li.multi > a:hover {
@@ -562,7 +563,8 @@ p + .btn {
           transition: opacity .8s ease;
           transition-delay: .2s;
           opacity: 0; }
-        .top-nav > .nav > li.multi .solutions-list h4 {
+        .top-nav > .nav > li.multi .solutions-list h4,
+        .top-nav > .nav > li.multi .solutions-list h5 {
           margin-bottom: 1rem;
           opacity: .8;
           color: #383838;
@@ -570,6 +572,18 @@ p + .btn {
           font-size: 1.8rem;
           letter-spacing: .1rem;
           text-transform: uppercase; }
+          .top-nav > .nav > li.multi .solutions-list h4 a,
+          .top-nav > .nav > li.multi .solutions-list h5 a {
+            color: #383838;
+            font-size: 1.8rem; }
+        .top-nav > .nav > li.multi .solutions-list h5 {
+          margin-bottom: 0;
+          opacity: .7;
+          font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+          font-size: 1.4rem;
+          letter-spacing: 0;
+          text-transform: capitalize;
+          cursor: pointer; }
         .top-nav > .nav > li.multi .solutions-list a {
           color: #3576a3;
           font-size: 1.2rem; }
@@ -610,36 +624,47 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
-.products-margin {
-  margin-bottom: 1.6rem; }
+
+.suite-name {
+  padding-bottom: .8rem; }
+  .suite-name + ul {
+    height: 0;
+    margin: 0;
+    opacity: 0; }
+  .suite-name.active {
+    padding-bottom: 0; }
+  .suite-name.active + ul {
+    height: auto;
+    margin-bottom: 2.4rem;
+    opacity: 1; }
 
 .language-nav {
-  position: absolute;
-  right: 4rem;
-  top: 1rem;
-  z-index: 3;
-  font-size: 1rem;
-  color: #fff;
   display: flex;
-  align-items: center; }
+  position: absolute;
+  z-index: 3;
+  top: 1rem;
+  right: 4rem;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem; }
   .language-nav abbr {
     padding-right: .5rem;
     font-size: 1.2rem; }
 
 .language-nav ul a {
   display: block;
+  padding: 0 15px;
   color: #3576a3;
-  text-decoration: none;
   line-height: 32px;
-  padding: 0 15px; }
+  text-decoration: none; }
   .language-nav ul a:hover {
     text-decoration: underline; }
 
 .language-nav ul li {
   position: relative;
-  float: left;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  float: left; }
 
 .language-nav ul li.current-menu-item {
   background: .language-nav ul li.current-menu-item #fff; }
@@ -649,21 +674,21 @@ p + .btn {
   position: absolute;
   top: 100%;
   right: 0;
-  background: #fff;
-  padding: 0; }
+  padding: 0;
+  background: #fff; }
 
 .language-nav ul ul li {
   float: none; }
 
 .language-nav ul ul a {
-  line-height: 120%;
-  padding: 1rem 1.5rem; }
+  padding: 1rem 1.5rem;
+  line-height: 120%; }
 
 .language-nav ul ul ul {
   top: 0;
   left: 100%; }
 
-.language-nav ul li:hover > ul {
+.language-nav ul:hover > li ul {
   display: block;
   box-shadow: 0 0.2rem 0.2rem 0 rgba(56, 56, 56, 0.5); }
 
@@ -756,6 +781,7 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
+
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -790,6 +816,7 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
+
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -1096,10 +1123,10 @@ p + .btn {
       margin: .4rem 0; }
 
 .solutions-benefits {
-  margin: 16rem 0; }
+  margin: 8rem 0; }
   @media screen and (min-width: 960px) {
     .solutions-benefits {
-      margin: 16rem 8rem; } }
+      margin: 10rem 8rem; } }
   @media screen and (min-width: 960px) {
     .solutions-benefits.centrado {
       margin: 16rem 0; } }
@@ -1144,31 +1171,25 @@ p + .btn {
         height: 4.8rem;
         margin-right: .8rem; }
 
-.solutions-benefits .cintilla-beneficios,
-.solutions-benefits .center-cintilla {
-  background-color: #F0EFF4; }
-  .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info,
-  .solutions-benefits .center-cintilla .slide .cards-list-item-info {
+.solutions-benefits .cintilla-beneficios {
+  background-color: #F0EFF4;
+  border-radius: .4rem; }
+  .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info {
     position: relative;
     padding: 2.4rem;
     border-radius: .4rem;
     background: #fff center/cover no-repeat;
     background-image: linear-gradient(180deg, #FFFFFF 38.29%, #ECECEC 100%);
     box-shadow: 0 0.1rem 0.3rem rgba(56, 56, 56, 0.3); }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info > *,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info > * {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info > * {
       position: relative;
       z-index: 10; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info > p,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info > p {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info > p {
       font-size: 1.8rem; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > *,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info.ama-llaves > *,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info.finanzas > * {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *,
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > * {
       color: #fff; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves::before, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas::before,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info.ama-llaves::before,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info.finanzas::before {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves::before, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas::before {
       content: '';
       display: block;
       position: absolute;
@@ -1179,8 +1200,7 @@ p + .btn {
       height: 100%;
       border-radius: .4rem;
       background: rgba(52, 73, 94, 0.8); }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info::after,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info::after {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info::after {
       content: '';
       display: block;
       position: absolute;
@@ -1189,12 +1209,11 @@ p + .btn {
       width: 100%;
       height: 100%;
       border-radius: .4rem; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves::after,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info.ama-llaves::after {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves::after {
       background: url("../imgs/beneficios/ama-llaves2.jpg") center/cover no-repeat; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas,
-    .solutions-benefits .center-cintilla .slide .cards-list-item-info.finanzas {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas {
       background: url("../imgs/beneficios/finanzas.jpg") center/cover no-repeat; }
+
 .solutions-benefits li strong {
   display: block;
   margin-bottom: .8rem;
@@ -1212,30 +1231,9 @@ p + .btn {
 .equal-height .slick-track {
   display: table !important; }
 
-.center-cintilla {
-  padding: 3.2rem 0; }
-  .center-cintilla .slide {
-    text-align: center;
-    opacity: .6;
-    outline: none; }
-    .center-cintilla .slide:nth-child(even) .cards-list-item-info {
-      background: #34495e;
-      color: #fff; }
-  .center-cintilla .slick-track {
-    padding: 2.4rem 0; }
-  .center-cintilla .cards-list-item-info {
-    padding: 4rem !important; }
-  .center-cintilla .slick-current {
-    font-size: 3.2rem;
-    opacity: 1; }
-    .center-cintilla .slick-current p {
-      font-size: 3.2rem !important; }
-    .center-cintilla .slick-current strong {
-      font-size: 4rem;
-      margin-bottom: 2.4rem !important; }
-
 .tabs {
-  margin: 8rem 8rem 16rem; }
+  margin: 8rem 8rem 16rem;
+  padding: 8rem 0 0; }
   .tabs-wrapper {
     display: grid;
     border-radius: .4rem;
@@ -1307,5 +1305,3 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
-
-/*# sourceMappingURL=style.css.map */

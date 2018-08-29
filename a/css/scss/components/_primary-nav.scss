@@ -39,8 +39,8 @@
       & {
         display: block;
         position: static;
-        overflow: visible;
         max-height: 40rem;
+        overflow: visible;
       }
 
       & > li {
@@ -70,7 +70,8 @@
               opacity: 0;
             }
 
-            h4 {
+            h4,
+            h5 {
               margin-bottom: 1rem;
               opacity: .8;
               color: $text-color;
@@ -78,6 +79,21 @@
               font-size: 1.8rem;
               letter-spacing: .1rem;
               text-transform: uppercase;
+
+              a {
+                color: $text-color;
+                font-size: 1.8rem;
+              }
+            }
+
+            h5 {
+              margin-bottom: 0;
+              opacity: .7;
+              font-family: $body-font;
+              font-size: 1.4rem;
+              letter-spacing: 0;
+              text-transform: capitalize;
+              cursor: pointer;
             }
 
             a {
@@ -148,19 +164,36 @@
   }
 }
 
-.products-margin {
-  margin-bottom: 1.6rem;
+.suite-name {
+  padding-bottom: .8rem;
+
+  & + ul {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+  }
+
+  &.active {
+    padding-bottom: 0;
+  }
+
+  &.active + ul {
+    height: auto;
+    margin-bottom: 2.4rem;
+    opacity: 1;
+  }
 }
 
+
 .language-nav {
-  position: absolute;
-  right: 4rem;
-  top: 1rem;
-  z-index: 3;
-  font-size: 1rem;
-  color: $white;
   display: flex;
+  position: absolute;
+  z-index: 3;
+  top: 1rem;
+  right: 4rem;
   align-items: center;
+  color: $white;
+  font-size: 1rem;
 
   abbr {
     padding-right: .5rem;
@@ -169,10 +202,10 @@
 }
 .language-nav ul a {
 	display: block;
-	color: #3576a3;
-	text-decoration: none;
-	line-height: 32px;
 	padding: 0 15px;
+	color: #3576a3;
+	line-height: 32px;
+	text-decoration: none;
 
   &:hover {
     text-decoration: underline;
@@ -180,9 +213,9 @@
 }
 .language-nav ul li {
 	position: relative;
-	float: left;
 	margin: 0;
 	padding: 0;
+	float: left;
 }
 .language-nav ul li.current-menu-item {
 	background: &$white;
@@ -192,21 +225,21 @@
 	position: absolute;
 	top: 100%;
 	right: 0;
-	background: $white;
 	padding: 0;
+	background: $white;
 }
 .language-nav ul ul li {
 	float: none;
 }
 .language-nav ul ul a {
-	line-height: 120%;
 	padding: 1rem 1.5rem;
+	line-height: 120%;
 }
 .language-nav ul ul ul {
 	top: 0;
 	left: 100%;
 }
-.language-nav ul li:hover > ul {
+.language-nav ul:hover > li ul {
 	display: block;
   box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
 }

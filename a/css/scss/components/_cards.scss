@@ -1,8 +1,8 @@
 .solutions-benefits {
 
-  .cintilla-beneficios,
-  .center-cintilla {
+  .cintilla-beneficios {
     background-color: $light-color;
+    border-radius: .4rem;
 
     .slide {
 
@@ -90,44 +90,4 @@
 
 .equal-height .slick-track {
   display: table !important;
-}
-
-.center-cintilla {
-  padding: 3.2rem 0;
-
-  .slide {
-    text-align: center;
-    opacity: .6;
-    outline: none;
-
-    &:nth-child(even) {
-
-      .cards-list-item-info {
-        background: rgba($innsist-blue, 1);
-        color: $white;
-      }
-    }
-  }
-
-  .slick-track {
-    padding: 2.4rem 0;
-  }
-
-  .cards-list-item-info {
-    padding: 4rem !important;
-  }
-
-  .slick-current {
-    font-size: 3.2rem;
-    opacity: 1;
-
-    & p {
-      font-size: 3.2rem !important;
-    }
-
-    strong {
-      font-size: 4rem;
-      margin-bottom: 2.4rem !important;
-    }
-  }
 }

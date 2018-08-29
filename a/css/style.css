@@ -518,8 +518,12 @@ p + .btn {
 .top-nav > .nav {
   position: absolute;
   right: 2.4rem;
-  max-height: 0;
-  overflow: hidden; }
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .top-nav > .nav {
+      max-height: 0;
+      overflow: hidden;
+      display: block; } }
   .top-nav > .nav.active {
     display: block;
     height: auto;
@@ -535,7 +539,8 @@ p + .btn {
       margin-top: 1.6rem; }
     .top-nav > .nav.active a {
       padding: .8rem 4rem;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      color: #3576a3; }
       .top-nav > .nav.active a:hover {
         text-decoration: underline; }
     .top-nav > .nav.active .solutions-list {
@@ -1014,7 +1019,7 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .our-clients {
       margin: 8rem 0 0;
-      padding: 6.4rem 2.4rem; } }
+      padding: 6.4rem 4rem; } }
   .our-clients > h3 {
     margin-bottom: 2.4rem;
     text-align: center;

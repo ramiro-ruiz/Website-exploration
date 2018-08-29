@@ -1,8 +1,13 @@
 .top-nav > .nav {
     position: absolute;
     right: 2.4rem;
-    max-height: 0;
-    overflow: hidden;
+    display: none;
+
+    @media screen and (min-width: 960px) {
+      max-height: 0;
+      overflow: hidden;
+      display: block;
+    }
 
     &.active {
       display: block;
@@ -23,6 +28,7 @@
       a {
         padding: .8rem 4rem;
         font-size: 1.6rem;
+        color: darken($health-blue, 10%);
 
         &:hover {
           text-decoration: underline;
@@ -33,6 +39,7 @@
         display: none;
       }
     }
+
 
     @media screen and (min-width: 960px) {
 

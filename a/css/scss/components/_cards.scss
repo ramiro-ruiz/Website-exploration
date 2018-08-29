@@ -78,16 +78,11 @@
 }
 
 .equal-height .slide {
-  display: table-cell !important;
-  float: none !important;
+  display: flex !important;
   padding: 1.6rem;
-  height: 100%;
 
-  .cards-list-item-info {
-    height: 100%;
-  }
 }
 
 .equal-height .slick-track {
-  display: table !important;
+  display: flex;
 }

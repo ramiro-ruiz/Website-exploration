@@ -168,9 +168,8 @@
   padding-bottom: .8rem;
 
   & + ul {
-    height: 0;
+    display: none;
     margin: 0;
-    opacity: 0;
   }
 
   &.active {
@@ -178,9 +177,8 @@
   }
 
   &.active + ul {
-    height: auto;
+    display: block;
     margin-bottom: 2.4rem;
-    opacity: 1;
   }
 }
 

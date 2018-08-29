@@ -628,15 +628,13 @@ p + .btn {
 .suite-name {
   padding-bottom: .8rem; }
   .suite-name + ul {
-    height: 0;
-    margin: 0;
-    opacity: 0; }
+    display: none;
+    margin: 0; }
   .suite-name.active {
     padding-bottom: 0; }
   .suite-name.active + ul {
-    height: auto;
-    margin-bottom: 2.4rem;
-    opacity: 1; }
+    display: block;
+    margin-bottom: 2.4rem; }
 
 .language-nav {
   display: flex;
@@ -1221,15 +1219,11 @@ p + .btn {
   font-weight: 700; }
 
 .equal-height .slide {
-  display: table-cell !important;
-  float: none !important;
-  padding: 1.6rem;
-  height: 100%; }
-  .equal-height .slide .cards-list-item-info {
-    height: 100%; }
+  display: flex !important;
+  padding: 1.6rem; }
 
 .equal-height .slick-track {
-  display: table !important; }
+  display: flex; }
 
 .tabs {
   margin: 8rem 8rem 16rem;

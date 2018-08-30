@@ -80,3 +80,15 @@
     }
 }
 }
+
+.blockmv {
+  border: 2px solid $green-olive;
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+
+  p {
+    opacity: 0;
+    content: hidden;
+  }
+}

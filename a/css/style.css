@@ -1380,6 +1380,15 @@ p + .btn {
   .misionvision div:hover h2 {
     top: -100px; }
 
+.blockmv {
+  border: 2px solid #CCE2A3;
+  display: flex;
+  justify-content: space-between;
+  width: 49%; }
+  .blockmv p {
+    opacity: 0;
+    content: hidden; }
+
 /*-----------------------------------
     Utilities
 ------------------------------------*/

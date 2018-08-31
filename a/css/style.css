@@ -518,8 +518,12 @@ p + .btn {
 .top-nav > .nav {
   position: absolute;
   right: 2.4rem;
-  max-height: 0;
-  overflow: hidden; }
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .top-nav > .nav {
+      max-height: 0;
+      overflow: hidden;
+      display: block; } }
   .top-nav > .nav.active {
     display: block;
     height: auto;
@@ -535,7 +539,8 @@ p + .btn {
       margin-top: 1.6rem; }
     .top-nav > .nav.active a {
       padding: .8rem 4rem;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      color: #3576a3; }
       .top-nav > .nav.active a:hover {
         text-decoration: underline; }
     .top-nav > .nav.active .solutions-list {
@@ -548,68 +553,75 @@ p + .btn {
       overflow: visible; }
     .top-nav > .nav > li {
       display: inline-block; }
-      .top-nav > .nav > li.multi > a:hover {
-        border: 0; }
-      .top-nav > .nav > li.multi .solutions-list {
-        display: flex;
-        visibility: hidden;
-        position: absolute;
-        top: 7.8rem;
-        right: 4rem;
-        padding: 3.2rem 5.6rem 4rem; }
-        .top-nav > .nav > li.multi .solutions-list-category + .solutions-list-category {
-          margin-left: 4.8rem; }
-        .top-nav > .nav > li.multi .solutions-list > * {
-          transition: opacity .8s ease;
-          transition-delay: .2s;
-          opacity: 0; }
-        .top-nav > .nav > li.multi .solutions-list h4,
-        .top-nav > .nav > li.multi .solutions-list h5 {
-          margin-bottom: 1rem;
-          opacity: .8;
-          color: #383838;
-          font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-          font-size: 1.8rem;
-          letter-spacing: .1rem;
-          text-transform: uppercase; }
-          .top-nav > .nav > li.multi .solutions-list h4 a,
-          .top-nav > .nav > li.multi .solutions-list h5 a {
-            color: #383838;
-            font-size: 1.8rem; }
-        .top-nav > .nav > li.multi .solutions-list h5 {
-          margin-bottom: 0;
-          opacity: .7;
-          font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-          font-size: 1.4rem;
-          letter-spacing: 0;
-          text-transform: capitalize;
-          cursor: pointer; }
-        .top-nav > .nav > li.multi .solutions-list a {
-          color: #3576a3;
-          font-size: 1.2rem; }
-          .top-nav > .nav > li.multi .solutions-list a:hover {
-            text-decoration: underline; }
-        .top-nav > .nav > li.multi .solutions-list::after {
-          content: '';
+      .top-nav > .nav > li.multi {
+        padding-bottom: .8rem; }
+        .top-nav > .nav > li.multi > .link {
+          padding-bottom: 1.6rem; }
+        .top-nav > .nav > li.multi > a:hover {
+          border: 0; }
+        .top-nav > .nav > li.multi .solutions-list {
+          display: flex;
+          visibility: hidden;
           position: absolute;
-          z-index: -1;
-          top: 0;
-          right: 0;
-          width: 100%;
-          height: 0;
-          transition: all .2s ease;
-          transition: all .2s ease;
-          border-bottom-left-radius: .4rem;
-          border-bottom-right-radius: .4rem;
-          background-color: #fff;
-          box-shadow: 0 0.2rem 0.2rem 0 rgba(56, 56, 56, 0.5); }
-      .top-nav > .nav > li.multi:hover .solutions-list {
-        visibility: visible;
-        opacity: 1; }
-        .top-nav > .nav > li.multi:hover .solutions-list > * {
+          top: 7.8rem;
+          right: 4rem;
+          padding: 3.2rem 5.6rem 4rem; }
+          .top-nav > .nav > li.multi .solutions-list-category + .solutions-list-category {
+            margin-left: 4.8rem; }
+          .top-nav > .nav > li.multi .solutions-list > * {
+            transition: opacity .8s ease;
+            transition-delay: .2s;
+            opacity: 0; }
+          .top-nav > .nav > li.multi .solutions-list h4,
+          .top-nav > .nav > li.multi .solutions-list h5 {
+            margin-bottom: 1rem;
+            opacity: 0;
+            color: #383838;
+            font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: .1rem;
+            text-transform: uppercase; }
+            .top-nav > .nav > li.multi .solutions-list h4 a,
+            .top-nav > .nav > li.multi .solutions-list h5 a {
+              color: #383838;
+              font-size: 1.8rem; }
+          .top-nav > .nav > li.multi .solutions-list h5 {
+            margin-bottom: 0;
+            opacity: .7;
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 0;
+            text-transform: capitalize;
+            cursor: pointer; }
+          .top-nav > .nav > li.multi .solutions-list a {
+            color: #3576a3;
+            font-size: 1.2rem; }
+            .top-nav > .nav > li.multi .solutions-list a:hover {
+              text-decoration: underline; }
+          .top-nav > .nav > li.multi .solutions-list::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 0;
+            transition: all .2s ease;
+            transition: all .2s ease;
+            border-bottom-left-radius: .4rem;
+            border-bottom-right-radius: .4rem;
+            background-color: #fff;
+            box-shadow: 0 0.2rem 0.2rem 0 rgba(56, 56, 56, 0.5); }
+        .top-nav > .nav > li.multi:hover .solutions-list {
+          visibility: visible;
           opacity: 1; }
-        .top-nav > .nav > li.multi:hover .solutions-list::after {
-          height: 100%; }
+          .top-nav > .nav > li.multi:hover .solutions-list > * {
+            opacity: 1; }
+          .top-nav > .nav > li.multi:hover .solutions-list::after {
+            height: 100%; }
+          .top-nav > .nav > li.multi:hover .solutions-list h4,
+          .top-nav > .nav > li.multi:hover .solutions-list h5 {
+            opacity: .8; }
     .top-nav > .nav > li + li {
       margin-left: 2.4rem; }
     .top-nav > .nav .link {
@@ -647,7 +659,10 @@ p + .btn {
   border-radius: 0 0 .2rem .2rem;
   background-color: rgba(255, 255, 255, 0.8);
   color: #383838;
-  font-size: 1rem; }
+  font-size: 1rem;
+  opacity: .7; }
+  .language-nav:hover {
+    opacity: 1; }
   @media screen and (min-width: 960px) {
     .language-nav {
       right: 4rem;
@@ -896,7 +911,7 @@ p + .btn {
 
 .solutions > .hospitality {
   background: url(../imgs/hotel.jpg) center/cover no-repeat; }
-  .solutions > .hospitality .products {
+  .solutions > .hospitality .products, .solutions > .hospitality .product {
     background-color: #253544; }
 
 .solutions > .hospitality::before {
@@ -904,7 +919,7 @@ p + .btn {
 
 .solutions > .healthcare {
   background: url(../imgs/health.jpg) center/cover no-repeat; }
-  .solutions > .healthcare .products {
+  .solutions > .healthcare .products, .solutions > .healthcare .product {
     background-color: #387caa; }
 
 .solutions > .healthcare::before {
@@ -912,7 +927,7 @@ p + .btn {
 
 .solutions > .retail {
   background: url(../imgs/retail.jpg) center/cover no-repeat; }
-  .solutions > .retail .products {
+  .solutions > .retail .products, .solutions > .retail .product {
     background-color: #713c64; }
 
 .solutions > .retail::before {
@@ -961,6 +976,26 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .certifications {
       padding: 8rem 4.8rem; } }
+
+.product {
+  padding: 0 2.4rem 3.2rem; }
+  .product-category-title {
+    margin: 0 0 .8rem;
+    opacity: .6;
+    letter-spacing: .1rem;
+    text-transform: uppercase; }
+  .product > ul > li:first-child {
+    margin-top: 3.2rem; }
+  .product > ul > li > ul > li + li {
+    margin-top: .4rem; }
+  .product a {
+    transition: all .2s ease;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none; }
+    .product a:hover {
+      opacity: .9;
+      text-decoration: underline; }
 
 .extra {
   padding: 3.2rem;
@@ -1014,7 +1049,7 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .our-clients {
       margin: 8rem 0 0;
-      padding: 6.4rem 2.4rem; } }
+      padding: 6.4rem 4rem; } }
   .our-clients > h3 {
     margin-bottom: 2.4rem;
     text-align: center;
@@ -1280,6 +1315,223 @@ p + .btn {
     font-size: 2.4rem; }
   .tabcontent > p {
     font-size: 1.8rem; }
+
+/*-----------------------------------
+    Pages
+------------------------------------*/
+.carrers {
+  margin: 4rem 8rem 8rem;
+  padding: 4rem 47% 4rem 4rem;
+  border-radius: .8rem;
+  background: #CCE2A3;
+  position: relative; }
+  @media screen and (min-width: 960px) {
+    .carrers > .btn {
+      margin-top: 0;
+      position: relative;
+      transform: translateX(130%);
+      z-index: 10;
+      width: 60%;
+      text-align: center; }
+      .carrers > .btn:hover {
+        transform: translate(130%, -0.2rem);
+        opacity: 1; } }
+  .carrers::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url("../imgs/nosotros/carreras.jpg") center/cover no-repeat; }
+
+.misionvision {
+  margin: 0 2.4rem; }
+  @media screen and (min-width: 960px) {
+    .misionvision {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 8rem;
+      padding: 4rem 0; } }
+  .misionvision .blockmv {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+    overflow: hidden;
+    border-radius: .8rem;
+    color: #fff;
+    text-align: center; }
+    .misionvision .blockmv > * {
+      z-index: 10; }
+    @media screen and (min-width: 960px) {
+      .misionvision .blockmv {
+        flex-basis: 49%;
+        margin: 4rem 0; }
+        .misionvision .blockmv + .blockmv {
+          margin-left: 2%; } }
+  .misionvision .blockmv::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5C6055; }
+  .misionvision .mision::after {
+    background: url("../imgs/mision.jpg") center/cover no-repeat; }
+  .misionvision .vision::after {
+    background: url("../imgs/vision.jpg") center/cover no-repeat; }
+  .misionvision h2 {
+    margin: auto;
+    transition: all 0.4s ease;
+    text-transform: uppercase; }
+    @media screen and (min-width: 960px) {
+      .misionvision h2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 20%;
+        margin: auto;
+        overflow: hidden;
+        line-height: 1.6; } }
+  .misionvision p {
+    position: relative;
+    margin: 0;
+    padding: 4rem;
+    transition: opacity 0.2s linear;
+    transition-delay: 0.1s;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left; }
+  .misionvision .blockmv:hover p {
+    opacity: 1; }
+  .misionvision .blockmv:hover h2 {
+    transform: translateY(-50rem); }
+
+@media screen and (min-width: 960px) {
+  .history {
+    padding: 8rem 0 6.4rem;
+    overflow: hidden; }
+    .history-intro {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4rem 8rem;
+      background-color: rgba(187, 161, 123, 0.15); }
+    .history-text {
+      flex-basis: 48%;
+      margin-right: 2%; } }
+  @media screen and (min-width: 960px) and (min-width: 960px) {
+    .history-imgs {
+      position: relative;
+      flex-basis: 50%; } }
+
+@media screen and (min-width: 960px) {
+    .history-imgs .history-img {
+      border: 1rem solid #f6f5f8;
+      box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3); } }
+    @media screen and (min-width: 960px) and (min-width: 960px) {
+      .history-imgs .history-img {
+        position: absolute; }
+        .history-imgs .history-img img {
+          width: 100%; }
+        .history-imgs .history-img::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(187, 161, 123, 0.2); }
+        .history-imgs .history-img:nth-child(1) {
+          top: 10%;
+          left: 1%;
+          width: 60%; }
+        .history-imgs .history-img:nth-child(2) {
+          top: -10%;
+          left: 36%;
+          width: 50%; }
+        .history-imgs .history-img:nth-child(3) {
+          z-index: 2;
+          top: 30%;
+          left: 44%;
+          width: 80%; }
+        .history-imgs .history-img:nth-child(4) {
+          top: 5%;
+          left: 73%;
+          width: 46%; }
+        .history-imgs .history-img:nth-child(5) {
+          z-index: 2;
+          top: 60%;
+          left: 70%;
+          width: 60%; } }
+
+.history .timeline {
+  padding: 4rem 8rem;
+  background-color: #807A72;
+  color: #fff; }
+  .history .timeline > h2 {
+    margin: 0 0 4rem; }
+  .history .timeline .beginning > .line-indicator::before {
+    content: '';
+    width: 4rem;
+    height: 3.4rem;
+    position: absolute;
+    left: -4rem;
+    background-color: #807A72;
+    top: -.1rem;
+    z-index: 50; }
+  .history .timeline .milestone::before {
+    content: '';
+    width: 100%;
+    height: .4rem;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    background-color: #fff;
+    z-index: 30; }
+  .history .timeline .milestone .line-indicator::before {
+    content: '';
+    width: 4rem;
+    height: 3.4rem;
+    position: absolute;
+    left: -4rem;
+    background-color: #807A72;
+    top: -.1rem; }
+  .history .timeline .milestone-date {
+    font-size: 4rem;
+    margin-bottom: 1.6rem; }
+  .history .timeline .milestone .line-indicator {
+    display: block;
+    position: relative;
+    width: .8rem;
+    height: 2.4rem;
+    top: .5rem;
+    background-color: #fff;
+    border-radius: .2rem; }
+  .history .timeline .milestone-text {
+    margin-top: 3.2rem;
+    padding: 2.4rem;
+    border-radius: .4rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    color: #383838;
+    position: relative; }
+    .history .timeline .milestone-text::after {
+      content: '';
+      position: absolute;
+      border-top: .8rem solid transparent;
+      border-left: 0.8rem solid #fff;
+      border-right: .8rem solid transparent;
+      border-bottom: 0.8rem solid #fff;
+      top: -.8rem;
+      left: 0;
+      border-radius: .2rem; }
 
 /*-----------------------------------
     Utilities

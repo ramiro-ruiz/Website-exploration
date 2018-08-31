@@ -61,7 +61,7 @@
                   L305.4,459.7z M407.6,397.7c-15.4-13.7-32.3-25.3-50.3-34.6c9.4-32.5,14.8-69.1,15.7-107.1h95C465.2,310.7,442.8,360.2,407.6,397.7
                   L407.6,397.7z"/>
               </g>
-          </svg>
+            </svg>
           <ul class="more-langs">
             <li><a href="#"><abbr>ENG</abbr></a></li>
           </ul>
@@ -233,17 +233,90 @@
     <section class="intro">
       <h2>¿Quién es TCA Software Solutions?</h2>
       <p>Con más de 35 años de experiencia en el mercado latinoamericano, TCA Software Solutions es una empresa mexicana proveedora de soluciones integrales de software para las industrias de Hotelería, Salud y Comercio. Asimismo, solucionamos todas las necesidades estratégicas, administrativas, operativas y tecnológicas de nuestros clientes a través de servicios de consultoría de industria, productos y desarrollo de software.</p>
-      <h2>Historia</h2>
-      <p>En 1982, TCA Software Solutions inicia operaciones en México como una compañía desarrolladora y comercializadora de software para la industria hotelera. A través de los años, hemos expandido nuestra oferta a las industrias de Salud y Comercio, así como a otros países Latinoamericanos. Teniendo como meta crecer e innovar internacionalmente, en 2008 inauguramos nuestras oficinas en EUA.</p>
-      <p>Con el fin de seguir ofreciendo productos y servicios con la mejor tecnología e innovadores, y gracias a nuestro constante trabajo para identificar las tendencias del mercado en conjunto con nuestra área de investigación y desarrollo, nuestras soluciones de software están en constante evolución.</p>
     </section>
 
-    <section class="misionvisio">
-      <div class="blockmv">
+    <section class="history">
+      <div class="history-intro">
+        <div class="history-text">
+          <h2>Historia</h2>
+          <p>En 1982, TCA Software Solutions inicia operaciones en México como una compañía desarrolladora y comercializadora de software para la industria hotelera. A través de los años, hemos expandido nuestra oferta a las industrias de Salud y Comercio, así como a otros países Latinoamericanos. Teniendo como meta crecer e innovar internacionalmente, en 2008 inauguramos nuestras oficinas en EUA.</p>
+          <p>Con el fin de seguir ofreciendo productos y servicios con la mejor tecnología e innovadores, y gracias a nuestro constante trabajo para identificar las tendencias del mercado en conjunto con nuestra área de investigación y desarrollo, nuestras soluciones de software están en constante evolución.</p>
+        </div>
+        <div class="history-imgs">
+          <div class="history-img">
+            <img src="a/imgs/nosotros/historia/todos.jpg" >
+          </div>
+          <div class="history-img">
+            <img src="a/imgs/nosotros/historia/edificio.jpg" >
+          </div>
+          <div class="history-img">
+            <img src="a/imgs/nosotros/historia/campeones.jpg" >
+          </div>
+          <div class="history-img">
+            <img src="a/imgs/nosotros/historia/pasillo.jpg" >
+          </div>
+          <div class="history-img">
+            <img src="a/imgs/nosotros/historia/trabajando.jpg" >
+          </div>
+        </div>
+      </div>
+
+      <section class="timeline">
+        <h2>Timeline</h2>
+        <ul class="milestones">
+          <li class="milestone slide beginning">
+            <h4 class="milestone-date">1982</h4>
+            <span class="line-indicator"></span>
+            <p class="milestone-text">
+              TCA Software Solutions inicia operaciones en México como una compañía desarrolladora y comercializadora de software para la industria hotelera.
+            </p>
+          </li>
+          <li class="milestone slide">
+            <h4 class="milestone-date">1988</h4>
+            <span class="line-indicator"></span>
+            <p class="milestone-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+            </p>
+          </li>
+          <li class="milestone slide">
+            <h4 class="milestone-date">1990</h4>
+            <span class="line-indicator"></span>
+            <p class="milestone-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+            </p>
+          </li>
+          <li class="milestone slide">
+            <h4 class="milestone-date">1996</h4>
+            <span class="line-indicator"></span>
+            <p class="milestone-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+            </p>
+          </li>
+          <li class="milestone slide">
+            <h4 class="milestone-date">2000</h4>
+            <span class="line-indicator"></span>
+            <p class="milestone-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+            </p>
+          </li>
+          <li class="milestone slide">
+            <h4 class="milestone-date">2005</h4>
+            <span class="line-indicator"></span>
+            <p class="milestone-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+    </section>
+
+    <section class="misionvision">
+      <div class="blockmv mision">
         <h2>Misión</h2>
         <p>En TCA Software Solutions buscamos, de una manera rentable, fabricar, comercializar, implementar y dar soporte a soluciones de software para las industrias de Hotelería, Salud y Comercio que generen valor, satisfacción y crecimiento a nuestros clientes, a nuestros colaboradores y a nuestra empresa.</p>
       </div>
-      <div class="blockmv">
+      <div class="blockmv vision">
         <h2>Visión</h2>
         <p>Ser la mayor y más confiable empresa mexicana fabricante de software para las industrias de Hotelería, Salud y Comercio, que se caracterice por su compromiso, servicio al cliente, profesionalismo y evolución constante.</p>
       </div>
@@ -402,6 +475,26 @@
             breakpoint: 520,
             settings: {
                 slidesToShow: 3
+            }
+        }]
+    });
+    $('.milestones').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        arrows: true,
+        dots: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1,
+                arrows: false
             }
         }]
     });

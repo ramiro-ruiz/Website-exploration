@@ -16,6 +16,7 @@
   src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -234,6 +235,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
+
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -450,7 +452,6 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
-
     .main-footer .footer-category-list h4 {
       margin: 1.2rem 0 .8rem;
       color: #AFB1AC;
@@ -635,6 +636,7 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
+
 .suite-name {
   padding-bottom: .8rem; }
   .suite-name + ul {
@@ -791,6 +793,7 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
+
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -825,6 +828,7 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
+
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -1214,7 +1218,8 @@ p + .btn {
       z-index: 10; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info > p {
       font-size: 1.8rem; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > * {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *,
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > * {
       color: #fff; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves::before, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas::before {
       content: '';
@@ -1240,6 +1245,7 @@ p + .btn {
       background: url("../imgs/beneficios/ama-llaves2.jpg") center/cover no-repeat; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas {
       background: url("../imgs/beneficios/finanzas.jpg") center/cover no-repeat; }
+
 .solutions-benefits li strong {
   display: block;
   margin-bottom: .8rem;
@@ -1314,80 +1320,218 @@ p + .btn {
     Pages
 ------------------------------------*/
 .carrers {
-  margin: 4rem 8rem;
-  padding: 4rem;
+  margin: 4rem 8rem 8rem;
+  padding: 4rem 47% 4rem 4rem;
+  border-radius: .8rem;
   background: #CCE2A3;
-  text-align: center;
-  border-radius: .8rem; }
+  position: relative; }
+  @media screen and (min-width: 960px) {
+    .carrers > .btn {
+      margin-top: 0;
+      position: relative;
+      transform: translateX(130%);
+      z-index: 10;
+      width: 60%;
+      text-align: center; }
+      .carrers > .btn:hover {
+        transform: translate(130%, -0.2rem);
+        opacity: 1; } }
+  .carrers::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url("../imgs/nosotros/carreras.jpg") center/cover no-repeat; }
 
 .misionvision {
-  margin: 0 2rem; }
+  margin: 0 2.4rem; }
   @media screen and (min-width: 960px) {
     .misionvision {
       display: flex;
       justify-content: space-between;
-      padding: 4rem; } }
-  .misionvision div {
-    border: 2px solid #CCE2A3;
-    width: 100%;
-    text-align: center;
+      margin: 0 8rem;
+      padding: 4rem 0; } }
+  .misionvision .blockmv {
+    display: flex;
     position: relative;
+    width: 100%;
+    margin: 2rem 0;
     overflow: hidden;
     border-radius: .8rem;
-    margin: 2rem 0; }
+    color: #fff;
+    text-align: center; }
+    .misionvision .blockmv > * {
+      z-index: 10; }
     @media screen and (min-width: 960px) {
-      .misionvision div {
-        margin: 0 4rem; } }
-  .misionvision div:after {
+      .misionvision .blockmv {
+        flex-basis: 49%;
+        margin: 4rem 0; }
+        .misionvision .blockmv + .blockmv {
+          margin-left: 2%; } }
+  .misionvision .blockmv::after {
     content: '';
+    display: block;
     position: absolute;
+    z-index: -1;
     top: 0;
-    left: 1%;
-    display: block;
-    width: 97%;
-    height: 100%;
-    background: transparent; }
-  .misionvision div:before {
-    content: '';
-    position: absolute;
-    top: 5%;
     left: 0;
-    display: block;
     width: 100%;
-    height: 89%;
-    background: transparent; }
+    height: 100%;
+    background-color: #5C6055; }
+  .misionvision .mision::after {
+    background: url("../imgs/mision.jpg") center/cover no-repeat; }
+  .misionvision .vision::after {
+    background: url("../imgs/vision.jpg") center/cover no-repeat; }
   .misionvision h2 {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    top: 40%;
-    transition: top 0.2s linear;
+    margin: auto;
+    transition: all 0.4s ease;
     text-transform: uppercase; }
-  .misionvision img {
-    position: absolute;
-    right: 20px;
-    bottom: 15px;
-    transition: bottom 0.2s linear; }
+    @media screen and (min-width: 960px) {
+      .misionvision h2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 20%;
+        margin: auto;
+        overflow: hidden;
+        line-height: 1.6; } }
   .misionvision p {
+    position: relative;
+    margin: 0;
+    padding: 4rem;
+    transition: opacity 0.2s linear;
+    transition-delay: 0.1s;
     opacity: 0;
-    transition: opacity 0.1s linear;
-    margin: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: left; }
-  .misionvision div:hover p {
+  .misionvision .blockmv:hover p {
     opacity: 1; }
-  .misionvision div:hover img {
-    bottom: -100px; }
-  .misionvision div:hover h2 {
-    top: -100px; }
+  .misionvision .blockmv:hover h2 {
+    transform: translateY(-50rem); }
 
-.blockmv {
-  border: 2px solid #CCE2A3;
-  display: flex;
-  justify-content: space-between;
-  width: 49%; }
-  .blockmv p {
-    opacity: 0;
-    content: hidden; }
+@media screen and (min-width: 960px) {
+  .history {
+    padding: 8rem 0 6.4rem;
+    overflow: hidden; }
+    .history-intro {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4rem 8rem;
+      background-color: rgba(187, 161, 123, 0.15); }
+    .history-text {
+      flex-basis: 48%;
+      margin-right: 2%; } }
+  @media screen and (min-width: 960px) and (min-width: 960px) {
+    .history-imgs {
+      position: relative;
+      flex-basis: 50%; } }
+
+@media screen and (min-width: 960px) {
+    .history-imgs .history-img {
+      border: 1rem solid #f6f5f8;
+      box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3); } }
+    @media screen and (min-width: 960px) and (min-width: 960px) {
+      .history-imgs .history-img {
+        position: absolute; }
+        .history-imgs .history-img img {
+          width: 100%; }
+        .history-imgs .history-img::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(187, 161, 123, 0.2); }
+        .history-imgs .history-img:nth-child(1) {
+          top: 10%;
+          left: 1%;
+          width: 60%; }
+        .history-imgs .history-img:nth-child(2) {
+          top: -10%;
+          left: 36%;
+          width: 50%; }
+        .history-imgs .history-img:nth-child(3) {
+          z-index: 2;
+          top: 30%;
+          left: 44%;
+          width: 80%; }
+        .history-imgs .history-img:nth-child(4) {
+          top: 5%;
+          left: 73%;
+          width: 46%; }
+        .history-imgs .history-img:nth-child(5) {
+          z-index: 2;
+          top: 60%;
+          left: 70%;
+          width: 60%; } }
+
+.history .timeline {
+  padding: 4rem 8rem;
+  background-color: #807A72;
+  color: #fff; }
+  .history .timeline > h2 {
+    margin: 0 0 4rem; }
+  .history .timeline .beginning > .line-indicator::before {
+    content: '';
+    width: 4rem;
+    height: 3.4rem;
+    position: absolute;
+    left: -4rem;
+    background-color: #807A72;
+    top: -.1rem;
+    z-index: 50; }
+  .history .timeline .milestone::before {
+    content: '';
+    width: 100%;
+    height: .4rem;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    background-color: #fff;
+    z-index: 30; }
+  .history .timeline .milestone .line-indicator::before {
+    content: '';
+    width: 4rem;
+    height: 3.4rem;
+    position: absolute;
+    left: -4rem;
+    background-color: #807A72;
+    top: -.1rem; }
+  .history .timeline .milestone-date {
+    font-size: 4rem;
+    margin-bottom: 1.6rem; }
+  .history .timeline .milestone .line-indicator {
+    display: block;
+    position: relative;
+    width: .8rem;
+    height: 2.4rem;
+    top: .5rem;
+    background-color: #fff;
+    border-radius: .2rem; }
+  .history .timeline .milestone-text {
+    margin-top: 3.2rem;
+    padding: 2.4rem;
+    border-radius: .4rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    color: #383838;
+    position: relative; }
+    .history .timeline .milestone-text::after {
+      content: '';
+      position: absolute;
+      border-top: .8rem solid transparent;
+      border-left: 0.8rem solid #fff;
+      border-right: .8rem solid transparent;
+      border-bottom: 0.8rem solid #fff;
+      top: -.8rem;
+      left: 0;
+      border-radius: .2rem; }
 
 /*-----------------------------------
     Utilities
@@ -1406,5 +1550,3 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,94 +1,296 @@
 .carrers {
-  margin: 4rem 8rem;
-  padding: 4rem;
-  background: $green-olive;
-  text-align: center;
+  margin: 4rem 8rem 8rem;
+  padding: 4rem 47% 4rem 4rem;
   border-radius: .8rem;
+  background: $green-olive;
+  position: relative;
+
+  > .btn {
+
+    @media screen and (min-width: 960px) {
+      margin-top: 0;
+      position: relative;
+      transform: translateX(130%);
+      z-index: 10;
+      width: 60%;
+      text-align: center;
+
+      &:hover {
+        transform: translate(130%, -.2rem);
+        opacity: 1;
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url("../imgs/nosotros/carreras.jpg") center/cover no-repeat;
+  }
 }
 
 .misionvision {
-  margin: 0 2rem;
+  margin: 0 2.4rem;
 
     @media screen and (min-width: 960px) {
       display: flex;
       justify-content: space-between;
-      padding: 4rem;
+      margin: 0 8rem;
+      padding: 4rem 0;
     }
 
-  div {
-    border: 2px solid $green-olive;
-    width: 100%;
-    text-align: center;
+  .blockmv {
+    display: flex;
     position: relative;
+    width: 100%;
+    margin: 2rem 0;
     overflow: hidden;
     border-radius: .8rem;
-    margin: 2rem 0;
+    color: $white;
+    text-align: center;
+
+    & > * {
+      z-index: 10;
+    }
 
     @media screen and (min-width: 960px) {
-      margin: 0 4rem;
+      flex-basis: 49%;
+      margin: 4rem 0;
+
+      & + .blockmv {
+        margin-left: 2%;
+      }
     }
   }
-  div:after {
-     content: ''; position: absolute;
-     top: 0;
-     left: 1%;
-     display: block;
-     width: 97%;
-     height: 100%;
-     background: transparent;
-  }
-  div:before {
-     content: ''; position: absolute;
-     top: 5%;
-     left: 0;
-     display: block;
-     width: 100%;
-     height: 89%;
-     background: transparent;
-  }
-  h2 {
-    position: absolute;
 
-    margin: 0;
-    width: 100%;
-    top: 40%;
-    transition: top 0.2s linear;
+  .blockmv::after {
+     content: '';
+     display: block;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: $dark-olive;
+  }
+
+  .mision::after {
+    background: url("../imgs/mision.jpg") center/cover no-repeat;
+  }
+
+  .vision::after {
+    background: url("../imgs/vision.jpg") center/cover no-repeat;
+  }
+
+  h2 {
+    margin: auto;
+    transition: all 0.4s ease;
     text-transform: uppercase;
+
+    @media screen and (min-width: 960px) {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      height: 20%;
+      margin: auto;
+      overflow: hidden;
+      line-height: 1.6;
+    }
+
   }
-  img {
-    position: absolute;
-    right: 20px;
-    bottom: 15px;
-    transition: bottom 0.2s linear;
-  }
+
   p {
+    position: relative;
+    margin: 0;
+    padding: 4rem;
+    transition: opacity 0.2s linear;
+    transition-delay: 0.1s;
     opacity: 0;
-    transition: opacity 0.1s linear;
-    margin: 2rem;
+    background-color: rgba(black, .5);
     text-align: left;
   }
 
-  div:hover {
+  .blockmv:hover {
+
     p {
      	opacity: 1;
     }
-    img {
-      bottom: -100px;
-    }
+
     h2 {
-      top: -100px;
+      transform: translateY(-50rem);
     }
-}
+  }
 }
 
-.blockmv {
-  border: 2px solid $green-olive;
-  display: flex;
-  justify-content: space-between;
-  width: 49%;
+.history {
 
-  p {
-    opacity: 0;
-    content: hidden;
+  @media screen and (min-width: 960px) {
+    padding: 8rem 0 6.4rem;
+    overflow: hidden;
+
+    &-intro {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4rem 8rem;
+      background-color: $history-section;
+    }
+
+    &-text {
+      flex-basis: 48%;
+      margin-right: 2%;
+    }
+
+    &-imgs {
+
+      @media screen and (min-width: 960px) {
+        position: relative;
+        flex-basis: 50%;
+      }
+
+      .history-img {
+        border: 1rem solid lighten($light-color, 2%);
+        box-shadow: 0 .4rem .4rem rgba(black, .3);
+
+        @media screen and (min-width: 960px) {
+          position: absolute;
+
+          img {
+            width: 100%;
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($history-section, .2);
+          }
+
+          &:nth-child(1) {
+            top: 10%;
+            left: 1%;
+            width: 60%;
+          }
+
+          &:nth-child(2) {
+            top: -10%;
+            left: 36%;
+            width: 50%;
+          }
+
+          &:nth-child(3) {
+            z-index: 2;
+            top: 30%;
+            left: 44%;
+            width: 80%;
+          }
+
+          &:nth-child(4) {
+            top: 5%;
+            left: 73%;
+            width: 46%;
+          }
+
+          &:nth-child(5) {
+            z-index: 2;
+            top: 60%;
+            left: 70%;
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+
+  .timeline {
+    padding: 4rem 8rem;
+    background-color: $timeline-section;
+    color: $white;
+
+    > h2 {
+      margin: 0 0 4rem;
+    }
+
+    .beginning {
+
+      > .line-indicator::before {
+        content: '';
+        width: 4rem;
+        height: 3.4rem;
+        position: absolute;
+        left: -4rem;
+        background-color: $timeline-section;
+        top: -.1rem;
+        z-index: 50;
+      }
+    }
+
+    .milestone {
+
+      &::before {
+          content: '';
+          width: 100%;
+          height: .4rem;
+          position: absolute;
+          top: 30%;
+          right: 0;
+          background-color: $white;
+          z-index: 30;
+      }
+
+      .line-indicator::before {
+        content: '';
+        width: 4rem;
+        height: 3.4rem;
+        position: absolute;
+        left: -4rem;
+        background-color: $timeline-section;
+        top: -.1rem;
+      }
+
+      &-date {
+        font-size: 4rem;
+        margin-bottom: 1.6rem;
+      }
+
+      .line-indicator {
+        display: block;
+        position: relative;
+        width: .8rem;
+        height: 2.4rem;
+        top: .5rem;
+        background-color: $white;
+        border-radius: .2rem;
+      }
+
+      &-text {
+        margin-top: 3.2rem;
+        padding: 2.4rem;
+        border-radius: .4rem;
+        background-color: $white;
+        font-size: 1.4rem;
+        color: $text-color;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          border-top: .8rem solid transparent;
+          border-left: .8rem solid $white;
+          border-right: .8rem solid transparent;
+          border-bottom: .8rem solid $white;
+          top: -.8rem;
+          left: 0;
+          border-radius: .2rem;
+        }
+      }
+    }
   }
 }

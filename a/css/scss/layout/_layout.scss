@@ -1,9 +1,25 @@
 .content {
   margin: 2.4rem;
 
+  .slick-next {
+    right: -1.6rem;
+  }
+
+  .slick-prev {
+    left: -1.6rem;
+  }
+
   @media screen and (min-width: 960px) {
     & {
       margin: 4rem 8rem;
+    }
+
+    .slick-next {
+      right: -2.5rem;
+    }
+
+    .slick-prev {
+      left: -2.5rem;
     }
   }
 }

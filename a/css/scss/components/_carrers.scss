@@ -1,18 +1,26 @@
 .bolsatrabajo {
-  margin: 4rem 8rem 8rem;
-  padding: 4rem 47% 4rem 4rem;
-  border-radius: .8rem;
-  background: $green-olive;
   position: relative;
+  margin: 4rem 2.4rem 8rem;
+  padding: 22.4rem 2.4rem 2.4rem;
+  border-radius: .8rem;
+  background: $light-color;
+
+  @media screen and (min-width: 960px) {
+    padding: 4rem 47% 4rem 4rem;
+    margin: 4rem 8rem 8rem;
+  }
 
   > .btn {
+    width: 20rem;
+    //display: block;
+    margin: 0 auto;
 
     @media screen and (min-width: 960px) {
-      margin-top: 0;
       position: relative;
-      transform: translateX(130%);
       z-index: 10;
       width: 60%;
+      margin-top: 0;
+      transform: translateX(130%);
       text-align: center;
 
       &:hover {
@@ -25,10 +33,210 @@
   &::after {
     content: '';
     position: absolute;
-    width: 50%;
-    height: 100%;
     top: 0;
     right: 0;
-    background: url("../imgs/carreras/bolsatrabajo.jpg") center/cover no-repeat;
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../imgs/carreras/bolsatrabajo.jpg") center/cover no-repeat;
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+
+    @media screen and (min-width: 960px) {
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+
+.blogcontacto {
+  margin: 4rem;
+
+    @media screen and (min-width: 960px) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 8rem;
+      padding: 4rem 0;
+    }
+
+  .blockbc {
+    position: relative;
+    border-radius: .8rem;
+    color: $white;
+    text-align: center;
+
+    @media screen and (min-width: 960px) {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    & + .blockbc {
+      margin-top: 2.4rem;
+
+      @media screen and (min-width: 960px) {
+        margin-top: 0;
+      }
+    }
+
+    & > * {
+      z-index: 10;
+    }
+
+    @media screen and (min-width: 960px) {
+      flex-basis: 49%;
+
+      & + .blockbc {
+        margin-left: 2%;
+      }
+    }
+  }
+
+  .blockbc::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+    background-color: rgba(black, .5);
+
+    @media screen and (min-width: 960px) {
+      transition: opacity 0.2s ease;
+      opacity: 0;
+    }
+  }
+
+  .blockbc::after {
+     content: '';
+     display: block;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: .8rem;
+  }
+
+  .blog::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../imgs/carreras/blog.jpg") center/cover no-repeat;
+  }
+
+  .contacto::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../imgs/carreras/contacto.jpg") center/cover no-repeat;
+  }
+
+  h2 {
+    position: relative;
+    margin: auto;
+    padding-top: 2.4rem;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 960px) {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      height: 30%;
+      margin: auto;
+      padding-top: 0;
+      overflow: hidden;
+      line-height: 1.6;
+    }
+
+  }
+
+  p {
+    position: relative;
+    margin: 0;
+    padding: 1.6rem 2.4rem 2.4rem;
+    text-align: left;
+
+    @media screen and (min-width: 960px) {
+      margin: auto;
+      padding: 4rem;
+      opacity: 0;
+    }
+  }
+
+  .blockbc:hover {
+
+    p {
+     	opacity: 1;
+    }
+
+    h2 {
+
+      @media screen and (min-width: 960px) {
+        transform: translateY(-50rem);
+      }
+    }
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.inside {
+  padding: 4rem;
+  text-align: center;
+  background: $green-olive;
+
+  @media screen and (min-width: 960px) {
+    padding: 8rem;
+    background: url("../imgs/carreras/grid-photos.png") bottom no-repeat $green-olive;
+    padding-bottom: 75rem;
+  }
+}
+
+.beneficioscarreras {
+  padding: 4rem;
+  background: $retail-purple;
+  color: $white;
+  text-align: center;
+
+  @media screen and (min-width: 960px) {
+    padding: 8rem;
+    text-align: left;
+  }
+}
+
+.university-header {
+  margin: 4rem 4rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../imgs/carreras/university.jpg") center/cover no-repeat;
+  height: 20rem;
+  text-align: center;
+  border-top-right-radius: .8rem;
+  border-top-left-radius: .8rem;
+  color: $white;
+
+  h2 {
+    padding-top: 8rem;
+  }
+
+    @media screen and (min-width: 960px) {
+      margin: 8rem 8rem 0;
+      height: 45rem;
+
+      h2 {
+        padding-top: 20rem;
+      }
+    }
+}
+
+.university {
+  padding: 4rem;
+  margin: 0 4rem 4rem;
+  border-bottom-right-radius: .8rem;
+  border-bottom-left-radius: .8rem;
+  background: $light-gray;
+  text-align: center;
+
+  @media screen and (min-width: 960px) {
+    padding: 8rem;
+    margin: 0 8rem 4rem;
   }
 }

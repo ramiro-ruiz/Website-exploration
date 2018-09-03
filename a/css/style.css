@@ -16,7 +16,6 @@
   src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -235,7 +234,6 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
-
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -460,6 +458,7 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
+
     .main-footer .footer-category-list h4 {
       margin: 1.2rem 0 .8rem;
       color: #AFB1AC;
@@ -644,7 +643,6 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
-
 .suite-name {
   padding-bottom: .8rem; }
   .suite-name + ul {
@@ -712,7 +710,7 @@ p + .btn {
       .language-nav .more-langs a abbr {
         padding: 0; }
 
-.hero-image, .hero-nosotros, .hero-hoteleria, .hero-ipms {
+.hero-image, .hero-nosotros, .hero-carreras, .hero-hoteleria, .hero-ipms {
   display: flex;
   position: relative;
   height: 45vh;
@@ -720,11 +718,11 @@ p + .btn {
   background: url(../imgs/hero.jpg) center no-repeat;
   background-size: cover; }
   @media screen and (min-width: 960px) {
-    .hero-image, .hero-nosotros, .hero-hoteleria, .hero-ipms {
+    .hero-image, .hero-nosotros, .hero-carreras, .hero-hoteleria, .hero-ipms {
       height: 70vh;
       padding: 4.8rem 8rem 2.4rem; } }
 
-.hero-image::after, .hero-nosotros::after, .hero-hoteleria::after, .hero-ipms::after {
+.hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-hoteleria::after, .hero-ipms::after {
   content: '';
   display: block;
   position: absolute;
@@ -735,11 +733,11 @@ p + .btn {
   height: 10rem;
   background-color: #D93E3E; }
   @media screen and (min-width: 960px) {
-    .hero-image::after, .hero-nosotros::after, .hero-hoteleria::after, .hero-ipms::after {
+    .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-hoteleria::after, .hero-ipms::after {
       bottom: -10.6rem;
       height: 16rem; } }
 
-.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
+.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
   width: 66%;
   margin: auto 0;
   color: #fff;
@@ -748,7 +746,7 @@ p + .btn {
   line-height: 1.25;
   text-transform: uppercase; }
   @media screen and (min-width: 960px) {
-    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
+    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
       width: 50%;
       margin: auto 0;
       font-size: 6.4rem;
@@ -756,6 +754,9 @@ p + .btn {
 
 .hero-nosotros {
   background: url(../imgs/nosotros/nosotros.jpg) center/cover no-repeat; }
+
+.hero-carreras {
+  background: url(../imgs/carreras/carreras.jpg) center/cover no-repeat; }
 
 .hero-hoteleria {
   background: url(../imgs/hoteleria.jpg) center/cover no-repeat; }
@@ -801,7 +802,6 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
-
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -836,7 +836,6 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
-
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -1226,8 +1225,7 @@ p + .btn {
       z-index: 10; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info > p {
       font-size: 1.8rem; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *,
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > * {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > * {
       color: #fff; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves::before, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas::before {
       content: '';
@@ -1253,7 +1251,6 @@ p + .btn {
       background: url("../imgs/beneficios/ama-llaves2.jpg") center/cover no-repeat; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas {
       background: url("../imgs/beneficios/finanzas.jpg") center/cover no-repeat; }
-
 .solutions-benefits li strong {
   display: block;
   margin-bottom: .8rem;
@@ -1604,30 +1601,187 @@ p + .btn {
         border-radius: .2rem; }
 
 .bolsatrabajo {
-  margin: 4rem 8rem 8rem;
-  padding: 4rem 47% 4rem 4rem;
+  position: relative;
+  margin: 4rem 2.4rem 8rem;
+  padding: 22.4rem 2.4rem 2.4rem;
   border-radius: .8rem;
-  background: #CCE2A3;
-  position: relative; }
+  background: #F0EFF4; }
   @media screen and (min-width: 960px) {
-    .bolsatrabajo > .btn {
-      margin-top: 0;
-      position: relative;
-      transform: translateX(130%);
-      z-index: 10;
-      width: 60%;
-      text-align: center; }
-      .bolsatrabajo > .btn:hover {
-        transform: translate(130%, -0.2rem);
-        opacity: 1; } }
+    .bolsatrabajo {
+      padding: 4rem 47% 4rem 4rem;
+      margin: 4rem 8rem 8rem; } }
+  .bolsatrabajo > .btn {
+    width: 20rem;
+    margin: 0 auto; }
+    @media screen and (min-width: 960px) {
+      .bolsatrabajo > .btn {
+        position: relative;
+        z-index: 10;
+        width: 60%;
+        margin-top: 0;
+        transform: translateX(130%);
+        text-align: center; }
+        .bolsatrabajo > .btn:hover {
+          transform: translate(130%, -0.2rem);
+          opacity: 1; } }
   .bolsatrabajo::after {
     content: '';
     position: absolute;
-    width: 50%;
-    height: 100%;
     top: 0;
     right: 0;
-    background: url("../imgs/carreras/bolsatrabajo.jpg") center/cover no-repeat; }
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../imgs/carreras/bolsatrabajo.jpg") center/cover no-repeat;
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem; }
+    @media screen and (min-width: 960px) {
+      .bolsatrabajo::after {
+        width: 50%;
+        height: 100%; } }
+
+.blogcontacto {
+  margin: 4rem; }
+  @media screen and (min-width: 960px) {
+    .blogcontacto {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 8rem;
+      padding: 4rem 0; } }
+  .blogcontacto .blockbc {
+    position: relative;
+    border-radius: .8rem;
+    color: #fff;
+    text-align: center; }
+    @media screen and (min-width: 960px) {
+      .blogcontacto .blockbc {
+        display: flex;
+        width: 100%;
+        overflow: hidden; } }
+    .blogcontacto .blockbc + .blockbc {
+      margin-top: 2.4rem; }
+      @media screen and (min-width: 960px) {
+        .blogcontacto .blockbc + .blockbc {
+          margin-top: 0; } }
+    .blogcontacto .blockbc > * {
+      z-index: 10; }
+    @media screen and (min-width: 960px) {
+      .blogcontacto .blockbc {
+        flex-basis: 49%; }
+        .blogcontacto .blockbc + .blockbc {
+          margin-left: 2%; } }
+  .blogcontacto .blockbc::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.5); }
+    @media screen and (min-width: 960px) {
+      .blogcontacto .blockbc::before {
+        transition: opacity 0.2s ease;
+        opacity: 0; } }
+  .blogcontacto .blockbc::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem; }
+  .blogcontacto .blog::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imgs/carreras/blog.jpg") center/cover no-repeat; }
+  .blogcontacto .contacto::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../imgs/carreras/contacto.jpg") center/cover no-repeat; }
+  .blogcontacto h2 {
+    position: relative;
+    margin: auto;
+    padding-top: 2.4rem;
+    transition: all 0.4s ease;
+    text-transform: uppercase; }
+    @media screen and (min-width: 960px) {
+      .blogcontacto h2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 30%;
+        margin: auto;
+        padding-top: 0;
+        overflow: hidden;
+        line-height: 1.6; } }
+  .blogcontacto p {
+    position: relative;
+    margin: 0;
+    padding: 1.6rem 2.4rem 2.4rem;
+    text-align: left; }
+    @media screen and (min-width: 960px) {
+      .blogcontacto p {
+        margin: auto;
+        padding: 4rem;
+        opacity: 0; } }
+  .blogcontacto .blockbc:hover p {
+    opacity: 1; }
+  @media screen and (min-width: 960px) {
+    .blogcontacto .blockbc:hover h2 {
+      transform: translateY(-50rem); } }
+  .blogcontacto .blockbc:hover::before {
+    opacity: 1; }
+
+.inside {
+  padding: 4rem;
+  text-align: center;
+  background: #CCE2A3; }
+  @media screen and (min-width: 960px) {
+    .inside {
+      padding: 8rem;
+      background: url("../imgs/carreras/grid-photos.png") bottom no-repeat #CCE2A3;
+      padding-bottom: 75rem; } }
+
+.beneficioscarreras {
+  padding: 4rem;
+  background: #8C4A7C;
+  color: #fff;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .beneficioscarreras {
+      padding: 8rem;
+      text-align: left; } }
+
+.university-header {
+  margin: 4rem 4rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/carreras/university.jpg") center/cover no-repeat;
+  height: 20rem;
+  text-align: center;
+  border-top-right-radius: .8rem;
+  border-top-left-radius: .8rem;
+  color: #fff; }
+  .university-header h2 {
+    padding-top: 8rem; }
+  @media screen and (min-width: 960px) {
+    .university-header {
+      margin: 8rem 8rem 0;
+      height: 45rem; }
+      .university-header h2 {
+        padding-top: 20rem; } }
+
+.university {
+  padding: 4rem;
+  margin: 0 4rem 4rem;
+  border-bottom-right-radius: .8rem;
+  border-bottom-left-radius: .8rem;
+  background: #ccc;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .university {
+      padding: 8rem;
+      margin: 0 8rem 4rem; } }
 
 /*-----------------------------------
     Utilities
@@ -1646,3 +1800,5 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
+
+/*# sourceMappingURL=style.css.map */

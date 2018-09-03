@@ -56,6 +56,10 @@
   @extend .hero-image;
   background: url(../imgs/nosotros/nosotros.jpg) center/cover no-repeat;
 }
+.hero-carreras {
+  @extend .hero-image;
+  background: url(../imgs/carreras/carreras.jpg) center/cover no-repeat;
+}
 
 .hero-hoteleria {
   @extend .hero-image;

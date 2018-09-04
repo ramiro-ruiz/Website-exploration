@@ -1776,11 +1776,15 @@ p + .btn {
   background: url("../imgs/carreras/grid-photos.png") center 132% no-repeat #CCE2A3;
   background-size: 220%;
   text-align: center; }
+  .inside p {
+    text-align: left; }
   @media screen and (min-width: 960px) {
     .inside {
       padding: 8rem 8rem 75rem;
       background: url("../imgs/carreras/grid-photos.png") center bottom no-repeat #CCE2A3;
-      background-size: auto; } }
+      background-size: auto; }
+      .inside p {
+        text-align: center; } }
   .inside .btn {
     margin-top: 0; }
 
@@ -1791,6 +1795,8 @@ p + .btn {
   background: #8C4A7C;
   color: #fff;
   text-align: center; }
+  .beneficioscarreras p {
+    text-align: left; }
   @media screen and (min-width: 960px) {
     .beneficioscarreras {
       padding: 8rem;
@@ -1820,6 +1826,8 @@ p + .btn {
   border-bottom-right-radius: .8rem;
   background: #F0EFF4;
   text-align: center; }
+  .university p {
+    text-align: left; }
   @media screen and (min-width: 960px) {
     .university {
       margin: 0 8rem 4rem;

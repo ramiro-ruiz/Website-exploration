@@ -189,10 +189,19 @@
   background-size: 220%;
   text-align: center;
 
+  p {
+    text-align: left;
+  }
+
   @media screen and (min-width: 960px) {
     padding: 8rem 8rem 75rem;
     background: url("../imgs/carreras/grid-photos.png") center bottom no-repeat $green-olive;
     background-size: auto;
+
+    p {
+      text-align: center;
+    }
+
   }
 
   .btn {
@@ -207,6 +216,10 @@
   background: $retail-purple;
   color: $white;
   text-align: center;
+
+  p {
+    text-align: left;
+  }
 
   @media screen and (min-width: 960px) {
     padding: 8rem;
@@ -244,6 +257,10 @@
   border-bottom-right-radius: .8rem;
   background: $light-color;
   text-align: center;
+
+  p {
+    text-align: left;
+  }
 
   @media screen and (min-width: 960px) {
     margin: 0 8rem 4rem;

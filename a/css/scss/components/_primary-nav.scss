@@ -191,11 +191,22 @@
 
   &.active {
     padding-bottom: 0;
+    border-left: .2rem solid $innsist-shade;
+    padding-left: .4rem;
+    color: $innsist-blue;
+
+    &:hover {
+      transform: none;
+    }
   }
 
   &.active + ul {
     display: block;
     margin-bottom: 2.4rem;
+  }
+
+  &:hover {
+    transform: translateX(3px);
   }
 }
 
@@ -214,7 +225,8 @@
   font-size: 1rem;
   opacity: .7;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
   }
 
@@ -243,7 +255,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-radius: 0;
 
     .more-langs {

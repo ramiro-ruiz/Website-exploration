@@ -6,9 +6,15 @@
   background-color: #F25F5C;
   box-shadow: 0 .6rem .3rem -.4rem rgba(0, 0, 0, .3);
   color: #fff;
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: .1rem;
+  text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 960px) {
+    font-size: 1.8rem;
+  }
 }
 
 .btn:hover {

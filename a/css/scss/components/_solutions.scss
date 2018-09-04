@@ -70,9 +70,14 @@
 
   > section {
     position: relative;
-    margin: 3.2rem 2.4rem;
+    margin: 3.2rem 0;
+    border-radius: .8rem;
     color: #fff;
     font-size: 1.6rem;
+
+    @media screen and (min-width: 960px) {
+      border-radius: 0;
+    }
 
     &:first-child {
       border-top-left-radius: .8rem;
@@ -198,6 +203,11 @@
   .products, .product {
     background-color: darken($innsist-blue, 8%);
   }
+
+  .btn {
+    background-color: rgba($white, .5);
+    color: darken($innsist-blue, 8%);
+  }
 }
 
 .solutions > .hospitality::before {
@@ -210,6 +220,11 @@
   .products, .product {
     background-color: darken($health-blue, 8%);
   }
+
+  .btn {
+    background-color: rgba($white, .5);
+    color: darken($health-blue, 15%);
+  }
 }
 
 .solutions > .healthcare::before {
@@ -221,6 +236,11 @@
 
   .products, .product {
     background-color: darken($retail-purple, 8%);
+  }
+
+  .btn {
+    background-color: rgba($white, .5);
+    color: darken($retail-purple, 8%);
   }
 }
 
@@ -298,7 +318,23 @@
 }
 
 .product {
-  padding: 0 2.4rem 3.2rem;
+  padding: 0;
+  border-radius: 0 0 .8rem .8rem;
+
+  @media screen and (min-width: 960px) {
+    padding: 0 2.4rem 3.2rem;
+    border-radius: 0;
+  }
+
+  .products-list {
+    display: none;
+    padding: 0 1.6rem 1.6rem;
+
+    @media screen and (min-width: 960px) {
+      display: flex;
+    }
+  }
+
 
   &-category-title {
     margin: 0 0 .8rem;
@@ -326,4 +362,44 @@
       text-decoration: underline;
     }
   }
+
+  .btn {
+    width: 100%;
+    padding: .8rem;
+    border: 0;
+    border-radius: 0 0 .8rem .8rem;
+    font-size: 1.2rem;
+    border-top: .1rem solid rgba($white, .2);
+
+    @media screen and (min-width: 960px) {
+      display: none;
+    }
+
+    &.active + .products-list {
+      display: block;
+    }
+  }
 }
+
+/*
+.solutions {
+
+  > section::after {
+    content: 'Ver productos';
+    width: 100%;
+    position: absolute;
+    background: red;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    text-align: center;
+    font-size: 1rem;
+    padding: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+
+    @media screen and (min-width: 960px) {
+      content: none;
+    }
+  }
+}*/

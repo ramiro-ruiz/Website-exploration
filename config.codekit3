@@ -91,6 +91,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/a\/css\/scss\/components\/_carrers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/a\/css\/scss\/components\/_carrers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/a\/css\/scss\/components\/_client-portal.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -462,6 +475,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/a\/imgs\/carreras\/bolsatrabajo.jpg": {
+		"ft": 16384,
+		"iS": 116560,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/carreras\/bolsatrabajo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/a\/imgs\/clients\/grupo-posadas.png": {
 		"ft": 32768,
 		"iS": 9659,
@@ -813,11 +836,41 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/a\/imgs\/soluciones\/innsist\/Apartotel.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/soluciones\/innsist\/Apartotel.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/a\/imgs\/soluciones\/innsist\/Business-Class.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/a\/imgs\/soluciones\/innsist\/Business-Class.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/soluciones\/innsist\/Hotel-Express.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/soluciones\/innsist\/Hotel-Express.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/a\/imgs\/soluciones\/innsist\/Hotel-Hospital.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/a\/imgs\/soluciones\/innsist\/Hotel-Hospital.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1002,6 +1055,13 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"\/carreras.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/carreras.html",
+		"oF": 0
 		},
 	"\/hoteleria.html": {
 		"cB": 0,

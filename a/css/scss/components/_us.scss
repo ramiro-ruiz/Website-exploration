@@ -1,22 +1,31 @@
 .carrers {
-  margin: 4rem 8rem 8rem;
-  padding: 4rem 47% 4rem 4rem;
+  position: relative;
+  margin: 4rem 2.4rem 8rem;
+  padding: 22.4rem 2.4rem 2.4rem;
+
   border-radius: .8rem;
   background: $green-olive;
-  position: relative;
+
+  @media screen and (min-width: 960px) {
+    padding: 4rem 47% 4rem 4rem;
+    margin: 4rem 8rem 8rem;
+  }
 
   > .btn {
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
 
     @media screen and (min-width: 960px) {
-      margin-top: 0;
       position: relative;
-      transform: translateX(130%);
       z-index: 10;
       width: 60%;
+      margin-top: 0;
+      transform: translateX(100%);
       text-align: center;
 
       &:hover {
-        transform: translate(130%, -.2rem);
+        transform: translate(100%, -.2rem);
         opacity: 1;
       }
     }
@@ -25,11 +34,16 @@
   &::after {
     content: '';
     position: absolute;
-    width: 50%;
-    height: 100%;
     top: 0;
     right: 0;
+    width: 100%;
+    height: 20rem;
     background: url("../imgs/nosotros/carreras.jpg") center/cover no-repeat;
+
+    @media screen and (min-width: 960px) {
+      width: 50%;
+      height: 100%;
+    }
   }
 }
 
@@ -44,14 +58,24 @@
     }
 
   .blockmv {
-    display: flex;
     position: relative;
-    width: 100%;
-    margin: 2rem 0;
-    overflow: hidden;
     border-radius: .8rem;
     color: $white;
     text-align: center;
+
+    @media screen and (min-width: 960px) {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    & + .blockmv {
+      margin-top: 2.4rem;
+
+      @media screen and (min-width: 960px) {
+        margin-top: 0;
+      }
+    }
 
     & > * {
       z-index: 10;
@@ -59,11 +83,28 @@
 
     @media screen and (min-width: 960px) {
       flex-basis: 49%;
-      margin: 4rem 0;
 
       & + .blockmv {
         margin-left: 2%;
       }
+    }
+  }
+
+  .blockmv::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+    background-color: rgba(black, .5);
+
+    @media screen and (min-width: 960px) {
+      transition: opacity 0.2s ease;
+      opacity: 0;
     }
   }
 
@@ -76,7 +117,7 @@
      left: 0;
      width: 100%;
      height: 100%;
-     background-color: $dark-olive;
+     border-radius: .8rem;
   }
 
   .mision::after {
@@ -88,7 +129,9 @@
   }
 
   h2 {
+    position: relative;
     margin: auto;
+    padding-top: 2.4rem;
     transition: all 0.4s ease;
     text-transform: uppercase;
 
@@ -97,6 +140,7 @@
       top: 0; right: 0; bottom: 0; left: 0;
       height: 20%;
       margin: auto;
+      padding-top: 0;
       overflow: hidden;
       line-height: 1.6;
     }
@@ -106,12 +150,14 @@
   p {
     position: relative;
     margin: 0;
-    padding: 4rem;
-    transition: opacity 0.2s linear;
-    transition-delay: 0.1s;
-    opacity: 0;
-    background-color: rgba(black, .5);
+    padding: 1.6rem 2.4rem 2.4rem;
     text-align: left;
+
+    @media screen and (min-width: 960px) {
+      margin: auto;
+      padding: 4rem;
+      opacity: 0;
+    }
   }
 
   .blockmv:hover {
@@ -121,15 +167,40 @@
     }
 
     h2 {
-      transform: translateY(-50rem);
+
+      @media screen and (min-width: 960px) {
+        transform: translateY(-50rem);
+      }
+    }
+
+    &::before {
+      opacity: 1;
     }
   }
 }
 
 .history {
+  margin: 2.4rem;
+
+  .slick-next {
+    right: 0;
+
+    @media screen and (min-width: 960px) {
+      right: -25px;
+    }
+  }
+
+  .slick-prev {
+    left: -1.6rem;
+
+    @media screen and (min-width: 960px) {
+      left: -25px;
+    }
+  }
 
   @media screen and (min-width: 960px) {
     padding: 8rem 0 6.4rem;
+    margin: 2.4rem 0;
     overflow: hidden;
 
     &-intro {
@@ -143,24 +214,26 @@
       flex-basis: 48%;
       margin-right: 2%;
     }
+  }
 
     &-imgs {
 
       @media screen and (min-width: 960px) {
+        display: block;
         position: relative;
         flex-basis: 50%;
+        overflow: visible;
       }
 
       .history-img {
-        border: 1rem solid lighten($light-color, 2%);
-        box-shadow: 0 .4rem .4rem rgba(black, .3);
+        margin: 2.4rem;
+        display: inline-block;
 
         @media screen and (min-width: 960px) {
+          border: 1rem solid lighten($light-color, 2%);
+          box-shadow: 0 .4rem .4rem rgba(black, .3);
           position: absolute;
-
-          img {
-            width: 100%;
-          }
+          margin: 0;
 
           &::after {
             content: '';
@@ -174,45 +247,83 @@
           }
 
           &:nth-child(1) {
-            top: 10%;
-            left: 1%;
+            top: 4rem;
+            left: .8rem;
             width: 60%;
+            max-width: 33rem;
           }
 
           &:nth-child(2) {
-            top: -10%;
-            left: 36%;
+            top: -6.4rem;
+            left: 20rem;
             width: 50%;
+            max-width: 27rem;
           }
 
           &:nth-child(3) {
             z-index: 2;
-            top: 30%;
-            left: 44%;
+            top: 16rem;
+            left: 24rem;
             width: 80%;
+            max-width: 40rem;
           }
 
           &:nth-child(4) {
-            top: 5%;
-            left: 73%;
+            top: 1.6rem;
+            right: -10rem;
             width: 46%;
+            max-width: 24rem;
           }
 
           &:nth-child(5) {
             z-index: 2;
-            top: 60%;
-            left: 70%;
+            top: 28.8rem;
+            right: -16rem;
             width: 60%;
+            max-width: 30rem;
+          }
+        }
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          border: 1rem solid lighten($light-color, 2%);
+          box-shadow: 0 .4rem .4rem rgba(black, .3);
+
+          @media screen and (min-width: 960px) {
+            width: 100%;
+            border: 0;
+            box-shadow: none;
           }
         }
       }
+
+      &.slick-slider {
+        margin-bottom: 8rem;
+      }
+
+      .slick-track {
+        display: flex;
+      }
+
+      .slick-track .slick-slide {
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+      }
     }
-  }
 
   .timeline {
-    padding: 4rem 8rem;
+    margin: 0 -2.4rem;
+    padding: 4rem 0 4rem 2.4rem;
     background-color: $timeline-section;
     color: $white;
+
+    @media screen and (min-width: 960px) {
+      margin: 0;
+      padding: 4rem 8rem;
+    }
 
     > h2 {
       margin: 0 0 4rem;
@@ -222,13 +333,13 @@
 
       > .line-indicator::before {
         content: '';
+        position: absolute;
+        z-index: 50;
+        top: -.1rem;
+        left: -4rem;
         width: 4rem;
         height: 3.4rem;
-        position: absolute;
-        left: -4rem;
         background-color: $timeline-section;
-        top: -.1rem;
-        z-index: 50;
       }
     }
 
@@ -236,58 +347,58 @@
 
       &::before {
           content: '';
-          width: 100%;
-          height: .4rem;
           position: absolute;
+          z-index: 30;
           top: 30%;
           right: 0;
+          width: 100%;
+          height: .4rem;
           background-color: $white;
-          z-index: 30;
       }
 
       .line-indicator::before {
         content: '';
+        position: absolute;
+        top: -.1rem;
+        left: -4rem;
         width: 4rem;
         height: 3.4rem;
-        position: absolute;
-        left: -4rem;
         background-color: $timeline-section;
-        top: -.1rem;
       }
 
       &-date {
-        font-size: 4rem;
         margin-bottom: 1.6rem;
+        font-size: 4rem;
       }
 
       .line-indicator {
         display: block;
         position: relative;
+        top: .5rem;
         width: .8rem;
         height: 2.4rem;
-        top: .5rem;
-        background-color: $white;
         border-radius: .2rem;
+        background-color: $white;
       }
 
       &-text {
+        position: relative;
         margin-top: 3.2rem;
         padding: 2.4rem;
         border-radius: .4rem;
         background-color: $white;
-        font-size: 1.4rem;
         color: $text-color;
-        position: relative;
+        font-size: 1.4rem;
 
         &::after {
           content: '';
           position: absolute;
-          border-top: .8rem solid transparent;
-          border-left: .8rem solid $white;
-          border-right: .8rem solid transparent;
-          border-bottom: .8rem solid $white;
           top: -.8rem;
           left: 0;
+          border-top: .8rem solid transparent;
+          border-right: .8rem solid transparent;
+          border-bottom: .8rem solid $white;
+          border-left: .8rem solid $white;
           border-radius: .2rem;
         }
       }

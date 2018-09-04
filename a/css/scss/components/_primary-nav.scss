@@ -191,11 +191,22 @@
 
   &.active {
     padding-bottom: 0;
+    border-left: .2rem solid $innsist-shade;
+    padding-left: .4rem;
+    color: $innsist-blue;
+
+    &:hover {
+      transform: none;
+    }
   }
 
   &.active + ul {
     display: block;
     margin-bottom: 2.4rem;
+  }
+
+  &:hover {
+    transform: translateX(3px);
   }
 }
 

@@ -244,6 +244,9 @@
             </div>
           </a>
           <div class="product">
+            <button class="btn">
+              Ver todos los productos
+            </button>
             <ul class="products-list">
               <li class="products-category">
                 <h4 class="products-category-title">Back Office Suite</h4>
@@ -315,6 +318,9 @@
             </div>
           </a>
           <div class="product bottom">
+            <button class="btn">
+              Ver todos los productos
+            </button>
             <ul class="products-list">
               <li class="products-category">
                 <h4 class="products-category-title">Aplicaciones Principales</h4>
@@ -357,6 +363,9 @@
             </div>
           </a>
           <div class="product">
+            <button class="btn">
+              Ver todos los productos
+            </button>
             <ul class="products-list">
               <li class="products-category">
                 <h4 class="products-category-title">Aplicaciones Principales</h4>
@@ -521,7 +530,7 @@ $(document).ready(function(){
     $( this ).toggleClass( 'active' );
   });
 
-  var $moreprod = $('.solutions > section::after');
+  var $moreprod = $('.product > .btn');
 
   $moreprod.click(function() {
     $( this ).toggleClass( 'active' );

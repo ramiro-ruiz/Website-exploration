@@ -1231,9 +1231,17 @@ p + .btn {
       .solutions-benefits > h3 {
         font-size: 4rem; } }
   .solutions-benefits .slick-prev {
-    left: 0; }
+    left: 0;
+    z-index: 90; }
+    @media screen and (min-width: 960px) {
+      .solutions-benefits .slick-prev {
+        left: -2.4rem; } }
   .solutions-benefits .slick-next {
-    right: 0; }
+    right: 0;
+    z-index: 90; }
+    @media screen and (min-width: 960px) {
+      .solutions-benefits .slick-next {
+        right: -2.4rem; } }
 
 .extra-material {
   margin: 4rem 2.4rem;

@@ -501,9 +501,11 @@ p + .btn {
     margin-top: 0;
     font-size: 2.1rem; }
 
-@media screen and (min-width: 960px) {
-  .solutions.one-category {
-    margin: 8rem; } }
+.solutions.one-category {
+  margin: 0 2.4rem; }
+  @media screen and (min-width: 960px) {
+    .solutions.one-category {
+      margin: 8rem; } }
 
 /*-----------------------------------
     Components
@@ -1056,28 +1058,6 @@ p + .btn {
     .product .btn.active + .products-list {
       display: block; }
 
-/*
-.solutions {
-
-  > section::after {
-    content: 'Ver productos';
-    width: 100%;
-    position: absolute;
-    background: red;
-    bottom: 0;
-    left: 0;
-    z-index: 50;
-    text-align: center;
-    font-size: 1rem;
-    padding: .8rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-
-    @media screen and (min-width: 960px) {
-      content: none;
-    }
-  }
-}*/
 .extra {
   padding: 3.2rem;
   flex-basis: 50%; }
@@ -1250,25 +1230,40 @@ p + .btn {
     @media screen and (min-width: 960px) {
       .solutions-benefits > h3 {
         font-size: 4rem; } }
+  .solutions-benefits .slick-prev {
+    left: 0; }
+  .solutions-benefits .slick-next {
+    right: 0; }
 
 .extra-material {
-  margin: 6.4rem 8rem;
-  display: flex;
-  height: 40rem; }
+  margin: 4rem 2.4rem;
+  display: block; }
+  @media screen and (min-width: 960px) {
+    .extra-material {
+      margin: 6.4rem 8rem;
+      display: flex;
+      height: 40rem; } }
   .extra-material-text {
     flex-basis: 50%;
     margin-right: 3%; }
     .extra-material-text h3 {
-      font-size: 2.8rem; }
+      font-size: 3.2rem; }
   .extra-material-video {
     flex-basis: 50%; }
     .extra-material-video iframe {
       border-radius: .8rem .8rem 0 0;
-      height: 76%; }
+      height: 40%;
+      margin-top: 1.6rem; }
+      @media screen and (min-width: 960px) {
+        .extra-material-video iframe {
+          height: 76%; } }
   .extra-material-links {
     background-color: #34495E;
-    padding: 1.6rem 2.4rem;
+    padding: 1.6rem;
     border-radius: 0 0 .8rem .8rem; }
+    @media screen and (min-width: 960px) {
+      .extra-material-links {
+        padding: 1.6rem 2.4rem; } }
     .extra-material-links ul {
       display: flex;
       justify-content: space-between; }
@@ -1276,7 +1271,11 @@ p + .btn {
       display: flex;
       align-items: center;
       color: #fff;
-      opacity: .8; }
+      opacity: .8;
+      font-size: 1.2rem; }
+      @media screen and (min-width: 960px) {
+        .extra-material-links li a {
+          font-size: 1.8rem; } }
       .extra-material-links li a:hover {
         opacity: 1; }
       .extra-material-links li a svg {
@@ -1341,40 +1340,47 @@ p + .btn {
   display: flex; }
 
 .tabs {
-  margin: 8rem 8rem 16rem;
+  margin: 8rem 2.4rem;
   padding: 8rem 0 0; }
+  @media screen and (min-width: 960px) {
+    .tabs {
+      margin: 8rem 8rem 16rem; } }
   .tabs-wrapper {
     display: grid;
-    border-radius: .4rem;
-    border-top: 1.6rem solid #7286A0;
     grid-template-columns: 1fr 3fr;
+    border-top: 1.6rem solid #7286A0;
+    border-radius: .4rem;
     box-shadow: 0 0.2rem 0.3rem 0 rgba(56, 56, 56, 0.3); }
   .tabs > h3 {
-    font-size: 3.2rem;
-    padding-bottom: 1.6rem;
     grid-column: 1/-1;
-    color: #506076; }
+    padding-bottom: 1.6rem;
+    color: #506076;
+    font-size: 3.2rem; }
 
 .tab {
+  grid-column: 1/2;
   border-top: 0.2rem solid #7286A0;
   border-bottom: 2px solid #7286A0;
   border-left: 2px solid #7286A0;
-  background-color: #7286A0;
   border-radius: 0 0 0 .4rem;
-  grid-column: 1/2; }
+  background-color: #7286A0; }
   .tab button {
     display: block;
-    background-color: #7286A0;
-    color: #fff;
-    padding: 2.4rem 1.6rem;
     width: 100%;
+    padding: 1.6rem .8rem;
+    transition: 0.3s;
     border: none;
     outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
+    background-color: #7286A0;
+    color: #fff;
     font-size: 1.4rem;
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer; }
+    @media screen and (min-width: 960px) {
+      .tab button {
+        padding: 2.4rem 1.6rem;
+        font-size: 1.4rem; } }
     .tab button:hover {
       background-color: #34495E;
       color: #fff; }
@@ -1384,14 +1390,17 @@ p + .btn {
 
 /* Style the tab content */
 .tabcontent {
-  padding: 4rem 8rem 0;
+  grid-column: 2/3;
+  padding: .8rem 1.6rem 0;
   border-top: 2px solid #7286A0;
   border-right: 2px solid #7286A0;
   border-bottom: 2px solid #7286A0;
   border-left: none;
   border-radius: 0 0 .4rem 0;
-  grid-column: 2/3;
   background-image: linear-gradient(180deg, #FFFFFF 38.29%, #ECECEC 100%); }
+  @media screen and (min-width: 960px) {
+    .tabcontent {
+      padding: 4rem 8rem 0; } }
   .tabcontent > h3 {
     font-size: 2.4rem; }
   .tabcontent > p {

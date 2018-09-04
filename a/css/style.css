@@ -1373,7 +1373,7 @@ p + .btn {
     outline: none;
     background-color: #7286A0;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: left;
     cursor: pointer; }
@@ -1404,7 +1404,10 @@ p + .btn {
   .tabcontent > h3 {
     font-size: 2.4rem; }
   .tabcontent > p {
-    font-size: 1.8rem; }
+    font-size: 1.6rem; }
+    @media screen and (min-width: 960px) {
+      .tabcontent > p {
+        font-size: 1.8rem; } }
 
 /*-----------------------------------
     Pages

@@ -244,19 +244,19 @@
         </div>
         <div class="history-imgs">
           <div class="history-img">
-            <img src="a/imgs/nosotros/historia/todos.jpg" >
+            <img class="slide" src="a/imgs/nosotros/historia/todos.jpg" >
           </div>
           <div class="history-img">
-            <img src="a/imgs/nosotros/historia/edificio.jpg" >
+            <img class="slide" src="a/imgs/nosotros/historia/edificio.jpg" >
           </div>
           <div class="history-img">
-            <img src="a/imgs/nosotros/historia/campeones.jpg" >
+            <img class="slide" src="a/imgs/nosotros/historia/campeones.jpg" >
           </div>
           <div class="history-img">
-            <img src="a/imgs/nosotros/historia/pasillo.jpg" >
+            <img class="slide" src="a/imgs/nosotros/historia/pasillo.jpg" >
           </div>
           <div class="history-img">
-            <img src="a/imgs/nosotros/historia/trabajando.jpg" >
+            <img class="slide" src="a/imgs/nosotros/historia/trabajando.jpg" >
           </div>
         </div>
       </div>
@@ -494,7 +494,6 @@
             breakpoint: 520,
             settings: {
                 slidesToShow: 1,
-                arrows: false
             }
         }]
     });
@@ -515,15 +514,19 @@
     });
   });
 
-  $("#mouse").mouseover(function(){
-  $("#mouse").addClass("nover").removeClass("ver")
-  $("#aparece").addClass("ver").removeClass("nover")
-})
+  if (window.matchMedia("(max-width: 520px)").matches) {
+  /* the viewport is less than 768 pixels wide */
+  $('.history-imgs').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      arrows: true,
+      dots: true,
+      pauseOnHover: false
+  });
+  }
 
-$("#aparece").mouseout(function(){
-  $("#aparece").addClass("nover").removeClass("ver")
-  $("#mouse").addClass("ver").removeClass("nover")
-})
   </script>
 </body>
 </html>

@@ -1498,6 +1498,16 @@ p + .btn {
 
 .history {
   margin: 2.4rem; }
+  .history .slick-next {
+    right: 0; }
+    @media screen and (min-width: 960px) {
+      .history .slick-next {
+        right: -25px; } }
+  .history .slick-prev {
+    left: -1.6rem; }
+    @media screen and (min-width: 960px) {
+      .history .slick-prev {
+        left: -25px; } }
   @media screen and (min-width: 960px) {
     .history {
       padding: 8rem 0 6.4rem;
@@ -1510,68 +1520,76 @@ p + .btn {
       .history-text {
         flex-basis: 48%;
         margin-right: 2%; } }
-  .history-imgs {
-    display: flex;
-    overflow: hidden;
-    overflow-x: scroll; }
+  @media screen and (min-width: 960px) {
+    .history-imgs {
+      display: block;
+      position: relative;
+      flex-basis: 50%;
+      overflow: visible; } }
+  .history-imgs .history-img {
+    margin: 2.4rem;
+    display: inline-block; }
     @media screen and (min-width: 960px) {
-      .history-imgs {
-        display: block;
-        position: relative;
-        flex-basis: 50%;
-        overflow: visible; } }
-    .history-imgs .history-img {
-      align-self: flex-start;
-      margin: 2.4rem;
+      .history-imgs .history-img {
+        border: 1rem solid #f6f5f8;
+        box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+        position: absolute;
+        margin: 0; }
+        .history-imgs .history-img::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(187, 161, 123, 0.2); }
+        .history-imgs .history-img:nth-child(1) {
+          top: 4rem;
+          left: .8rem;
+          width: 60%;
+          max-width: 33rem; }
+        .history-imgs .history-img:nth-child(2) {
+          top: -6.4rem;
+          left: 20rem;
+          width: 50%;
+          max-width: 27rem; }
+        .history-imgs .history-img:nth-child(3) {
+          z-index: 2;
+          top: 16rem;
+          left: 24rem;
+          width: 80%;
+          max-width: 40rem; }
+        .history-imgs .history-img:nth-child(4) {
+          top: 1.6rem;
+          right: -10rem;
+          width: 46%;
+          max-width: 24rem; }
+        .history-imgs .history-img:nth-child(5) {
+          z-index: 2;
+          top: 28.8rem;
+          right: -16rem;
+          width: 60%;
+          max-width: 30rem; } }
+    .history-imgs .history-img img {
+      max-width: 100%;
+      max-height: 100%;
       border: 1rem solid #f6f5f8;
       box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3); }
       @media screen and (min-width: 960px) {
-        .history-imgs .history-img {
-          position: absolute; }
-          .history-imgs .history-img::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(187, 161, 123, 0.2); }
-          .history-imgs .history-img:nth-child(1) {
-            top: 4rem;
-            left: .8rem;
-            width: 60%;
-            max-width: 33rem; }
-          .history-imgs .history-img:nth-child(2) {
-            top: -6.4rem;
-            left: 20rem;
-            width: 50%;
-            max-width: 27rem; }
-          .history-imgs .history-img:nth-child(3) {
-            z-index: 2;
-            top: 16rem;
-            left: 24rem;
-            width: 80%;
-            max-width: 40rem; }
-          .history-imgs .history-img:nth-child(4) {
-            top: 1.6rem;
-            right: -10rem;
-            width: 46%;
-            max-width: 24rem; }
-          .history-imgs .history-img:nth-child(5) {
-            z-index: 2;
-            top: 28.8rem;
-            right: -16rem;
-            width: 60%;
-            max-width: 30rem; } }
-      .history-imgs .history-img img {
-        max-width: 30rem;
-        max-height: 20rem; }
-        @media screen and (min-width: 960px) {
-          .history-imgs .history-img img {
-            width: 100%;
-            max-width: 100%;
-            max-height: 100%; } }
+        .history-imgs .history-img img {
+          width: 100%;
+          border: 0;
+          box-shadow: none; } }
+  .history-imgs.slick-slider {
+    margin-bottom: 8rem; }
+  .history-imgs .slick-track {
+    display: flex; }
+  .history-imgs .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center; }
   .history .timeline {
     margin: 0 -2.4rem;
     padding: 4rem 0 4rem 2.4rem;

@@ -197,6 +197,7 @@
 
   .products, .product {
     background-color: darken($innsist-blue, 8%);
+    display: none;
   }
 }
 
@@ -209,6 +210,7 @@
 
   .products, .product {
     background-color: darken($health-blue, 8%);
+    display: none;
   }
 }
 
@@ -221,6 +223,7 @@
 
   .products, .product {
     background-color: darken($retail-purple, 8%);
+    display: none;
   }
 }
 

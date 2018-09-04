@@ -21,11 +21,11 @@
       z-index: 10;
       width: 60%;
       margin-top: 0;
-      transform: translateX(130%);
+      transform: translateX(100%);
       text-align: center;
 
       &:hover {
-        transform: translate(130%, -.2rem);
+        transform: translate(100%, -.2rem);
         opacity: 1;
       }
     }
@@ -200,6 +200,7 @@
 
   @media screen and (min-width: 960px) {
     padding: 8rem 0 6.4rem;
+    margin: 2.4rem 0;
     overflow: hidden;
 
     &-intro {

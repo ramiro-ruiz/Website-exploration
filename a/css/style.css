@@ -16,6 +16,7 @@
   src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -234,6 +235,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"); }
+
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
@@ -458,7 +460,6 @@ p + .btn {
   @media screen and (min-width: 960px) and (min-width: 960px) {
     .main-footer .footer-category-list-products li ul > li {
       display: flex; } }
-
     .main-footer .footer-category-list h4 {
       margin: 1.2rem 0 .8rem;
       color: #AFB1AC;
@@ -643,6 +644,7 @@ p + .btn {
 @media screen and (min-width: 960px) {
   .mobile-toggle {
     display: none; } }
+
 .suite-name {
   padding-bottom: .8rem; }
   .suite-name + ul {
@@ -802,6 +804,7 @@ p + .btn {
   .solutions .products-category {
     min-width: 33%;
     margin: 3.2rem 0 0; }
+
 @media screen and (min-width: 960px) {
   .solutions > .hospitality > a::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
@@ -836,6 +839,7 @@ p + .btn {
       .solutions .products a:hover {
         opacity: .9;
         text-decoration: underline; } }
+
 .solutions > section {
   position: relative;
   margin: 3.2rem 2.4rem;
@@ -1225,7 +1229,8 @@ p + .btn {
       z-index: 10; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info > p {
       font-size: 1.8rem; }
-    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > * {
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves > *,
+    .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas > * {
       color: #fff; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.ama-llaves::before, .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas::before {
       content: '';
@@ -1251,6 +1256,7 @@ p + .btn {
       background: url("../imgs/beneficios/ama-llaves2.jpg") center/cover no-repeat; }
     .solutions-benefits .cintilla-beneficios .slide .cards-list-item-info.finanzas {
       background: url("../imgs/beneficios/finanzas.jpg") center/cover no-repeat; }
+
 .solutions-benefits li strong {
   display: block;
   margin-bottom: .8rem;
@@ -1608,7 +1614,7 @@ p + .btn {
   background: #F0EFF4; }
   @media screen and (min-width: 960px) {
     .bolsatrabajo {
-      padding: 4rem 47% 4rem 4rem;
+      padding: 4rem 4rem 4rem 47%;
       margin: 4rem 8rem 8rem; } }
   .bolsatrabajo > .btn {
     width: 20rem;
@@ -1619,21 +1625,20 @@ p + .btn {
         z-index: 10;
         width: 60%;
         margin-top: 0;
-        transform: translateX(130%);
+        transform: translateX(-75%);
         text-align: center; }
         .bolsatrabajo > .btn:hover {
-          transform: translate(130%, -0.2rem);
+          transform: translate(-75%, -0.2rem);
           opacity: 1; } }
   .bolsatrabajo::after {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 20rem;
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../imgs/carreras/bolsatrabajo.jpg") center/cover no-repeat;
-    border-top-right-radius: .8rem;
-    border-bottom-right-radius: .8rem; }
+    border-radius: .8rem 0 0 .8rem; }
     @media screen and (min-width: 960px) {
       .bolsatrabajo::after {
         width: 50%;
@@ -1663,7 +1668,8 @@ p + .btn {
         .blogcontacto .blockbc + .blockbc {
           margin-top: 0; } }
     .blogcontacto .blockbc > * {
-      z-index: 10; }
+      z-index: 10;
+      color: #fff; }
     @media screen and (min-width: 960px) {
       .blogcontacto .blockbc {
         flex-basis: 49%; }
@@ -1776,12 +1782,14 @@ p + .btn {
   margin: 0 4rem 4rem;
   border-bottom-right-radius: .8rem;
   border-bottom-left-radius: .8rem;
-  background: #ccc;
+  background: #F0EFF4;
   text-align: center; }
   @media screen and (min-width: 960px) {
     .university {
-      padding: 8rem;
+      padding: 4rem;
       margin: 0 8rem 4rem; } }
+  .university > p {
+    margin: 0; }
 
 /*-----------------------------------
     Utilities
@@ -1800,5 +1808,3 @@ p + .btn {
   @media screen and (min-width: 768px) {
     .two-sections {
       display: flex; } }
-
-/*# sourceMappingURL=style.css.map */

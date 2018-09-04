@@ -198,6 +198,10 @@
   .products, .product {
     background-color: darken($innsist-blue, 8%);
     display: none;
+
+    @media screen and (min-width: 960px) {
+      display: block;
+    }
   }
 }
 
@@ -211,6 +215,10 @@
   .products, .product {
     background-color: darken($health-blue, 8%);
     display: none;
+
+    @media screen and (min-width: 960px) {
+      display: block;
+    }
   }
 }
 
@@ -224,6 +232,10 @@
   .products, .product {
     background-color: darken($retail-purple, 8%);
     display: none;
+
+    @media screen and (min-width: 960px) {
+      display: block;
+    }
   }
 }
 

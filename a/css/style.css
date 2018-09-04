@@ -932,6 +932,9 @@ p + .btn {
   .solutions > .hospitality .products, .solutions > .hospitality .product {
     background-color: #253544;
     display: none; }
+    @media screen and (min-width: 960px) {
+      .solutions > .hospitality .products, .solutions > .hospitality .product {
+        display: block; } }
 
 .solutions > .hospitality::before {
   background-color: #34495E; }
@@ -941,6 +944,9 @@ p + .btn {
   .solutions > .healthcare .products, .solutions > .healthcare .product {
     background-color: #387caa;
     display: none; }
+    @media screen and (min-width: 960px) {
+      .solutions > .healthcare .products, .solutions > .healthcare .product {
+        display: block; } }
 
 .solutions > .healthcare::before {
   background-color: #4891C3; }
@@ -950,6 +956,9 @@ p + .btn {
   .solutions > .retail .products, .solutions > .retail .product {
     background-color: #713c64;
     display: none; }
+    @media screen and (min-width: 960px) {
+      .solutions > .retail .products, .solutions > .retail .product {
+        display: block; } }
 
 .solutions > .retail::before {
   background-color: #8C4A7C; }

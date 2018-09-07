@@ -1674,7 +1674,7 @@ p + .btn {
         margin: 0;
         padding: 4rem 8rem; } }
     .history .timeline > h2 {
-      margin: 0 0 4rem; }
+      margin: 0 0 4rem 2.4rem; }
     .history .timeline .beginning > .line-indicator::before {
       content: '';
       position: absolute;

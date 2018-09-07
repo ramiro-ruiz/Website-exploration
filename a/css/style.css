@@ -422,31 +422,33 @@ p + .btn {
       @media screen and (min-width: 960px) {
         .main-footer .footer-category-list + .main-footer .footer-category-list {
           margin: 0 0 0 10%; } }
-    .main-footer .footer-category-list.acerca {
-      flex-basis: 25%; }
-      @media screen and (min-width: 960px) {
-        @supports (display: grid) {
-          .main-footer .footer-category-list.acerca {
-            grid-column: 1/4; }
-          .main-footer .footer-category-list.acerca.footer-category-list-products {
-            display: grid;
-            grid-template-columns: 5fr 1fr 5fr; }
-            .main-footer .footer-category-list.acerca.footer-category-list-products li:last-child {
-              grid-column: 3/4; } } }
-    .main-footer .footer-category-list.solutions-footer {
-      flex-basis: 65%; }
-      @media screen and (min-width: 960px) {
-        @supports (display: grid) {
-          .main-footer .footer-category-list.solutions-footer {
-            display: grid;
-            grid-column: 5/10; }
-          .main-footer .footer-category-list.solutions-footer .footer-category-list-products {
-            display: grid;
-            grid-template-columns: repeat(2, 5fr 1fr) 5fr; }
-            .main-footer .footer-category-list.solutions-footer .footer-category-list-products li:nth-child(2) {
-              grid-column: 3/4; }
-            .main-footer .footer-category-list.solutions-footer .footer-category-list-products li:last-child {
-              grid-column: 5/6; } } }
+    @media screen and (min-width: 960px) {
+      .main-footer .footer-category-list.acerca {
+        flex-basis: 25%; } }
+    @media screen and (min-width: 960px) {
+      @supports (display: grid) {
+        .main-footer .footer-category-list.acerca {
+          grid-column: 1/4; }
+        .main-footer .footer-category-list.acerca.footer-category-list-products {
+          display: grid;
+          grid-template-columns: 5fr 1fr 5fr; }
+          .main-footer .footer-category-list.acerca.footer-category-list-products li:last-child {
+            grid-column: 3/4; } } }
+    @media screen and (min-width: 960px) {
+      .main-footer .footer-category-list.solutions-footer {
+        flex-basis: 65%; } }
+    @media screen and (min-width: 960px) {
+      @supports (display: grid) {
+        .main-footer .footer-category-list.solutions-footer {
+          display: grid;
+          grid-column: 5/10; }
+        .main-footer .footer-category-list.solutions-footer .footer-category-list-products {
+          display: grid;
+          grid-template-columns: repeat(2, 5fr 1fr) 5fr; }
+          .main-footer .footer-category-list.solutions-footer .footer-category-list-products li:nth-child(2) {
+            grid-column: 3/4; }
+          .main-footer .footer-category-list.solutions-footer .footer-category-list-products li:last-child {
+            grid-column: 5/6; } } }
     .main-footer .footer-category-list-products {
       display: flex;
       flex-flow: column; }

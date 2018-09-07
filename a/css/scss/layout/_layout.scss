@@ -114,7 +114,10 @@ p + .btn {
 
       &-list {
         &.acerca {
-          flex-basis: 25%;
+
+          @media screen and (min-width: 960px) {
+            flex-basis: 25%;
+          }
 
           @media screen and (min-width: 960px) {
             @supports (display: grid) {
@@ -137,7 +140,10 @@ p + .btn {
         }
 
         &.solutions-footer {
-          flex-basis: 65%;
+          
+          @media screen and (min-width: 960px) {
+            flex-basis: 65%;
+          }
 
           @media screen and (min-width: 960px) {
             @supports (display: grid) {

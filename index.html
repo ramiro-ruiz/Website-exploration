@@ -474,7 +474,13 @@
                 <li><a href="#">CRM Suite</a></li>
                 <li><a href="#">Revenue Centers Suite</a></li>
                 <li><a href="#">Corporate Tools Suite</a></li>
-                <li><a href="#">Front Office Suite</a></li>
+                <li class="multi-footer">
+                  <a class="expandable" href="#">Front Office Suite</a>
+                  <ul>
+                    <li><a href="innsist-pms.html">Innsist Property Management System</a></li>
+                    <li><a href="#">Innsist Front Desk App Móvil</a></li>
+                  </ul>
+                </li>
                 <li><a href="#">Guests Suite</a></li>
                 <li><a href="#">Business Intelligence Suite</a></li>
                 <li><a href="#">Electronic Invoice Suite</a></li>
@@ -544,6 +550,11 @@ $(document).ready(function(){
   $suitelink.click(function() {
     $( this ).toggleClass( 'active' );
   });
+
+$('.multi-footer .expandable').click(function() {
+  $( this ).toggleClass( 'active' );
+  return false;
+});
 
   var $langlink = $('.language-nav');
 

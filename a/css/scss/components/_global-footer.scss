@@ -79,11 +79,17 @@
       }
 
       &.acerca {
-        flex-basis: 25%;
+
+        @media screen and (min-width: 960px) {
+          flex-basis: 25%;
+        }
       }
 
       &.solutions-footer {
-        flex-basis: 65%;
+
+        @media screen and (min-width: 960px) {
+          flex-basis: 65%;
+        }
       }
 
       &-products {

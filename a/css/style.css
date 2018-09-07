@@ -1197,10 +1197,12 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .main-footer .footer-category-list + .footer-category-list {
       margin-top: 0; } }
-  .main-footer .footer-category-list.acerca {
-    flex-basis: 25%; }
-  .main-footer .footer-category-list.solutions-footer {
-    flex-basis: 65%; }
+  @media screen and (min-width: 960px) {
+    .main-footer .footer-category-list.acerca {
+      flex-basis: 25%; } }
+  @media screen and (min-width: 960px) {
+    .main-footer .footer-category-list.solutions-footer {
+      flex-basis: 65%; } }
   .main-footer .footer-category-list-products li ul > li {
     display: none; }
     @media screen and (min-width: 960px) {

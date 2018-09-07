@@ -475,11 +475,73 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/a\/imgs\/carreras\/blog.jpg": {
+		"ft": 16384,
+		"iS": 65661,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/carreras\/blog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/a\/imgs\/carreras\/bolsatrabajo.jpg": {
 		"ft": 16384,
 		"iS": 116560,
 		"oA": 0,
 		"oAP": "\/a\/imgs\/carreras\/bolsatrabajo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/carreras\/carreras.jpg": {
+		"ft": 16384,
+		"iS": 269398,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/carreras\/carreras.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/carreras\/contacto.jpg": {
+		"ft": 16384,
+		"iS": 61573,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/carreras\/contacto.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/a\/imgs\/carreras\/grid-photos-2.png": {
+		"ft": 32768,
+		"iS": 71930,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/carreras\/grid-photos-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/a\/imgs\/carreras\/grid-photos.png": {
+		"ft": 32768,
+		"iS": 2684829,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/carreras\/grid-photos.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/a\/imgs\/carreras\/university.jpg": {
+		"ft": 16384,
+		"iS": 124523,
+		"oA": 0,
+		"oAP": "\/a\/imgs\/carreras\/university.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

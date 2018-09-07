@@ -22,14 +22,6 @@
       </a>
     </h1>
 
-  <nav class="top-nav">
-    <a href="#" class="mobile-toggle">
-      <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="25" height="3" rx="1" fill="white"/>
-        <rect width="25" height="3" rx="1" transform="translate(0 8)" fill="white"/>
-        <rect width="25" height="3" rx="1" transform="translate(0 16)" fill="white"/>
-      </svg>
-    </a>
     <nav class="top-nav">
       <a href="#" class="mobile-toggle">
         <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -345,7 +337,7 @@
 
   <section class="solutions one-category">
     <section class="hospitality">
-      <a href="#">
+      <a href="soluciones.html">
         <div class="solution-info">
           <h2>Soluciones completas</h2>
           <p>ERP que brinda soluciones integradas a las necesidades de hoteles y grupos hoteleros en las áreas de operación y administración.</p>
@@ -554,6 +546,12 @@ $(document).ready(function(){
   var $suitelink = $('.suite-name');
 
   $suitelink.click(function() {
+    $( this ).toggleClass( 'active' );
+  });
+
+  var $langlink = $('.language-nav');
+
+  $langlink.click(function() {
     $( this ).toggleClass( 'active' );
   });
 

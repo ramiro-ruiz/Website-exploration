@@ -685,7 +685,7 @@ p + .btn {
   color: #383838;
   font-size: 1rem;
   opacity: .7; }
-  .language-nav:hover, .language-nav:focus, .language-nav:active {
+  .language-nav:hover, .language-nav:focus, .language-nav:active, .language-nav.active {
     opacity: 1; }
   @media screen and (min-width: 960px) {
     .language-nav {
@@ -701,9 +701,9 @@ p + .btn {
       width: 1.1rem; }
     .language-nav .current-lang .st0 {
       fill: #383838; }
-  .language-nav:hover, .language-nav:focus, .language-nav:active {
+  .language-nav:hover, .language-nav:focus, .language-nav:active, .language-nav.active {
     border-radius: 0; }
-    .language-nav:hover .more-langs, .language-nav:focus .more-langs, .language-nav:active .more-langs {
+    .language-nav:hover .more-langs, .language-nav:focus .more-langs, .language-nav:active .more-langs, .language-nav.active .more-langs {
       display: block; }
   .language-nav .more-langs {
     display: none;

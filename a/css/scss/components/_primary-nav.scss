@@ -226,8 +226,6 @@
   opacity: .7;
 
   &:hover,
-  &:focus,
-  &:active,
   &.active {
     opacity: 1;
   }
@@ -258,8 +256,6 @@
   }
 
   &:hover,
-  &:focus,
-  &:active,
   &.active {
     border-radius: 0;
 

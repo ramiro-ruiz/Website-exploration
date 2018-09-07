@@ -1105,7 +1105,7 @@ p + .btn {
 
 .our-clients {
   margin: 4rem 0 0;
-  padding: 4rem 2.4rem;
+  padding: 4rem 2.4rem 7.2rem;
   background-color: #F0EFF4; }
   @media screen and (min-width: 960px) {
     .our-clients {
@@ -1136,6 +1136,18 @@ p + .btn {
       .client-logos .logo img {
         width: 100%;
         max-width: 100%; } }
+  .client-logos .slick-prev {
+    left: 0;
+    z-index: 90; }
+    @media screen and (min-width: 960px) {
+      .client-logos .slick-prev {
+        left: -2.4rem; } }
+  .client-logos .slick-next {
+    right: 0;
+    z-index: 90; }
+    @media screen and (min-width: 960px) {
+      .client-logos .slick-next {
+        right: -2.4rem; } }
   .client-logos .slick-slide {
     margin: 0 1.6rem; }
     @media screen and (min-width: 960px) {

@@ -226,7 +226,8 @@
   opacity: .7;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     opacity: 1;
   }
 
@@ -256,7 +257,8 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     border-radius: 0;
 
     .more-langs {

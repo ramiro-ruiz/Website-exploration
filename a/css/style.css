@@ -1231,6 +1231,21 @@ p + .btn {
     .main-footer .footer-category h4 + ul > li {
       margin: .4rem 0; }
 
+.multi-footer {
+  flex-wrap: wrap; }
+  .multi-footer ul {
+    display: none;
+    margin: .8rem 0 2.4rem .8rem; }
+    .multi-footer ul li + li {
+      padding-top: .8rem; }
+    .multi-footer ul li > a {
+      text-decoration: underline;
+      opacity: .8; }
+      .multi-footer ul li > a:hover {
+        opacity: 1; }
+  .multi-footer .expandable.active + ul {
+    display: block; }
+
 .solutions-benefits {
   margin: 8rem 0; }
   @media screen and (min-width: 960px) {

@@ -138,3 +138,29 @@
     }
   }
 }
+
+.multi-footer {
+  flex-wrap: wrap;
+
+  ul {
+    display: none;
+    margin: .8rem 0 2.4rem .8rem;
+
+    li + li {
+      padding-top: .8rem;
+    }
+
+    li > a {
+      text-decoration: underline;
+      opacity: .8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .expandable.active + ul {
+    display: block;
+  }
+}

@@ -15,11 +15,11 @@
       max-height: 40rem;
       padding: 2.4rem 0;
       transition: all .2s ease;
-      border-bottom-left-radius: .4rem;
-      border-bottom-right-radius: .4rem;
+      //border-bottom-left-radius: .4rem;
+      //border-bottom-right-radius: .4rem;
       opacity: 1;
       background-color: $white;
-      box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
+      //box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
 
       li + li {
         margin-top: 1.6rem;
@@ -127,10 +127,10 @@
               height: 0;
               transition: all .2s ease;
               transition: all .2s ease;
-              border-bottom-left-radius: .4rem;
-              border-bottom-right-radius: .4rem;
+              //border-bottom-left-radius: .4rem;
+              //border-bottom-right-radius: .4rem;
               background-color: $white;
-              box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
+              //box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
             }
           }
 
@@ -219,7 +219,7 @@
   right: 1.6rem;
   align-items: center;
   padding: .2rem .4rem;
-  border-radius: 0 0 .2rem .2rem;
+  //border-radius: 0 0 .2rem .2rem;
   background-color: rgba($white, .8);
   color: $text-color;
   font-size: 1rem;
@@ -257,7 +257,7 @@
 
   &:hover,
   &.active {
-    border-radius: 0;
+    //border-radius: 0;
 
     .more-langs {
       display: block;
@@ -271,9 +271,9 @@
   	right: 0;
     width: 4.1rem;
   	padding: 0;
-    border-radius: 0 0 .4rem .4rem;
+    //border-radius: 0 0 .4rem .4rem;
   	background: rgba($text-color, .9);
-    box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
+    //box-shadow: 0 .2rem .2rem 0 rgba($text-color, .5);
     text-align: center;
 
     @media screen and (min-width: 960px) {

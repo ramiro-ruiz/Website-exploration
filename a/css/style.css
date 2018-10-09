@@ -808,13 +808,8 @@ p + .btn {
     background: url(../imgs/retail.jpg) center/cover no-repeat; }
   .solutions .products {
     display: block;
-    position: absolute;
-    height: 0;
     padding: 0 2.4rem 3.2rem;
-    overflow: hidden;
-    transform: translateY(-100%);
     transition: all ease .2s;
-    opacity: 0;
     background-color: #253544; }
     .solutions .products-category-title {
       margin: 0 0 .8rem;

@@ -523,6 +523,36 @@ p + .btn {
     .main-header {
       padding: 4rem; } }
 
+.nav-sup {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  margin-top: -2rem;
+  font-size: 1.4rem;
+  color: #fff; }
+  .nav-sup a {
+    color: #fff; }
+  .nav-sup a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+  .nav-sup li {
+    margin-left: 2rem; }
+  .nav-sup .dropdown {
+    position: relative;
+    display: inline-block; }
+    .nav-sup .dropdown li {
+      margin-left: 0;
+      padding-bottom: 1rem; }
+  .nav-sup .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #383838;
+    min-width: 100%;
+    padding: 1rem 2rem;
+    z-index: 1; }
+  .nav-sup .dropdown:hover .dropdown-content {
+    display: block; }
+
 .top-nav > .nav {
   position: absolute;
   right: 2.4rem;
@@ -569,7 +599,7 @@ p + .btn {
           display: flex;
           visibility: hidden;
           position: absolute;
-          top: 7.8rem;
+          top: 9.8rem;
           right: 4rem;
           padding: 3.2rem 5.6rem 4rem;
           width: 96%;

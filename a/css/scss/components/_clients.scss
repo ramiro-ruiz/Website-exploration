@@ -1,0 +1,97 @@
+.client-portal {
+  flex-basis: 50%;
+  padding: 3.2rem;
+  background-color: $green-olive;
+
+  > h2 {
+    margin-bottom: .8rem;
+  }
+
+  @media screen and (min-width: 960px) {
+    & {
+      padding: 8rem 4.8rem;
+    }
+  }
+}
+
+
+.casosexitoh {
+  margin: 2.4rem;
+
+  &-intro {
+    background-color: $innsist-blue;
+    color: $white;
+    padding: 4rem 2rem;
+  }
+
+  @media screen and (min-width: 960px) {
+    //padding: 8rem 0 6.4rem;
+    //margin: 2.4rem 0;
+    overflow: hidden;
+
+    &-intro {
+      display: flex;
+      flex-wrap: wrap;
+      //padding: 4rem 8rem;
+    }
+
+    &-text {
+      flex-basis: 48%;
+      margin-right: 2%;
+    }
+  }
+}
+
+.casosexitos {
+  margin: 2.4rem;
+
+  &-intro {
+    background-color: $health-blue;
+    color: $white;
+    padding: 4rem 2rem;
+  }
+
+  @media screen and (min-width: 960px) {
+    //padding: 8rem 0 6.4rem;
+    //margin: 2.4rem 0;
+    overflow: hidden;
+
+    &-intro {
+      display: flex;
+      flex-wrap: wrap;
+      //padding: 4rem 8rem;
+    }
+
+    &-text {
+      flex-basis: 48%;
+      margin-right: 2%;
+    }
+  }
+}
+
+.casosexitoc {
+  margin: 2.4rem;
+
+  &-intro {
+    background-color: $retail-purple;
+    color: $white;
+    padding: 4rem 2rem;
+  }
+
+  @media screen and (min-width: 960px) {
+    //padding: 8rem 0 6.4rem;
+    //margin: 2.4rem 0;
+    overflow: hidden;
+
+    &-intro {
+      display: flex;
+      flex-wrap: wrap;
+      //padding: 4rem 8rem;
+    }
+
+    &-text {
+      flex-basis: 48%;
+      margin-right: 2%;
+    }
+  }
+}

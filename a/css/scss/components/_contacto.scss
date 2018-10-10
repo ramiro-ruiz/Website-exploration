@@ -1,0 +1,39 @@
+.oficinas {
+  margin: 2rem;
+
+  @media screen and (min-width: 960px) {
+  margin: 8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  }
+}
+
+.formulario {
+  background: $light-gray;
+
+  @media screen and (min-width: 960px) {
+  margin: 8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  flex-wrap: wrap;
+  }
+
+  &-campo {
+    width: 500px;
+  }
+  input {
+    border: 0;
+    width: 100%;
+    max-width: 35rem;
+    height: 4rem;
+    padding-left: 1rem;
+  }
+  textarea {
+    border: 0;
+    width: 100%;
+    max-width: 35rem;
+    height: 12rem;
+  }
+}

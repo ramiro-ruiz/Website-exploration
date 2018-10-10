@@ -60,6 +60,10 @@
   @extend .hero-image;
   background: url(../imgs/carreras/carreras.jpg) center/cover no-repeat;
 }
+.hero-servicios {
+  @extend .hero-image;
+  background: url(../imgs/servicios/servicios.jpg) center/cover no-repeat;
+}
 
 .hero-hoteleria {
   @extend .hero-image;

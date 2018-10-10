@@ -739,7 +739,7 @@ p + .btn {
       .language-nav .more-langs a abbr {
         padding: 0; }
 
-.hero-image, .hero-nosotros, .hero-carreras, .hero-hoteleria, .hero-ipms {
+.hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-hoteleria, .hero-ipms {
   display: flex;
   position: relative;
   height: 45vh;
@@ -747,11 +747,11 @@ p + .btn {
   background: url(../imgs/hero.jpg) center no-repeat;
   background-size: cover; }
   @media screen and (min-width: 960px) {
-    .hero-image, .hero-nosotros, .hero-carreras, .hero-hoteleria, .hero-ipms {
+    .hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-hoteleria, .hero-ipms {
       height: 70vh;
       padding: 4.8rem 8rem 2.4rem; } }
 
-.hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-hoteleria::after, .hero-ipms::after {
+.hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-hoteleria::after, .hero-ipms::after {
   content: '';
   display: block;
   position: absolute;
@@ -762,11 +762,11 @@ p + .btn {
   height: 10rem;
   background-color: #D93E3E; }
   @media screen and (min-width: 960px) {
-    .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-hoteleria::after, .hero-ipms::after {
+    .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-hoteleria::after, .hero-ipms::after {
       bottom: -10.6rem;
       height: 16rem; } }
 
-.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
+.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
   width: 66%;
   margin: auto 0;
   color: #fff;
@@ -774,7 +774,7 @@ p + .btn {
   letter-spacing: .1rem;
   line-height: 1.25; }
   @media screen and (min-width: 960px) {
-    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
+    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
       width: 50%;
       margin: auto 0;
       font-size: 6.4rem;
@@ -785,6 +785,9 @@ p + .btn {
 
 .hero-carreras {
   background: url(../imgs/carreras/carreras.jpg) center/cover no-repeat; }
+
+.hero-servicios {
+  background: url(../imgs/servicios/servicios.jpg) center/cover no-repeat; }
 
 .hero-hoteleria {
   background: url(../imgs/hoteleria.jpg) center/cover no-repeat; }
@@ -1894,6 +1897,117 @@ p + .btn {
       padding: 4rem; } }
   .university > p {
     margin: 0; }
+
+.servicios-mesa {
+  position: relative;
+  margin: 4rem 2.4rem 8rem;
+  padding: 22.4rem 2.4rem 2.4rem;
+  background: #CCE2A3; }
+  @media screen and (min-width: 960px) {
+    .servicios-mesa {
+      padding: 4rem 47% 4rem 4rem;
+      margin: 4rem 8rem 8rem; } }
+  .servicios-mesa > .btn {
+    width: 20rem;
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 960px) {
+      .servicios-mesa > .btn {
+        position: relative;
+        z-index: 10;
+        width: 60%;
+        margin-top: 0;
+        transform: translateX(100%);
+        text-align: center; }
+        .servicios-mesa > .btn:hover {
+          transform: translate(100%, -0.2rem);
+          opacity: 1; } }
+  .servicios-mesa::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20rem;
+    background: url("../imgs/servicios/mesa-ayuda.jpg") center/cover no-repeat; }
+    @media screen and (min-width: 960px) {
+      .servicios-mesa::after {
+        width: 50%;
+        height: 100%; } }
+
+.implementaciones {
+  position: relative;
+  margin: 4rem 2.4rem 8rem;
+  padding: 22.4rem 2.4rem 2.4rem;
+  background: #CCE2A3; }
+  @media screen and (min-width: 960px) {
+    .implementaciones {
+      padding: 4rem 47% 4rem 4rem;
+      margin: 4rem 8rem 8rem; } }
+  .implementaciones > .btn {
+    width: 20rem;
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 960px) {
+      .implementaciones > .btn {
+        position: relative;
+        z-index: 10;
+        width: 60%;
+        margin-top: 0;
+        transform: translateX(100%);
+        text-align: center; }
+        .implementaciones > .btn:hover {
+          transform: translate(100%, -0.2rem);
+          opacity: 1; } }
+  .implementaciones::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20rem;
+    background: url("../imgs/servicios/implementaciones.jpg") center/cover no-repeat; }
+    @media screen and (min-width: 960px) {
+      .implementaciones::after {
+        width: 50%;
+        height: 100%; } }
+
+.capacitaciones {
+  position: relative;
+  margin: 4rem 2.4rem 8rem;
+  padding: 22.4rem 2.4rem 2.4rem;
+  background: #CCE2A3; }
+  @media screen and (min-width: 960px) {
+    .capacitaciones {
+      padding: 4rem 47% 4rem 4rem;
+      margin: 4rem 8rem 8rem; } }
+  .capacitaciones > .btn {
+    width: 20rem;
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 960px) {
+      .capacitaciones > .btn {
+        position: relative;
+        z-index: 10;
+        width: 60%;
+        margin-top: 0;
+        transform: translateX(100%);
+        text-align: center; }
+        .capacitaciones > .btn:hover {
+          transform: translate(100%, -0.2rem);
+          opacity: 1; } }
+  .capacitaciones::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20rem;
+    background: url("../imgs/servicios/capacitaciones.jpg") bottom/cover no-repeat; }
+    @media screen and (min-width: 960px) {
+      .capacitaciones::after {
+        width: 50%;
+        height: 100%; } }
 
 /*-----------------------------------
     Utilities

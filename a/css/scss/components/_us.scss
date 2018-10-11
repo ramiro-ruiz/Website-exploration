@@ -62,6 +62,7 @@
     //border-radius: .8rem;
     color: $white;
     text-align: center;
+    background-color: rgba(black, .5);
 
     @media screen and (min-width: 960px) {
       display: flex;
@@ -138,9 +139,9 @@
     @media screen and (min-width: 960px) {
       position: absolute;
       top: 0; right: 0; bottom: 0; left: 0;
-      height: 20%;
+      //height: 20%;
       margin: auto;
-      padding-top: 0;
+      //padding-top: 0;
       overflow: hidden;
       line-height: 1.6;
     }
@@ -156,11 +157,12 @@
     @media screen and (min-width: 960px) {
       margin: auto;
       padding: 4rem;
-      opacity: 0;
+      margin-top: 7rem;
+      opacity: 1;
     }
   }
 
-  .blockmv:hover {
+  .blockmv:hove {
 
     p {
      	opacity: 1;

@@ -1592,7 +1592,8 @@ p + .btn {
   .misionvision .blockmv {
     position: relative;
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); }
     @media screen and (min-width: 960px) {
       .misionvision .blockmv {
         display: flex;
@@ -1649,9 +1650,7 @@ p + .btn {
         right: 0;
         bottom: 0;
         left: 0;
-        height: 20%;
         margin: auto;
-        padding-top: 0;
         overflow: hidden;
         line-height: 1.6; } }
   .misionvision p {
@@ -1663,13 +1662,14 @@ p + .btn {
       .misionvision p {
         margin: auto;
         padding: 4rem;
-        opacity: 0; } }
-  .misionvision .blockmv:hover p {
+        margin-top: 7rem;
+        opacity: 1; } }
+  .misionvision .blockmv:hove p {
     opacity: 1; }
   @media screen and (min-width: 960px) {
-    .misionvision .blockmv:hover h2 {
+    .misionvision .blockmv:hove h2 {
       transform: translateY(-50rem); } }
-  .misionvision .blockmv:hover::before {
+  .misionvision .blockmv:hove::before {
     opacity: 1; }
 
 .history {
@@ -1927,7 +1927,7 @@ p + .btn {
   .blogcontacto h2 {
     position: relative;
     margin: auto;
-    padding-top: 2.4rem;
+    margin-top: 2.4rem;
     transition: all 0.4s ease; }
     @media screen and (min-width: 960px) {
       .blogcontacto h2 {
@@ -1949,8 +1949,9 @@ p + .btn {
     @media screen and (min-width: 960px) {
       .blogcontacto p {
         margin: auto;
+        padding-top: 4rem;
         padding: 4rem;
-        opacity: 0; } }
+        opacity: 1; } }
   .blogcontacto .blockbc:hover p {
     opacity: 1; }
   @media screen and (min-width: 960px) {

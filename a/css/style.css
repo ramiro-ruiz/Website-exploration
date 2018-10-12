@@ -1056,17 +1056,20 @@ p + .btn {
 
 .procesos {
   background-color: #34495E;
-  margin: 4rem;
+  margin: 2rem;
   color: #fff;
-  padding: 4rem; }
-  .procesos-items {
-    display: flex; }
+  padding: 2rem; }
   .procesos-text {
-    padding: 2rem;
-    width: 25%; }
+    padding: 2rem; }
   @media screen and (min-width: 960px) {
     .procesos {
-      margin: 0 8rem; } }
+      margin: 0 8rem;
+      padding: 4rem; }
+      .procesos-items {
+        display: flex; }
+      .procesos-text {
+        padding: 2rem;
+        width: 25%; } }
 
 .extra {
   padding: 3.2rem;

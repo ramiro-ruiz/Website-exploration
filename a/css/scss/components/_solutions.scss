@@ -383,20 +383,29 @@
 
 .procesos {
   background-color: $innsist-blue;
-  margin: 4rem;
+  margin: 2rem;
   color: $white;
-  padding: 4rem;
+  padding: 2rem;
 
   &-items {
-    display: flex;
+    //display: flex;
   }
   &-text {
     padding: 2rem;
-    width: 25%;
   }
 
   @media screen and (min-width: 960px) {
     margin: 0 8rem;
+    padding: 4rem;
+
+    &-items {
+      display: flex;
+    }
+
+    &-text {
+      padding: 2rem;
+      width: 25%;
+    }
   }
 
 }

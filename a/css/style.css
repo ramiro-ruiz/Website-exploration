@@ -1054,6 +1054,20 @@ p + .btn {
     .product .btn.active + .products-list {
       display: block; }
 
+.procesos {
+  background-color: #34495E;
+  margin: 4rem;
+  color: #fff;
+  padding: 4rem; }
+  .procesos-items {
+    display: flex; }
+  .procesos-text {
+    padding: 2rem;
+    width: 25%; }
+  @media screen and (min-width: 960px) {
+    .procesos {
+      margin: 0 8rem; } }
+
 .extra {
   padding: 3.2rem;
   flex-basis: 50%; }
@@ -1169,7 +1183,7 @@ p + .btn {
   content: '-';
   line-height: 10px; }
 
-.accordion .content {
+.accordion .acontent {
   opacity: 0;
   padding: 0 1rem;
   max-height: 0;
@@ -1179,11 +1193,11 @@ p + .btn {
   -o-transition: all 0.2s ease 0.15s;
   transition: all 0.2s ease 0.15s; }
 
-.accordion .content p {
+.accordion .acontent p {
   font-size: 1.8rem;
   font-weight: 300; }
 
-.accordion .content.active {
+.accordion .acontent.active {
   opacity: 1;
   padding: 1rem;
   max-height: 100%;

@@ -380,3 +380,23 @@
     }
   }
 }
+
+.procesos {
+  background-color: $innsist-blue;
+  margin: 4rem;
+  color: $white;
+  padding: 4rem;
+
+  &-items {
+    display: flex;
+  }
+  &-text {
+    padding: 2rem;
+    width: 25%;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin: 0 8rem;
+  }
+
+}

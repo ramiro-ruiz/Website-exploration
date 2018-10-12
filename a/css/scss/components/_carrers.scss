@@ -272,3 +272,42 @@
     margin: 0;
   }
 }
+
+.bc {
+  margin: 2rem;
+  color: $white;
+  text-align: center;
+
+  .bc-blog {
+    flex-basis: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("../imgs/carreras/blog.jpg") center/cover no-repeat;
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .bc-contacto {
+    flex-basis: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../imgs/carreras/contacto.jpg") bottom/cover no-repeat;
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 960px) {
+    display: flex;
+    margin: 2rem 8rem;
+
+    .bc-blog {
+      padding: 4rem;
+      margin-right: 4rem;
+    }
+
+    .bc-contacto {
+      padding: 4rem;
+      margin-leftt: 4rem;
+    }
+  }
+}

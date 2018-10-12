@@ -2020,6 +2020,33 @@ p + .btn {
   .university > p {
     margin: 0; }
 
+.bc {
+  margin: 2rem;
+  color: #fff;
+  text-align: center; }
+  .bc .bc-blog {
+    flex-basis: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imgs/carreras/blog.jpg") center/cover no-repeat;
+    padding: 2rem;
+    margin-bottom: 4rem; }
+  .bc .bc-contacto {
+    flex-basis: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/carreras/contacto.jpg") bottom/cover no-repeat;
+    padding: 2rem;
+    margin-bottom: 4rem; }
+  .bc p {
+    text-align: left; }
+  @media screen and (min-width: 960px) {
+    .bc {
+      display: flex;
+      margin: 2rem 8rem; }
+      .bc .bc-blog {
+        padding: 4rem;
+        margin-right: 4rem; }
+      .bc .bc-contacto {
+        padding: 4rem;
+        margin-leftt: 4rem; } }
+
 .servicios-mesa {
   position: relative;
   margin: 4rem 2.4rem 8rem;

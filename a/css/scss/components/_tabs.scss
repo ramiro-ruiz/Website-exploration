@@ -10,8 +10,8 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     border-top: 1.6rem solid $innsist-shade;
-    border-radius: .4rem;
-    box-shadow: 0 .2rem .3rem 0 rgba($text-color, .3);
+    //border-radius: .4rem;
+    //box-shadow: 0 .2rem .3rem 0 rgba($text-color, .3);
   }
 
   > h3 {
@@ -26,7 +26,7 @@
     border-top: .2rem solid $innsist-shade;
     border-bottom: 2px solid $innsist-shade;
     border-left: 2px solid $innsist-shade;
-    border-radius: 0 0 0 .4rem;
+    //border-radius: 0 0 0 .4rem;
     background-color: $innsist-shade;
 
     button {
@@ -70,7 +70,7 @@
     border-right: 2px solid $innsist-shade;
     border-bottom: 2px solid $innsist-shade;
     border-left: none;
-    border-radius: 0 0 .4rem 0;
+    //border-radius: 0 0 .4rem 0;
     background-image: linear-gradient(180deg, #FFFFFF 38.29%, #ECECEC 100%);
 
     @media screen and (min-width: 960px) {

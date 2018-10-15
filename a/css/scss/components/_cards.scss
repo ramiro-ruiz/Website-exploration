@@ -2,7 +2,7 @@
 
   .cintilla-beneficios {
     background-color: $light-color;
-    border-radius: .4rem;
+    //border-radius: .4rem;
 
     .slide {
 
@@ -10,11 +10,11 @@
         position: relative;
         padding: 2.4rem;
 
-        border-radius: .4rem;
+        //border-radius: .4rem;
         background: $white center/cover no-repeat;
 
         background-image: linear-gradient(180deg, #FFFFFF 38.29%, #ECECEC 100%);
-        box-shadow: 0 .1rem .3rem rgba($text-color, .3);
+        //box-shadow: 0 .1rem .3rem rgba($text-color, .3);
 
         & > * {
           position: relative;
@@ -40,7 +40,7 @@
       		left: 0;
       		width: 100%;
       		height: 100%;
-          border-radius: .4rem;
+          //border-radius: .4rem;
       		background: rgba($innsist-blue, .8);
         }
 
@@ -52,7 +52,7 @@
       		left: 0;
       		width: 100%;
       		height: 100%;
-          border-radius: .4rem;
+          //border-radius: .4rem;
         }
 
         &.ama-llaves::after {

@@ -40,7 +40,7 @@
   font-size: 2.4rem;
   letter-spacing: .1rem;
   line-height: 1.25;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 
   @media screen and (min-width: 960px) {
     & {
@@ -60,6 +60,19 @@
   @extend .hero-image;
   background: url(../imgs/carreras/carreras.jpg) center/cover no-repeat;
 }
+.hero-servicios {
+  @extend .hero-image;
+  background: url(../imgs/servicios/servicios.jpg) center/cover no-repeat;
+}
+.hero-clientes {
+  @extend .hero-image;
+  background: url(../imgs/clients/clientes.jpg) center/cover no-repeat;
+}
+.hero-contacto {
+  @extend .hero-image;
+  background: url(../imgs/contacto/contacto.jpg) center/cover no-repeat;
+}
+
 
 .hero-hoteleria {
   @extend .hero-image;

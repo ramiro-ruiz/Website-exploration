@@ -1,0 +1,55 @@
+.contacto {
+  padding: 2rem;
+
+  h2 {
+    margin-bottom: -1rem;
+  }
+
+  @media screen and (min-width: 960px) {
+  margin: 4rem 8rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  }
+}
+
+.formulario {
+  background: $green-olive;
+  padding: .5rem 2rem;
+  flex-basis: 35%;
+
+  @media screen and (min-width: 960px) {
+    padding: 4rem 8rem;
+  //margin: 8rem;
+  //display: flex;
+  //justify-content: space-between;
+  //flex-wrap: wrap;
+  }
+
+  input {
+    border: 0;
+    width: 100%;
+    max-width: 60rem;
+    height: 5rem;
+    padding-left: 1rem;
+  }
+  textarea {
+    border: 0;
+    width: 100%;
+    max-width: 60rem;
+    height: 14rem;
+    padding: 1rem;
+  }
+}
+
+.oficinas {
+  padding: 2rem;
+  flex-basis: 65%;
+
+  @media screen and (min-width: 960px) {
+    padding: 4rem 8rem;
+  //margin: 8rem;
+  //display: flex;
+  //justify-content: space-between;
+  }
+}

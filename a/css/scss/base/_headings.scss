@@ -4,7 +4,7 @@ h1, h2, h4 {
 
 h2 {
   font-size: 2.4rem;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 
   @media screen and (min-width: 960px) {
     & {
@@ -15,7 +15,7 @@ h2 {
 
 h3 {
   font-family: $display-font;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   letter-spacing: .1rem;
   font-size: 2.2rem;
 }

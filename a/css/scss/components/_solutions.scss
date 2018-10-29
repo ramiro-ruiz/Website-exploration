@@ -16,15 +16,15 @@
 
   @media screen and (min-width: 960px) {
 
-    > .hospitality > a::after {
+    > .hospitality > span::after {
       background: url(../imgs/hotel.jpg) center / cover no-repeat;
     }
 
-    > .healthcare > a::after {
+    > .healthcare > span::after {
       background: url(../imgs/health.jpg) center / cover no-repeat;
     }
 
-    > .retail > a::after {
+    > .retail > span::after {
       background: url(../imgs/retail.jpg) center / cover no-repeat;
     }
 
@@ -103,12 +103,12 @@
         opacity: 1;
       }
 
-      &:nth-child(2) > a > .solution-info {
+      &:nth-child(2) > span > .solution-info {
         padding: 4.8rem 0 4.8rem 4.8rem;
         float: right;
       }
 
-      &:nth-child(2) > a::after {
+      &:nth-child(2) > span::after {
         right: auto;
         left: 0;
       }
@@ -147,7 +147,7 @@
       }
     }
 
-    > a {
+    > span {
       display: block;
       padding: 2.4rem 3.2rem;
       color: $white;
@@ -205,8 +205,9 @@
   }
 
   .btn {
-    background-color: rgba($white, .5);
-    color: darken($innsist-blue, 8%);
+    //background-color: rgba($white, .5);
+    //color: darken($innsist-blue, 8%);
+    border: none;
   }
 }
 
@@ -222,8 +223,9 @@
   }
 
   .btn {
-    background-color: rgba($white, .5);
-    color: darken($health-blue, 15%);
+    //background-color: rgba($white, .5);
+    //color: darken($health-blue, 15%);
+    border: none;
   }
 }
 
@@ -239,8 +241,9 @@
   }
 
   .btn {
-    background-color: rgba($white, .5);
-    color: darken($retail-purple, 8%);
+    //background-color: rgba($white, .5);
+    //color: darken($retail-purple, 8%);
+    border: none;
   }
 }
 
@@ -327,7 +330,7 @@
   }
 
   .products-list {
-    display: none;
+    //display: none;
     padding: 0 1.6rem 1.6rem;
 
     @media screen and (min-width: 960px) {
@@ -408,4 +411,8 @@
     }
   }
 
+}
+
+.hide-panel {
+  display:none;
 }

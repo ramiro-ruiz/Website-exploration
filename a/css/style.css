@@ -836,11 +836,11 @@ p + .btn {
     min-width: 33%;
     margin: 3.2rem 0 0; }
 @media screen and (min-width: 960px) {
-  .solutions > .hospitality > a::after {
+  .solutions > .hospitality > span::after {
     background: url(../imgs/hotel.jpg) center/cover no-repeat; }
-  .solutions > .healthcare > a::after {
+  .solutions > .healthcare > span::after {
     background: url(../imgs/health.jpg) center/cover no-repeat; }
-  .solutions > .retail > a::after {
+  .solutions > .retail > span::after {
     background: url(../imgs/retail.jpg) center/cover no-repeat; }
   .solutions .products {
     display: block;
@@ -877,10 +877,10 @@ p + .btn {
       height: auto;
       transform: translateY(0);
       opacity: 1; }
-    .solutions > section:nth-child(2) > a > .solution-info {
+    .solutions > section:nth-child(2) > span > .solution-info {
       padding: 4.8rem 0 4.8rem 4.8rem;
       float: right; }
-    .solutions > section:nth-child(2) > a::after {
+    .solutions > section:nth-child(2) > span::after {
       right: auto;
       left: 0; } }
   .solutions > section::before {
@@ -905,19 +905,19 @@ p + .btn {
       position: relative;
       overflow: hidden;
       background-image: none; } }
-  .solutions > section > a {
+  .solutions > section > span {
     display: block;
     padding: 2.4rem 3.2rem;
     color: #fff;
     text-decoration: none; }
     @media screen and (min-width: 960px) {
-      .solutions > section > a {
+      .solutions > section > span {
         padding: 4.8rem 3.2rem;
         overflow: hidden;
         transition: all ease .2s; }
-      .solutions > section > a:hover {
+      .solutions > section > span:hover {
         background-color: rgba(255, 255, 255, 0.1); }
-      .solutions > section > a::after {
+      .solutions > section > span::after {
         content: '';
         position: absolute;
         z-index: 1;
@@ -927,10 +927,10 @@ p + .btn {
         width: 50%;
         height: 100%; } }
     @media screen and (min-width: 960px) {
-      .solutions > section > a > .solution-info {
+      .solutions > section > span > .solution-info {
         width: 50%;
         padding: 4.8rem 4.8rem 4.8rem 0; }
-        .solutions > section > a > .solution-info p {
+        .solutions > section > span > .solution-info p {
           font-size: 1.8rem; } }
 
 .solutions h2 {
@@ -941,8 +941,7 @@ p + .btn {
   .solutions > .hospitality .products, .solutions > .hospitality .product {
     background-color: #253544; }
   .solutions > .hospitality .btn {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #253544; }
+    border: none; }
 
 .solutions > .hospitality::before {
   background-color: #34495E; }
@@ -952,8 +951,7 @@ p + .btn {
   .solutions > .healthcare .products, .solutions > .healthcare .product {
     background-color: #387caa; }
   .solutions > .healthcare .btn {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #2f688f; }
+    border: none; }
 
 .solutions > .healthcare::before {
   background-color: #4891C3; }
@@ -963,8 +961,7 @@ p + .btn {
   .solutions > .retail .products, .solutions > .retail .product {
     background-color: #713c64; }
   .solutions > .retail .btn {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #713c64; }
+    border: none; }
 
 .solutions > .retail::before {
   background-color: #8C4A7C; }
@@ -1018,7 +1015,6 @@ p + .btn {
     .product {
       padding: 0 2.4rem 3.2rem; } }
   .product .products-list {
-    display: none;
     padding: 0 1.6rem 1.6rem; }
     @media screen and (min-width: 960px) {
       .product .products-list {
@@ -1067,6 +1063,9 @@ p + .btn {
       .procesos-text {
         padding: 2rem;
         width: 33%; } }
+
+.hide-panel {
+  display: none; }
 
 .extra {
   padding: 3.2rem;

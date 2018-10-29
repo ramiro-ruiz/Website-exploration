@@ -214,19 +214,19 @@
       <h2>Título del texto</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
+
     <section class="content">
       <section class="solutions">
         <section class="hospitality">
-          <a href="hoteleria.html">
+          <span>
             <div class="solution-info">
               <h2>Hotelería</h2>
               <p>ERP que brinda soluciones integradas a las necesidades de hoteles y grupos hoteleros en las áreas de operación y administración.</p>
+              <button class="btn" type="button" id="botonhoteleria">Ver productos</button>
             </div>
-          </a>
+          </span>
+          <div id="panelhoteleria" class="hide-panel">
           <div class="product">
-            <button class="btn">
-              Ver todos los productos
-            </button>
             <ul class="products-list">
               <li class="products-category">
                 <h4 class="products-category-title">Back Office Suite</h4>
@@ -290,18 +290,18 @@
               </li>
             </ul>
           </div>
+        </div>
         </section>
         <section class="healthcare">
-          <a href="#">
+          <span>
             <div class="solution-info">
               <h2>Salud</h2>
               <p>HIS que permite manejar la operación, administración y planeación estratégica de una institución hospitalaria.</p>
+              <button class="btn" type="button" id="botonsalud">Ver productos</button>
             </div>
-          </a>
+          </span>
+          <div id="panelsalud" class="hide-panel">
           <div class="product bottom">
-            <button class="btn">
-              Ver todos los productos
-            </button>
             <ul class="products-list">
               <li class="products-category">
                 <h4 class="products-category-title">Aplicaciones Principales</h4>
@@ -335,18 +335,18 @@
               </li>
             </ul>
           </div>
+        </div>
         </section>
         <section class="retail">
-          <a href="#">
+          <span>
             <div class="solution-info">
               <h2>Comercio</h2>
               <p>ERP que apoya a su empresa a maximizar su rendimiento, incorporando las mejores prácticas de operación comercial.</p>
+              <button class="btn" type="button" id="botoncomercio">Ver productos</button>
             </div>
-          </a>
+          </span>
+          <div id="panelcomercio" class="hide-panel">
           <div class="product">
-            <button class="btn">
-              Ver todos los productos
-            </button>
             <ul class="products-list">
               <li class="products-category">
                 <h4 class="products-category-title">Aplicaciones Principales</h4>
@@ -389,6 +389,7 @@
               </li>
             </ul>
           </div>
+        </div>
         </section>
       </section>
     </section>
@@ -553,6 +554,19 @@ $('.multi-footer .expandable').click(function() {
     $( this ).toggleClass( 'active' );
   });
 
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#botonhoteleria").click(function(){
+        $("#panelhoteleria").toggle();
+    });
+    $("#botonsalud").click(function(){
+        $("#panelsalud").toggle();
+    });
+    $("#botoncomercio").click(function(){
+        $("#panelcomercio").toggle();
+    });
 });
 </script>
 </body>

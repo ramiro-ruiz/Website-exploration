@@ -91,3 +91,28 @@
     background-color: $innsist-blue;
   }
 }
+
+.hero-clientes-hoteleria {
+  @extend .hero-image;
+  background: url(../imgs/clients/clientes.jpg) center/cover no-repeat;
+
+  &::after {
+    background-color: $innsist-blue;
+  }
+}
+.hero-clientes-salud {
+  @extend .hero-image;
+  background: url(../imgs/clients/clientes.jpg) center/cover no-repeat;
+
+  &::after {
+    background-color: $health-blue;
+  }
+}
+.hero-clientes-comercio {
+  @extend .hero-image;
+  background: url(../imgs/clients/clientes.jpg) center/cover no-repeat;
+
+  &::after {
+    background-color: $retail-purple;
+  }
+}

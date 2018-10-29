@@ -736,7 +736,7 @@ p + .btn {
       .language-nav .more-langs a abbr {
         padding: 0; }
 
-.hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-clientes, .hero-contacto, .hero-hoteleria, .hero-ipms {
+.hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-clientes, .hero-contacto, .hero-hoteleria, .hero-ipms, .hero-clientes-hoteleria, .hero-clientes-salud, .hero-clientes-comercio {
   display: flex;
   position: relative;
   height: 45vh;
@@ -744,11 +744,11 @@ p + .btn {
   background: url(../imgs/hero.jpg) center no-repeat;
   background-size: cover; }
   @media screen and (min-width: 960px) {
-    .hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-clientes, .hero-contacto, .hero-hoteleria, .hero-ipms {
+    .hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-clientes, .hero-contacto, .hero-hoteleria, .hero-ipms, .hero-clientes-hoteleria, .hero-clientes-salud, .hero-clientes-comercio {
       height: 70vh;
       padding: 4.8rem 8rem 2.4rem; } }
 
-.hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-hoteleria::after, .hero-ipms::after {
+.hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-hoteleria::after, .hero-ipms::after, .hero-clientes-hoteleria::after, .hero-clientes-salud::after, .hero-clientes-comercio::after {
   content: '';
   display: block;
   position: absolute;
@@ -759,11 +759,11 @@ p + .btn {
   height: 10rem;
   background-color: #D93E3E; }
   @media screen and (min-width: 960px) {
-    .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-hoteleria::after, .hero-ipms::after {
+    .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-hoteleria::after, .hero-ipms::after, .hero-clientes-hoteleria::after, .hero-clientes-salud::after, .hero-clientes-comercio::after {
       bottom: -10.6rem;
       height: 16rem; } }
 
-.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
+.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
   width: 66%;
   margin: auto 0;
   color: #fff;
@@ -771,7 +771,7 @@ p + .btn {
   letter-spacing: .1rem;
   line-height: 1.25; }
   @media screen and (min-width: 960px) {
-    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading {
+    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
       width: 50%;
       margin: auto 0;
       font-size: 6.4rem;
@@ -801,6 +801,21 @@ p + .btn {
   background: url(../imgs/ipms.jpg) center/cover no-repeat; }
   .hero-ipms::after {
     background-color: #34495E; }
+
+.hero-clientes-hoteleria {
+  background: url(../imgs/clients/clientes.jpg) center/cover no-repeat; }
+  .hero-clientes-hoteleria::after {
+    background-color: #34495E; }
+
+.hero-clientes-salud {
+  background: url(../imgs/clients/clientes.jpg) center/cover no-repeat; }
+  .hero-clientes-salud::after {
+    background-color: #4891C3; }
+
+.hero-clientes-comercio {
+  background: url(../imgs/clients/clientes.jpg) center/cover no-repeat; }
+  .hero-clientes-comercio::after {
+    background-color: #8C4A7C; }
 
 .intro {
   position: relative;

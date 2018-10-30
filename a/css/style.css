@@ -760,8 +760,8 @@ p + .btn {
   background-color: #D93E3E; }
   @media screen and (min-width: 960px) {
     .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-hoteleria::after, .hero-ipms::after, .hero-clientes-hoteleria::after, .hero-clientes-salud::after, .hero-clientes-comercio::after {
-      bottom: -10.6rem;
-      height: 16rem; } }
+      bottom: 0rem;
+      height: 1rem; } }
 
 .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
   width: 66%;

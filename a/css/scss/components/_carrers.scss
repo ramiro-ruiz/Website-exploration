@@ -185,24 +185,22 @@
 }
 
 .inside {
-  padding: 4rem 2.4rem 12rem;
-  background: url("../imgs/carreras/grid-photos.png") center 156% no-repeat $green-olive;
-  background-size: 220%;
-  text-align: center;
+  padding: 4rem 2.4rem;
+  background: $green-olive;
 
-  p {
-    text-align: left;
+  .fotos {
+    margin-top: 2.4rem;
   }
 
   @media screen and (min-width: 960px) {
-    padding: 8rem 8rem 75rem;
-    background: url("../imgs/carreras/grid-photos.png") center bottom no-repeat $green-olive;
-    background-size: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 8rem;
 
-    p {
-      text-align: center;
+    .texto, .fotos {
+      //border: 1px solid #000;
+      width: 48%;
     }
-
   }
 
   .btn {

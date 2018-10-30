@@ -235,9 +235,45 @@
     </section>
 
     <section class="inside">
-          <h2>Inside TCA</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labor. sed do eiusmod tempo adipisicing elit sed do eiusmod.</p>
-          <a href="#" class="btn">Ver testimoniales</a>
+      <div class="texto">
+        <h2>Inside TCA</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labor. sed do eiusmod tempo adipisicing elit sed do eiusmod.</p>
+        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        <a href="#" class="btn">Ver testimoniales</a>
+      </div>
+      <div class="fotos slideshow">
+        <div class="slideshow-container">
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-01.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-02.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-03.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-04.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-05.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-06.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-07.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-08.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-09.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-10.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-11.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-12.jpg" style="width:100%"> </div>
+          <div class="mySlides fade"> <img src="a/imgs/carreras/inside-13.jpg" style="width:100%"> </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center; margin-top: -30px;">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+          <span class="dot" onclick="currentSlide(13)"></span>
+        </div>
+      </div>
     </section>
 
     <section class="beneficioscarreras">
@@ -438,6 +474,34 @@ $("#aparece").mouseout(function(){
   $("#aparece").addClass("nover").removeClass("ver")
   $("#mouse").addClass("ver").removeClass("nover")
 })
+  </script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
   </script>
 </body>
 </html>

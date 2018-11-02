@@ -35,3 +35,35 @@
     }
   }
 }
+
+.industrias-home {
+  padding: 2.4rem;
+  display: none;
+
+  .hoteleria, .salud, .comercio {
+    width: 100%;
+    //border: 1px solid #000;
+    padding: 4rem;
+    color: $white;
+  }
+  .hoteleria {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../imgs/hotel.jpg") center/cover no-repeat;
+  }
+  .salud {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../imgs/health.jpg") center/cover no-repeat;
+  }
+  .comercio {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../imgs/retail.jpg") center/cover no-repeat;
+  }
+  @media screen and (min-width: 960px) {
+    & {
+      padding: 8rem;
+      display: flex;
+      justify-content: space-between;
+      display: none;
+    }
+    .hoteleria, .salud, .comercio {
+      width: 32%;
+    }
+  }
+}

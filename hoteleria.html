@@ -236,35 +236,35 @@
         <h2>Especializada en hoteles de categoría</h2>
         <ul class="cintilla">
           <li class="slide">
-            <img src="a/imgs/soluciones/innsist/Hotel-Express.svg" alt="Hotel Express" width="50">
+            <img src="a/imgs/soluciones/innsist/Hotel-Express.svg" alt="Hotel Express" width="80" height="80">
             <p>Hotel Express</p>
           </li>
           <li class="slide">
-            <img src="a/imgs/soluciones/innsist/Business-Class.svg" alt="Hotel Business Class" width="50">
+            <img src="a/imgs/soluciones/innsist/Business-Class.svg" alt="Hotel Business Class" width="80" height="80">
             <p>Hotel Business Class</p>
           </li>
           <li class="slide">
-            <img src="a/imgs/soluciones/innsist/Hoteles-Convenciones.svg" alt="Hotel Eventos y Convenciones" width="50">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Convenciones.svg" alt="Hotel Eventos y Convenciones" width="80" height="80">
             <p>Hotel Eventos y Convenciones</p>
           </li>
           <li class="slide">
-            <img src="a/imgs/soluciones/innsist/Hoteles-Boutiques.svg" alt="Hotele Boutique" width="50">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Boutiques.svg" alt="Hotele Boutique" width="80" height="80">
             <p>Hotele Boutique</p>
           </li>
           <li class="slide">
-            <img src="a/imgs/soluciones/innsist/Hoteles-Bed&Breakfast.svg" alt="Hoteles Bed & Breakfast" width="50">
+            <img src="a/imgs/soluciones/innsist/Hoteles-Bed&Breakfast.svg" alt="Hoteles Bed & Breakfast" width="80" height="80">
             <p>Hoteles Bed & Breakfast</p>
           </li>
           <li class="slide">
-            <img src="a/imgs/soluciones/innsist/Apartotel.svg" alt="Apartotel" width="50">
+            <img src="a/imgs/soluciones/innsist/Apartotel.svg" alt="Apartotel" width="80" height="80">
             <p>Apartotel</p>
           </li>
           <li class="slide">
-            <img src="a/imgs/soluciones/innsist/Resorts-Spa&Golf.svg" alt="Hotel Resort" width="50">
+            <img src="a/imgs/soluciones/innsist/Resorts-Spa&Golf.svg" alt="Hotel Resort" width="80" height="80">
             <p>Hotel Resort</p>
           </li>
           <li class="slide">
-            <img src="a/imgs/soluciones/innsist/Hotel-Hospital.svg" alt="Hotel de Hospital" width="50">
+            <img src="a/imgs/soluciones/innsist/Hotel-Hospital.svg" alt="Hotel de Hospital" width="80" height="80">
             <p>Hotel de Hospital</p>
           </li>
         </ul>
@@ -334,8 +334,10 @@
         <div class="solution-info">
           <h2>Soluciones completas</h2>
           <p>ERP que brinda soluciones integradas a las necesidades de hoteles y grupos hoteleros en las áreas de operación y administración.</p>
+          <button class="btn" type="button" id="botonhoteleria">Ver productos</button>
         </div>
       </span>
+      <div id="panelhoteleria" class="hide-panel">
       <div class="products">
         <ul class="products-list">
           <li class="products-category">
@@ -398,6 +400,7 @@
             </ul>
           </li>
         </ul>
+      </div>
       </div>
     </section>
   </section>
@@ -549,6 +552,19 @@ $(document).ready(function(){
     $( this ).toggleClass( 'active' );
   });
 
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#botonhoteleria").click(function(){
+        $("#panelhoteleria").toggle();
+    });
+    $("#botonsalud").click(function(){
+        $("#panelsalud").toggle();
+    });
+    $("#botoncomercio").click(function(){
+        $("#panelcomercio").toggle();
+    });
 });
 </script>
 </body>

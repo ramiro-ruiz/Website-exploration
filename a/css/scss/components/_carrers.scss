@@ -1,6 +1,6 @@
 .bolsatrabajo {
   position: relative;
-  margin: 4rem 2.4rem 8rem;
+  margin: 2.4rem;
   padding: 22.4rem 2.4rem 2.4rem;
   //border-radius: .8rem;
   background: $light-color;
@@ -185,17 +185,19 @@
 }
 
 .inside {
-  padding: 4rem 2.4rem;
+  //padding: 4rem 2.4rem;
   background: $green-olive;
+  margin: 2.4rem;
 
   .fotos {
-    margin-top: 2.4rem;
+    //margin-top: 2.4rem;
   }
 
   @media screen and (min-width: 960px) {
     display: flex;
     justify-content: space-between;
-    padding: 8rem 8rem;
+    //padding: 8rem 8rem;
+    margin: 8rem;
 
     .texto, .fotos {
       //border: 1px solid #000;
@@ -203,6 +205,9 @@
     }
   }
 
+  .texto {
+    padding: 4rem;
+  }
   .btn {
     margin-top: 0;
   }
@@ -215,6 +220,7 @@
   background: $retail-purple;
   color: $white;
   text-align: center;
+  margin-bottom: 4rem;
 
   p {
     text-align: left;
@@ -223,12 +229,14 @@
   @media screen and (min-width: 960px) {
     padding: 8rem;
     text-align: left;
+    margin-bottom: 8rem;
   }
 }
 
 .university-header {
   height: 20rem;
   margin: 4rem 2.4rem 0;
+  display: none;
   //border-top-left-radius: .8rem;
   //border-top-right-radius: .8rem;
   background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../imgs/carreras/university.jpg") center/cover no-repeat;
@@ -242,6 +250,7 @@
     @media screen and (min-width: 960px) {
       height: 45rem;
       margin: 8rem 8rem 0;
+      display: none;
 
       h2 {
         padding-top: 20rem;
@@ -256,6 +265,7 @@
   //border-bottom-right-radius: .8rem;
   background: $light-color;
   text-align: center;
+  display: none;
 
   p {
     text-align: left;
@@ -264,6 +274,7 @@
   @media screen and (min-width: 960px) {
     margin: 0 8rem 4rem;
     padding: 4rem;
+    display: none;
   }
 
   > p {
@@ -275,6 +286,7 @@
   margin: 2rem;
   color: $white;
   text-align: center;
+  display: none;
 
   .bc-blog {
     flex-basis: 50%;
@@ -295,7 +307,8 @@
   }
 
   @media screen and (min-width: 960px) {
-    display: flex;
+    //display: flex;
+    display: none;
     margin: 2rem 8rem;
 
     .bc-blog {

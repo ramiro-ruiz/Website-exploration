@@ -49,12 +49,14 @@
 
 .misionvision {
   margin: 0 2.4rem;
+  display: none;
 
     @media screen and (min-width: 960px) {
       display: flex;
       justify-content: space-between;
       margin: 0 8rem;
       padding: 4rem 0;
+      display: none;
     }
 
   .blockmv {
@@ -201,12 +203,13 @@
   }
 
   @media screen and (min-width: 960px) {
-    padding: 8rem 0 6.4rem;
+    padding: 0 0 6.4rem;
     margin: 2.4rem 0;
     overflow: hidden;
 
     &-intro {
-      display: flex;
+      display: none;
+      //display: flex;
       flex-wrap: wrap;
       padding: 4rem 8rem;
       background-color: $history-section;
@@ -511,5 +514,26 @@
   .prev, .next, .text {
   	font-size: 11px
   }
+  }
+}
+
+.mv {
+  margin: 0 2.4rem;
+
+  @media screen and (min-width: 960px) {
+    margin: 0 8rem;
+  	display: flex;
+    justify-content: space-between;
+
+    .mision, .vision {
+      width: 48%;
+    }
+  }
+
+  .contenido {
+    background: $light-gray;
+    padding: 4rem;
+    min-height: 330px;
+    margin-bottom: 2.4rem;
   }
 }

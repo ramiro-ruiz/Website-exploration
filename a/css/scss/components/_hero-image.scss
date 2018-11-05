@@ -74,6 +74,10 @@
   @extend .hero-image;
   background: url(../imgs/contacto/contacto.jpg) center/cover no-repeat;
 }
+.hero-blog {
+  @extend .hero-image;
+  background: url(../imgs/blog/hero-blog.jpg) center/cover no-repeat;
+}
 
 
 .hero-hoteleria {

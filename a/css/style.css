@@ -329,18 +329,38 @@ h3 {
   padding: 1.6rem 2.4rem;
   transition: all ease .2s;
   background-color: transparent;
-  border: 2px solid #FFF;
-  color: #fff;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 700;
-  letter-spacing: .1rem;
   text-align: center; }
   @media screen and (min-width: 960px) {
     .btn {
       font-size: 1.8rem;
-      border: 2px solid #FFF; } }
+      border: 2px solid #FFFFFF;
+      cursor: pointer; } }
 
 .btn:hover {
+  transform: translateY(-0.1rem);
+  opacity: .9; }
+
+.btn-gris {
+  display: inline-block;
+  padding: 1.6rem 2.4rem;
+  transition: all ease .2s;
+  background-color: transparent;
+  border: 2px solid #383838;
+  color: #383838;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .btn-gris {
+      font-size: 1.8rem;
+      border: 2px solid #383838;
+      cursor: pointer; } }
+
+.btn-gris:hover {
   transform: translateY(-0.1rem);
   opacity: .9; }
 
@@ -738,7 +758,7 @@ p + .btn {
       .language-nav .more-langs a abbr {
         padding: 0; }
 
-.hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-clientes, .hero-contacto, .hero-hoteleria, .hero-ipms, .hero-clientes-hoteleria, .hero-clientes-salud, .hero-clientes-comercio {
+.hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-clientes, .hero-contacto, .hero-blog, .hero-hoteleria, .hero-ipms, .hero-clientes-hoteleria, .hero-clientes-salud, .hero-clientes-comercio {
   display: flex;
   position: relative;
   height: 45vh;
@@ -746,11 +766,11 @@ p + .btn {
   background: url(../imgs/hero.jpg) center no-repeat;
   background-size: cover; }
   @media screen and (min-width: 960px) {
-    .hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-clientes, .hero-contacto, .hero-hoteleria, .hero-ipms, .hero-clientes-hoteleria, .hero-clientes-salud, .hero-clientes-comercio {
+    .hero-image, .hero-nosotros, .hero-carreras, .hero-servicios, .hero-clientes, .hero-contacto, .hero-blog, .hero-hoteleria, .hero-ipms, .hero-clientes-hoteleria, .hero-clientes-salud, .hero-clientes-comercio {
       height: 70vh;
       padding: 4.8rem 8rem 2.4rem; } }
 
-.hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-hoteleria::after, .hero-ipms::after, .hero-clientes-hoteleria::after, .hero-clientes-salud::after, .hero-clientes-comercio::after {
+.hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-blog::after, .hero-hoteleria::after, .hero-ipms::after, .hero-clientes-hoteleria::after, .hero-clientes-salud::after, .hero-clientes-comercio::after {
   content: '';
   display: block;
   position: absolute;
@@ -761,11 +781,11 @@ p + .btn {
   height: 10rem;
   background-color: #D93E3E; }
   @media screen and (min-width: 960px) {
-    .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-hoteleria::after, .hero-ipms::after, .hero-clientes-hoteleria::after, .hero-clientes-salud::after, .hero-clientes-comercio::after {
+    .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-blog::after, .hero-hoteleria::after, .hero-ipms::after, .hero-clientes-hoteleria::after, .hero-clientes-salud::after, .hero-clientes-comercio::after {
       bottom: 0rem;
       height: 1rem; } }
 
-.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
+.hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-blog > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
   width: 66%;
   margin: auto 0;
   color: #fff;
@@ -773,7 +793,7 @@ p + .btn {
   letter-spacing: .1rem;
   line-height: 1.25; }
   @media screen and (min-width: 960px) {
-    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
+    .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-blog > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
       width: 50%;
       margin: auto 0;
       font-size: 6.4rem;
@@ -793,6 +813,9 @@ p + .btn {
 
 .hero-contacto {
   background: url(../imgs/contacto/contacto.jpg) center/cover no-repeat; }
+
+.hero-blog {
+  background: url(../imgs/blog/hero-blog.jpg) center/cover no-repeat; }
 
 .hero-hoteleria {
   background: url(../imgs/hoteleria.jpg) center/cover no-repeat; }
@@ -1115,7 +1138,7 @@ p + .btn {
 .client-portal {
   flex-basis: 50%;
   padding: 3.2rem;
-  background-color: #CCCCCC; }
+  background-color: #D3D2D7; }
   .client-portal > h2 {
     margin-bottom: .8rem; }
   @media screen and (min-width: 960px) {
@@ -1590,7 +1613,7 @@ p + .btn {
   position: relative;
   margin: 4rem 2.4rem 8rem;
   padding: 22.4rem 2.4rem 2.4rem;
-  background: #CCCCCC; }
+  background: #D3D2D7; }
   @media screen and (min-width: 960px) {
     .carrers {
       padding: 4rem 47% 4rem 4rem;
@@ -1624,13 +1647,15 @@ p + .btn {
         height: 100%; } }
 
 .misionvision {
-  margin: 0 2.4rem; }
+  margin: 0 2.4rem;
+  display: none; }
   @media screen and (min-width: 960px) {
     .misionvision {
       display: flex;
       justify-content: space-between;
       margin: 0 8rem;
-      padding: 4rem 0; } }
+      padding: 4rem 0;
+      display: none; } }
   .misionvision .blockmv {
     position: relative;
     color: #FFFFFF;
@@ -1728,11 +1753,11 @@ p + .btn {
         left: -25px; } }
   @media screen and (min-width: 960px) {
     .history {
-      padding: 8rem 0 6.4rem;
+      padding: 0 0 6.4rem;
       margin: 2.4rem 0;
       overflow: hidden; }
       .history-intro {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         padding: 4rem 8rem;
         background-color: rgba(187, 161, 123, 0.15); }
@@ -1954,9 +1979,24 @@ p + .btn {
     .slideshow .prev, .slideshow .next, .slideshow .text {
       font-size: 11px; } }
 
+.mv {
+  margin: 0 2.4rem; }
+  @media screen and (min-width: 960px) {
+    .mv {
+      margin: 0 8rem;
+      display: flex;
+      justify-content: space-between; }
+      .mv .mision, .mv .vision {
+        width: 48%; } }
+  .mv .contenido {
+    background: #CCCCCC;
+    padding: 4rem;
+    min-height: 330px;
+    margin-bottom: 2.4rem; }
+
 .bolsatrabajo {
   position: relative;
-  margin: 4rem 2.4rem 8rem;
+  margin: 2.4rem;
   padding: 22.4rem 2.4rem 2.4rem;
   background: #F0EFF4; }
   @media screen and (min-width: 960px) {
@@ -2087,17 +2127,17 @@ p + .btn {
     opacity: 1; }
 
 .inside {
-  padding: 4rem 2.4rem;
-  background: #CCCCCC; }
-  .inside .fotos {
-    margin-top: 2.4rem; }
+  background: #D3D2D7;
+  margin: 2.4rem; }
   @media screen and (min-width: 960px) {
     .inside {
       display: flex;
       justify-content: space-between;
-      padding: 8rem 8rem; }
+      margin: 8rem; }
       .inside .texto, .inside .fotos {
         width: 48%; } }
+  .inside .texto {
+    padding: 4rem; }
   .inside .btn {
     margin-top: 0; }
 
@@ -2107,17 +2147,20 @@ p + .btn {
   padding: 4rem;
   background: #8C4A7C;
   color: #FFFFFF;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 4rem; }
   .beneficioscarreras p {
     text-align: left; }
   @media screen and (min-width: 960px) {
     .beneficioscarreras {
       padding: 8rem;
-      text-align: left; } }
+      text-align: left;
+      margin-bottom: 8rem; } }
 
 .university-header {
   height: 20rem;
   margin: 4rem 2.4rem 0;
+  display: none;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/carreras/university.jpg") center/cover no-repeat;
   color: #FFFFFF;
   text-align: center; }
@@ -2126,7 +2169,8 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .university-header {
       height: 45rem;
-      margin: 8rem 8rem 0; }
+      margin: 8rem 8rem 0;
+      display: none; }
       .university-header h2 {
         padding-top: 20rem; } }
 
@@ -2134,20 +2178,23 @@ p + .btn {
   margin: 0 2.4rem 4rem;
   padding: 4rem;
   background: #F0EFF4;
-  text-align: center; }
+  text-align: center;
+  display: none; }
   .university p {
     text-align: left; }
   @media screen and (min-width: 960px) {
     .university {
       margin: 0 8rem 4rem;
-      padding: 4rem; } }
+      padding: 4rem;
+      display: none; } }
   .university > p {
     margin: 0; }
 
 .bc {
   margin: 2rem;
   color: #FFFFFF;
-  text-align: center; }
+  text-align: center;
+  display: none; }
   .bc .bc-blog {
     flex-basis: 50%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imgs/carreras/blog.jpg") center/cover no-repeat;
@@ -2162,7 +2209,7 @@ p + .btn {
     text-align: left; }
   @media screen and (min-width: 960px) {
     .bc {
-      display: flex;
+      display: none;
       margin: 2rem 8rem; }
       .bc .bc-blog {
         padding: 4rem;
@@ -2175,7 +2222,7 @@ p + .btn {
   position: relative;
   margin: 4rem 2.4rem 8rem;
   padding: 22.4rem 2.4rem 2.4rem;
-  background: #CCCCCC; }
+  background: #D3D2D7; }
   @media screen and (min-width: 960px) {
     .servicios-mesa {
       padding: 4rem 47% 4rem 4rem;
@@ -2212,7 +2259,7 @@ p + .btn {
   position: relative;
   margin: 4rem 2.4rem 8rem;
   padding: 22.4rem 2.4rem 2.4rem;
-  background: #CCCCCC; }
+  background: #D3D2D7; }
   @media screen and (min-width: 960px) {
     .implementaciones {
       padding: 4rem 47% 4rem 4rem;
@@ -2249,7 +2296,7 @@ p + .btn {
   position: relative;
   margin: 4rem 2.4rem 8rem;
   padding: 22.4rem 2.4rem 2.4rem;
-  background: #CCCCCC; }
+  background: #D3D2D7; }
   @media screen and (min-width: 960px) {
     .capacitaciones {
       padding: 4rem 47% 4rem 4rem;
@@ -2294,7 +2341,7 @@ p + .btn {
       padding: 0 2rem; } }
 
 .formulario {
-  background: #CCCCCC;
+  background: #D3D2D7;
   padding: .5rem 2rem;
   flex-basis: 35%; }
   @media screen and (min-width: 960px) {
@@ -2319,6 +2366,29 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .oficinas {
       padding: 4rem 8rem; } }
+
+.blog {
+  margin: 2.4rem; }
+  .blog .post {
+    margin-bottom: 2.4rem; }
+  .blog .bottom {
+    margin-bottom: 4rem; }
+  .blog .lateral {
+    padding: 4rem;
+    background-color: #F0EFF4; }
+  @media screen and (min-width: 960px) {
+    .blog {
+      margin: 4rem 8rem;
+      display: flex;
+      justify-content: space-between; }
+      .blog .posts {
+        width: 67%;
+        display: flex;
+        justify-content: space-between; }
+        .blog .posts .post {
+          width: 48%; }
+      .blog .lateral {
+        width: 30%; } }
 
 /*-----------------------------------
     Utilities

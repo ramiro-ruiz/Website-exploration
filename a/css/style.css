@@ -540,7 +540,7 @@ p + .btn {
   padding: 2.4rem; }
   @media screen and (min-width: 960px) {
     .main-header {
-      padding: 4rem; } }
+      padding: 4rem 8rem; } }
 
 .nav-sup {
   display: flex;
@@ -783,7 +783,7 @@ p + .btn {
   @media screen and (min-width: 960px) {
     .hero-image::after, .hero-nosotros::after, .hero-carreras::after, .hero-servicios::after, .hero-clientes::after, .hero-contacto::after, .hero-blog::after, .hero-hoteleria::after, .hero-ipms::after, .hero-clientes-hoteleria::after, .hero-clientes-salud::after, .hero-clientes-comercio::after {
       bottom: 0rem;
-      height: 1rem; } }
+      height: 0.5rem; } }
 
 .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-blog > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
   width: 66%;
@@ -794,7 +794,7 @@ p + .btn {
   line-height: 1.25; }
   @media screen and (min-width: 960px) {
     .hero-image > .main-heading, .hero-nosotros > .main-heading, .hero-carreras > .main-heading, .hero-servicios > .main-heading, .hero-clientes > .main-heading, .hero-contacto > .main-heading, .hero-blog > .main-heading, .hero-hoteleria > .main-heading, .hero-ipms > .main-heading, .hero-clientes-hoteleria > .main-heading, .hero-clientes-salud > .main-heading, .hero-clientes-comercio > .main-heading {
-      width: 50%;
+      width: 70%;
       margin: auto 0;
       font-size: 6.4rem;
       line-height: 1.1; } }
@@ -889,6 +889,8 @@ p + .btn {
     .industrias-home .hoteleria, .industrias-home .salud, .industrias-home .comercio {
       width: 32%; } }
 
+.solutions a {
+  color: #FFFFFF; }
 .solutions .products {
   display: none; }
   .solutions .products-list {
@@ -978,7 +980,7 @@ p + .btn {
         overflow: hidden;
         transition: all ease .2s; }
       .solutions > section > span:hover {
-        background-color: rgba(255, 255, 255, 0.1); }
+        background-color: rgba(255, 255, 255, 0); }
       .solutions > section > span::after {
         content: '';
         position: absolute;
@@ -2346,7 +2348,7 @@ p + .btn {
   flex-basis: 35%; }
   @media screen and (min-width: 960px) {
     .formulario {
-      padding: 4rem 8rem; } }
+      padding: 2rem 5rem; } }
   .formulario input {
     border: 0;
     width: 100%;

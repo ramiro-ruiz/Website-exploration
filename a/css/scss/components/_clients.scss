@@ -183,3 +183,10 @@
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.15s;
 }
+
+.dos {
+  display: flex;
+  div {
+    margin: 0 1rem;
+  }
+}

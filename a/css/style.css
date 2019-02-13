@@ -1258,6 +1258,11 @@ p + .btn {
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.15s; }
 
+.dos {
+  display: flex; }
+  .dos div {
+    margin: 0 1rem; }
+
 .hotel-categories {
   background: rgba(114, 134, 160, 0.1); }
   .hotel-categories h2 {
